@@ -3,8 +3,8 @@ import React from "react";
 
 // Project imports
 import "./styles/main.css";
-import logo from "../imgs/logo.svg";
-import hamburger from "../imgs/hamburger-icon.svg";
+import logo from "../assets/imgs/logo.svg";
+import hamburger from "../assets/icons/hamburger-icon.svg";
 
 function Header() {
 

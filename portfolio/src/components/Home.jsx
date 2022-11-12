@@ -3,11 +3,11 @@ import React from "react";
 
 // Project imports
 import "./styles/main.css";
-import githubBlack from "../imgs/github-icon-black.svg";
-import linkedinBlack from "../imgs/linkedin-icon-black.svg";
-import mailBlack from "../imgs/mail-icon-black.svg";
-import poster3d from '../imgs/3d-poster.jpg';
-import paperLanter from '../imgs/paper-lantern.jpg';
+import githubBlack from "../assets/icons/github-icon-black.svg";
+import linkedinBlack from "../assets/icons/linkedin-icon-black.svg";
+import mailBlack from "../assets/icons/mail-icon-black.svg";
+import poster3d from '../assets/imgs/3d-poster.jpg';
+import paperLanter from '../assets/imgs/paper-lantern.jpg';
 
 function Home() {
 

@@ -10,6 +10,16 @@
 
 body {
     min-height: 100vh;
+    font-size: 16px;
+    font-family: $light;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 // Utilities
