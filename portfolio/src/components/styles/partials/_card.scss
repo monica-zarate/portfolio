@@ -7,15 +7,18 @@
     max-width: 690px;
     margin: 0 auto 32px;
     @extend .box-shadow;
+    justify-content: space-between;
+    align-items: flex-start;
 
     &__img {
         border-radius: 8px 0 0 8px;
         height: auto;
-        width: 280px;
+        width: 340px;
     }
 
     &__info {
         padding: 32px 50px;
+        max-width: 350px;
 
         &--chip {
             background-color: $chips-bg;

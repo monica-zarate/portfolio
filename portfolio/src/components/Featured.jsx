@@ -3,24 +3,24 @@ import React from "react";
 
 // Project imports
 import Card from "./Card";
-import poster3d from '../assets/imgs/3d-poster.jpg';
-import paperLantern from '../assets/imgs/paper-lantern.jpg';
+import paperLantern from '../assets/imgs/projects/paper-lantern.jpg';
+import guavaPunch from '../assets/imgs/projects/guava-punch.jpg';
 
 let featuredProjectsArr = [
     {
         id: 1,
-        title: "Paper Lantern",
+        title: "Paper Lantern Bookstore",
         thumb: paperLantern,
         thumbAlt: "mobile interface preview",
-        description: "Design, developed and tested a prototype for a fictitious book store. The project includes a website optimized for desktop environment and a mobile interface.",
+        description: "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website optimized for a desktop environment and a mobile interface.",
         discipline: "UI/UX Design"
     },
     {
         id: 2,
-        title: "3D Promotional Poster",
-        thumb: poster3d,
+        title: "Guava Punch Beverage Company",
+        thumb: guavaPunch,
         thumbAlt: "beverage poster mockup",
-        description: "Create a promotional poster for a fictitious beverage company. Using a background image, a 3D container and custom lighting to set up a realistic scene.",
+        description: "Developed a fictional beverage company profile and designed a logo and a promotional poster that would attract their target audience.",
         discipline: "Graphic Design"
     }
 ]

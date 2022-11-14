@@ -23,7 +23,7 @@
   line-height: 48px;
 }
 
-.h2, .about__title, .featured__title {
+.h2, .about__title, .projects__title, .featured__title {
   font-family: "Poppins Medium";
   font-size: 24px;
   line-height: 36px;
@@ -54,16 +54,20 @@
   letter-spacing: 0.04em;
 }
 
-.chips, .card__info--chip {
+.chips, .projects__chip, .card__info--chip {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.04em;
 }
 
-.card-description, .card__info--description {
+.card-description, .card__info--description, .footer, .footer p {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.02em;
+}
+
+.footer, .footer p {
+  letter-spacing: 0.04em;
 }
 
 *,
@@ -121,8 +125,6 @@ ul, ol {
 }
 .intro__img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
 }
 .intro__text-wrapper {
   max-width: 384px;
@@ -172,14 +174,17 @@ ul, ol {
   border-radius: 8px;
   max-width: 690px;
   margin: 0 auto 32px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .card__img {
   border-radius: 8px 0 0 8px;
   height: auto;
-  width: 280px;
+  width: 340px;
 }
 .card__info {
   padding: 32px 50px;
+  max-width: 350px;
 }
 .card__info--chip {
   background-color: #EFEFEF;
@@ -191,6 +196,29 @@ ul, ol {
 }
 .card__info--description {
   color: #808080;
+}
+
+.projects {
+  background-color: #fafafa;
+}
+.projects__wrapper {
+  padding: 72px 120px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.projects__chips {
+  margin: 32px 0 40px;
+}
+.projects__chip {
+  background-color: #EFEFEF;
+  border-radius: 50px;
+  padding: 4px 16px;
+  margin-right: 32px;
+  cursor: pointer;
+}
+.projects__chip:hover {
+  background-color: #6667AB;
+  color: #ffffff;
 }
 
 .about__wrapper {
@@ -221,7 +249,7 @@ ul, ol {
 }
 
 /* Footer */
-.footer {
+.footer, .footer p {
   background-color: #6667AB;
 }
 .footer__wrapper {

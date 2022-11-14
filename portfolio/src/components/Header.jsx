@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Project imports
-import "./styles/main.css";
 import logo from "../assets/imgs/logo.svg";
 
 function Header() {
@@ -16,7 +15,7 @@ function Header() {
                 </Link>
                 <nav className="header__nav">
                     <ul className="flex-c header__nav-ul">
-                        <li className="header__nav-li"><Link to="/work" title="Work" className="header__link">work</Link></li>
+                        <li className="header__nav-li"><Link to="/projects" title="Projects" className="header__link">projects</Link></li>
                         <li className="header__nav-li"><Link to="/about" title="About" className="header__link">about</Link></li>
                     </ul>
                 </nav>

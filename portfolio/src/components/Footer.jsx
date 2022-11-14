@@ -2,10 +2,9 @@
 import React from "react";
 
 // Project imports
-import "./styles/main.css";
 import github from "../assets/icons/github-icon.svg";
 import linkedin from "../assets/icons/linkedin-icon.svg";
-import mail from "../assets/icons/mail-icon.svg";
+import mail from "../assets/icons/mail-icon.png";
 
 function Footer() {
 

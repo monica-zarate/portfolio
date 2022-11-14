@@ -1,0 +1,33 @@
+// Projects Page Styles
+
+.projects {
+    background-color: $section-bg;
+    
+    &__wrapper {
+        padding: 72px 120px;
+        max-width: $small-desktop-width;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @extend .h2;
+    }
+
+    &__chips {
+        margin: 32px 0 40px;
+    }
+
+    &__chip {
+        background-color: $chips-bg;
+        border-radius: 50px;
+        padding: 4px 16px;
+        margin-right: 32px;
+        @extend .chips;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+}

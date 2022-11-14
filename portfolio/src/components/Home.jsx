@@ -8,7 +8,7 @@ import Featured from "../components/Featured";
 function Home() {
 
     return (
-        <div className="home">
+        <div>
             <Intro/>
             <Featured/>
         </div>

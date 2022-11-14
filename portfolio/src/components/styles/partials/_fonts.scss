@@ -78,3 +78,8 @@ $kalam: "Kalam Bold";
     line-height: 18px;
     letter-spacing: 0.02em;
 }
+
+.footer {
+    @extend .card-description;
+    letter-spacing: 0.04em;
+}

@@ -12,6 +12,7 @@
     p {
         color: $white;
         text-align: center;
+        @extend .footer;
     }
 
     &__social {
