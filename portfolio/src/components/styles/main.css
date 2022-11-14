@@ -1,3 +1,66 @@
+.nav-menu, .header a, .nav-active {
+  font-family: "Poppins SemiBold";
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 4px;
+}
+.nav-menu:hover, .header a:hover, .nav-active:hover {
+  border-bottom: 2px solid #6667AB;
+  color: #6667AB;
+}
+
+.nav-active {
+  color: #6667AB;
+  border-bottom: 2px solid #6667AB;
+}
+
+.h1, .intro__h1 {
+  font-family: "Kalam Bold";
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.h2, .featured__title {
+  font-family: "Poppins Medium";
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+}
+
+.h3, .card__info--title {
+  font-family: "Poppins Medium";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+
+.body-light, body, .body-med, .intro__cta {
+  font-family: "Poppins Light";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+}
+
+.body-med, .intro__cta {
+  font-family: "Poppins Medium";
+  letter-spacing: 0.04em;
+}
+
+.chips, .card__info--chip {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+.card-description, .card__info--description {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+}
+
 *,
 *::before,
 *::after {
@@ -8,95 +71,146 @@
 
 body {
   min-height: 100vh;
-  font-size: 16px;
-  font-family: "Poppins Light";
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul, ol {
   list-style: none;
 }
 
-.flex-c {
+.flex-c, .intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+
+.box-shadow, .card {
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Header Styles */
-.header {
-  position: relative;
-  padding: 24px;
+.header__wrapper {
+  padding: 32px 120px;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header__logo {
+  height: 36px;
+  width: auto;
+}
+.header__nav-li {
+  margin-left: 40px;
+}
+.intro {
+  padding: 32px 250px 66px 295px;
+  border-bottom: 1px solid rgba(102, 103, 171, 0.25);
+}
+.intro__img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.intro__text-wrapper {
+  max-width: 384px;
+  max-height: 260px;
+  margin-left: 101px;
+}
+.intro__h1 {
+  margin-bottom: 16px;
+}
+.intro__h1--highlight {
+  color: #6667AB;
+}
+.intro__cta {
+  color: #6667AB;
+  margin: 36px 0 16px;
+}
+.intro__social {
+  justify-content: unset;
+}
+.intro__social li {
+  height: 24px;
+  max-width: 32px;
+  margin-right: 24px;
+}
+.intro__social a {
+  height: 24px;
+}
+.intro__social img {
+  height: 24px;
 }
 
-.logo {
-  height: 40px;
-}
-
-.nav-wrapper {
-  position: absolute;
-  right: 24px;
-  top: 32px;
-}
-
-.nav {
-  display: none;
-}
-
-/* Featured */
 .featured {
   background-color: #fafafa;
-  padding: 32px;
-  align-items: flex-start;
 }
-
-/* Card */
-.chip {
-  background-color: #EFEFEF;
-  border-radius: 50px;
-  padding: 4px 16px;
+.featured__wrapper {
+  padding: 72px 120px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.featured__title {
+  margin-bottom: 40px;
 }
 
 .card {
   background-color: #ffffff;
+  color: #000000;
   border-radius: 8px;
-  width: 90%;
-  margin-bottom: 32px;
-  padding: 10% 5%;
-  align-items: flex-start;
-  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
+  max-width: 690px;
+  margin: 0 auto 32px;
 }
-
-.card p {
-  text-align: left;
-}
-
-.card img {
+.card__img {
+  border-radius: 8px 0 0 8px;
   height: auto;
   width: 280px;
+}
+.card__info {
+  padding: 32px 50px;
+}
+.card__info--chip {
+  background-color: #EFEFEF;
+  border-radius: 50px;
+  padding: 4px 16px;
+}
+.card__info--title {
+  margin: 24px 0 16px;
+}
+.card__info--description {
+  color: #808080;
 }
 
 /* Footer */
 .footer {
   background-color: #6667AB;
-  padding: 50px 25px;
 }
-
+.footer__wrapper {
+  max-width: 1280px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 120px;
+}
 .footer p {
   color: #ffffff;
-  margin: 24px;
+  text-align: center;
 }
-
-.social {
-  flex-direction: row;
+.footer__social {
+  justify-content: unset;
 }
-
-.social li {
-  margin: 0 16px;
+.footer__social li {
+  height: 24px;
+  max-width: 32px;
+  margin-right: 24px;
+}
+.footer__social a {
+  height: 24px;
+}
+.footer__social img {
+  height: 24px;
 }
 
 @font-face {

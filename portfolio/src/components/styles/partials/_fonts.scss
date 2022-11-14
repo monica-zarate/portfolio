@@ -3,3 +3,72 @@ $light: "Poppins Light";
 $medium: "Poppins Medium";
 $semi: "Poppins SemiBold";
 $kalam: "Kalam Bold";
+
+// Text Styles
+
+.nav-menu {
+    font-family: $semi;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 16px * 1.5;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid $white;
+    padding-bottom: 4px;
+    
+    // Add hover animation
+    &:hover {
+        border-bottom: 2px solid $primary-color;
+        color: $primary-color;
+    }
+}
+
+.nav-active {
+    @extend .nav-menu;
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+}
+
+.h1 {
+    font-family: $kalam;
+    font-size: 32px;
+    line-height: 32px * 1.5;
+}
+
+.h2 {
+    font-family: $medium;
+    font-size: 24px;
+    line-height: 24px * 1.5;
+    letter-spacing: 0.04em;
+}
+
+.h3 {
+    font-family: $medium;
+    font-size: 20px;
+    line-height: 20px * 1.5;
+    letter-spacing: 0.02em;
+}
+
+.body-light {
+    font-family: $light;
+    font-size: 16px;
+    line-height: 16px * 1.5;
+    letter-spacing: 0.08em;
+}
+
+.body-med {
+    @extend .body-light;
+    font-family: $medium;
+    letter-spacing: 0.04em;
+}
+
+.chips {
+    font-size: 12px;
+    line-height: 12px * 1.5;
+    letter-spacing: 0.04em;
+}
+
+.card-description {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+}

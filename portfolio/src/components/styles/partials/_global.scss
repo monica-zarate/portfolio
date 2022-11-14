@@ -10,12 +10,12 @@
 
 body {
     min-height: 100vh;
-    font-size: 16px;
-    font-family: $light;
+    @extend .body-light;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul, ol {
@@ -27,5 +27,8 @@ ul, ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+}
+
+.box-shadow {
+    box-shadow: 0px 4px 4px 2px $box-shadow;
 }

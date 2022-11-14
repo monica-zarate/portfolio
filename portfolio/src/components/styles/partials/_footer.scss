@@ -1,18 +1,35 @@
 /* Footer */
 .footer {
-    background-color: #6667AB;
-    padding: 50px 25px;
-}
+    background-color: $primary-color;
+    
+    &__wrapper {
+        max-width: $small-desktop-width;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 40px 120px;
+    }
 
-.footer p {
-    color: #ffffff;
-    margin: 24px;
-}
+    p {
+        color: $white;
+        text-align: center;
+    }
 
-.social {
-    flex-direction: row;
-}
+    &__social {
+        justify-content: unset;
 
-.social li {
-    margin: 0 16px;
+        li {
+            height: 24px;
+            max-width: 32px;
+            margin-right: 24px;
+        }
+
+        a {
+            height: 24px;
+        }
+
+        img {
+            height: 24px;
+
+        }
+    }
 }

@@ -1,0 +1,16 @@
+// Featured Section Styles
+
+.featured {
+    background-color: $section-bg;
+
+    &__wrapper {
+        padding: 72px 120px;
+        max-width: $small-desktop-width;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @extend .h2;
+        margin-bottom: 40px;
+    }
+}
