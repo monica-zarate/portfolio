@@ -1,4 +1,4 @@
-.nav-menu, .header a, .nav-active {
+.nav-menu, .header__link, .nav-active {
   font-family: "Poppins SemiBold";
   font-size: 16px;
   text-transform: uppercase;
@@ -7,7 +7,7 @@
   border-bottom: 2px solid #ffffff;
   padding-bottom: 4px;
 }
-.nav-menu:hover, .header a:hover, .nav-active:hover {
+.nav-menu:hover, .header__link:hover, .nav-active:hover {
   border-bottom: 2px solid #6667AB;
   color: #6667AB;
 }
@@ -23,7 +23,7 @@
   line-height: 48px;
 }
 
-.h2, .featured__title {
+.h2, .about__title, .featured__title {
   font-family: "Poppins Medium";
   font-size: 24px;
   line-height: 36px;
@@ -37,15 +37,20 @@
   letter-spacing: 0.02em;
 }
 
-.body-light, body, .body-med, .intro__cta {
+.body-light, body, .body-bulk, .about__text, .body-med, .about__links, .about__cta, .intro__cta {
   font-family: "Poppins Light";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.08em;
 }
 
-.body-med, .intro__cta {
+.body-med, .about__links, .about__cta, .intro__cta {
   font-family: "Poppins Medium";
+  letter-spacing: 0.04em;
+}
+
+.body-bulk, .about__text {
+  line-height: 32px;
   letter-spacing: 0.04em;
 }
 
@@ -106,6 +111,10 @@ ul, ol {
 .header__nav-li {
   margin-left: 40px;
 }
+.header__link {
+  color: #000000;
+}
+
 .intro {
   padding: 32px 250px 66px 295px;
   border-bottom: 1px solid rgba(102, 103, 171, 0.25);
@@ -182,6 +191,33 @@ ul, ol {
 }
 .card__info--description {
   color: #808080;
+}
+
+.about__wrapper {
+  padding: 72px 210px 200px 120px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.about__title {
+  margin-bottom: 32px;
+}
+.about__content {
+  align-items: flex-start;
+  max-width: 862px;
+  margin: 0 auto;
+}
+.about__text {
+  max-width: 426px;
+}
+.about__text p {
+  margin-bottom: 32px;
+}
+.about__cta {
+  color: #6667AB;
+}
+.about__links {
+  color: #6667AB;
+  text-decoration: underline;
 }
 
 /* Footer */

@@ -61,6 +61,12 @@ $kalam: "Kalam Bold";
     letter-spacing: 0.04em;
 }
 
+.body-bulk {
+    @extend .body-light;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+}
+
 .chips {
     font-size: 12px;
     line-height: 12px * 1.5;

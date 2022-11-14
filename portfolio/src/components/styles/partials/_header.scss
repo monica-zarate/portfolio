@@ -16,7 +16,8 @@
         margin-left: 40px
     }
 
-    a{
+    &__link{
+        color: $black;
         @extend .nav-menu;
     }
 }

@@ -1,0 +1,41 @@
+// About Section Styles
+
+.about {
+
+    &__wrapper {
+        padding: 72px 210px 200px 120px;
+        max-width: $small-desktop-width;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @extend .h2;
+        margin-bottom: 32px;
+    }
+
+    &__content {
+        align-items: flex-start;
+        max-width: 862px;
+        margin: 0 auto
+    }
+
+    &__text {
+        @extend .body-bulk;
+        max-width: 426px;
+
+        p {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__cta {
+        @extend .body-med;
+        color: $primary-color;
+    }
+
+    &__links {
+        @extend .body-med;
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
