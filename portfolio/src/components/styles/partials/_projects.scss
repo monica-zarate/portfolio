@@ -11,11 +11,13 @@
 
     &__title {
         @extend .h2;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
-    &__chips {
-        margin: 32px 0 40px;
-    }
+    // &__chips {
+    //     margin: 32px 0 40px;
+    // }
 
     &__chip {
         background-color: $chips-bg;

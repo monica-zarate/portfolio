@@ -1,5 +1,10 @@
 /* Header Styles */
 .header {
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    @extend .box-shadow;
+    
     &__wrapper {
         padding: 32px 120px;
         justify-content: space-between;
