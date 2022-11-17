@@ -13,7 +13,9 @@ let projectsArr = [
         thumb: paperLantern,
         thumbAlt: "mobile interface mockup",
         description: "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website optimized for a desktop environment and a mobile interface.",
-        discipline: "UI/UX Design"
+        chip: "UI/UX Design",
+        discipline: "design",
+        path: "paper-lantern"
     },
     {
         id: 2,
@@ -21,7 +23,9 @@ let projectsArr = [
         thumb: guavaPunch,
         thumbAlt: "beverage poster mockup",
         description: "Developed a fictional beverage company profile and designed a logo and a promotional poster that would attract their target audience.",
-        discipline: "Graphic Design"
+        chip: "Graphic Design",
+        discipline: "design",
+        path: "guava-punch"
     }
 ]
 

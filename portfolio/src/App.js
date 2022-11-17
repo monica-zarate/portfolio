@@ -9,8 +9,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Development from "./components/Development";
 import Design from "./components/Design";
-import Projects from "./components/Projects";
 import About from "./components/About";
+import ProjectDetails from "./components/ProjectDetails";
 
 function App() {
   return (
@@ -20,8 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} exact></Route>
           <Route path="/design" element={<Design />}></Route>
+          <Route path="/design/:path" element={<ProjectDetails />}></Route>
           <Route path="/development" element={<Development />}></Route>
-          <Route path="/about" element={<About />} />
+          <Route path="/development/:path" element={<ProjectDetails />}></Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
         <Footer />
       </div>

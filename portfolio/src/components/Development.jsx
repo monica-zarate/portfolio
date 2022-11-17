@@ -13,7 +13,9 @@ let projectsArr = [
         thumb: acnhVillagers,
         thumbAlt: "animal crossing villagers",
         description: "Designed and developed a site listing a collection of Animal Crossing villagers. The goal was to include classes and constructor methods. This project considers knowledge of arrays loops and functions in PHP.",
-        discipline: "PHP"
+        chip: "PHP",
+        discipline: "development",
+        path: "acnh"
     },
     {
         id: 4,
@@ -21,7 +23,9 @@ let projectsArr = [
         thumb: apod,
         thumbAlt: "astronomy picture of the day",
         description: "Designed and developed a site that consumes NASA APOD API to display the Picture of the Day. The goal was to use AJAX to make at least two requests to an endpoint and display content programmatically.",
-        discipline: "Javascript"
+        chip: "Javascript",
+        discipline: "development",
+        path: "apod"
     }
 ]
 
