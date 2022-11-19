@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.09900df6.css",
+    "main.js": "/static/js/main.62c0793c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/guava-punch-2.jpg": "/static/media/guava-punch-2.047c992687e50d3535de.jpg",
+    "static/media/guava-punch-thumb.jpg": "/static/media/guava-punch-thumb.e745520b8687770e4e6b.jpg",
+    "static/media/acnh-thumb.jpg": "/static/media/acnh-thumb.0e936e6f8431134cbde2.jpg",
+    "static/media/acnh.jpg": "/static/media/acnh.0e936e6f8431134cbde2.jpg",
+    "static/media/paper-lantern-thumb.jpg": "/static/media/paper-lantern-thumb.abe8524c076d36e8574e.jpg",
+    "static/media/paper-lantern.jpg": "/static/media/paper-lantern.abe8524c076d36e8574e.jpg",
+    "static/media/apod-thumb.jpg": "/static/media/apod-thumb.d8c282eab91863fa5f27.jpg",
+    "static/media/apod.jpg": "/static/media/apod.d8c282eab91863fa5f27.jpg",
+    "static/media/guava-punch-1.jpg": "/static/media/guava-punch-1.b7bb1be6b92d65cfb0a1.jpg",
+    "static/media/kalam-bold.ttf": "/static/media/kalam-bold.c4671477e81c3c51ffc0.ttf",
+    "static/media/about.png": "/static/media/about.f4cce4e0b2cab7fefd64.png",
+    "static/media/logo.svg": "/static/media/logo.aa4149da9857d061a4dd88e2b4d17f45.svg",
+    "static/media/poppins-light.ttf": "/static/media/poppins-light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/poppins-medium.ttf": "/static/media/poppins-medium.673ed42382ab264e0bf5.ttf",
+    "static/media/poppins-semibold.ttf": "/static/media/poppins-semibold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/monica-zarate.jpg": "/static/media/monica-zarate.6f2ed352336204cb4865.jpg",
+    "static/media/linkedin-icon-black.svg": "/static/media/linkedin-icon-black.49e2e1c34255e0dbd05ddea73dbdf01a.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.01d0b982b79c9993ad559586c1827bc5.svg",
+    "static/media/github-icon-black.svg": "/static/media/github-icon-black.ea7cc6b988d7e2aa87c036b140a686fa.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.ff575a9bafe8f1b2933bfaafd47bf4ee.svg",
+    "index.html": "/index.html",
+    "main.09900df6.css.map": "/static/css/main.09900df6.css.map",
+    "main.62c0793c.js.map": "/static/js/main.62c0793c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09900df6.css",
+    "static/js/main.62c0793c.js"
+  ]
+}
