@@ -3,8 +3,8 @@ import React from "react";
 
 // Project imports
 import Card from "./Card";
-import acnhVillagers from '../assets/imgs/projects/acnh.jpg';
-import apod from '../assets/imgs/projects/apod.jpg';
+import acnhVillagers from '../assets/imgs/projects/acnh-thumb.jpg';
+import apod from '../assets/imgs/projects/apod-thumb.jpg';
 
 let projectsArr = [
     {

@@ -3,8 +3,8 @@ import React from "react";
 
 // Project imports
 import Card from "./Card";
-import paperLantern from '../assets/imgs/projects/paper-lantern.jpg';
-import guavaPunch from '../assets/imgs/projects/guava-punch.jpg';
+import paperLantern from '../assets/imgs/projects/paper-lantern-thumb.jpg';
+import guavaPunch from '../assets/imgs/projects/guava-punch-thumb.jpg';
 
 let projectsArr = [
     {

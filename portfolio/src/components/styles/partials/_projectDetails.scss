@@ -1,0 +1,97 @@
+// Project Details Page Styles
+
+.project {
+    background-color: $section-bg;
+    padding: 72px 0 200px;
+
+    & p {
+        @extend .body-bulk;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: $laptop-width;
+    }
+
+    &__section-title{
+        @extend .h2;
+        margin-bottom: 72px;
+        text-align: center;
+    }
+
+    &__card {
+        background-color: $white;
+        border-radius: 25px;
+        padding: 40px 88px 80px;
+        @extend .box-shadow-light;
+    }
+
+    &__title{
+        @extend .project-title;
+    }
+
+    &__subtitle {
+        @extend .h3;
+        color: $gray;
+        margin: 8px 0 32px;
+    }
+
+    &__overview {
+        align-items: flex-start;
+        justify-content: space-evenly;
+        background-color: $primary-color;
+        color: $white;
+        padding: 32px;
+
+        &--left {
+            max-width: 43%;
+        }
+
+        &--right {
+            width: 30%;
+            max-width: 40%;
+        }
+
+        & h2 {
+            @extend .h2;
+            margin-bottom: 16px;
+        }
+
+        & li {
+            @extend .body-bulk;
+        }
+    }
+
+    &__img {
+        height: 500px;
+        margin: 64px 0;
+    }
+
+    &__intro {
+        max-width: $tablet-width;
+        margin: 0 auto 32px;
+    }
+
+    &__steps {
+        margin-top: 72px;
+    }
+
+    &__step{
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 72px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        & h3 {
+            @extend .h3;
+            color: $primary-color;
+        }
+
+        & p {
+            max-width: 601px;
+        }
+    }
+}

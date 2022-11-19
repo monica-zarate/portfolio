@@ -23,21 +23,28 @@
   line-height: 48px;
 }
 
-.h2, .about__title, .projects__title, .featured__title {
+.h2, .about__title, .project__overview h2, .project__section-title, .projects__title, .featured__title {
   font-family: "Poppins Medium";
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.04em;
 }
 
-.h3, .card__info--title {
+.h3, .project__step h3, .project__subtitle, .card__info--title {
   font-family: "Poppins Medium";
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.02em;
 }
 
-.body-light, body, .body-bulk, .about__text, .body-med, .about__links, .about__cta, .intro__cta {
+.project-title, .project__title {
+  font-family: "Poppins Light";
+  font-size: 40px;
+  line-height: 80px;
+  letter-spacing: 0.06em;
+}
+
+.body-light, body, .body-bulk, .about__text, .project__overview li, .project p, .body-med, .about__links, .about__cta, .intro__cta {
   font-family: "Poppins Light";
   font-size: 16px;
   line-height: 24px;
@@ -49,7 +56,7 @@
   letter-spacing: 0.04em;
 }
 
-.body-bulk, .about__text {
+.body-bulk, .about__text, .project__overview li, .project p {
   line-height: 32px;
   letter-spacing: 0.04em;
 }
@@ -99,6 +106,10 @@ ul, ol {
 
 .box-shadow, .card, .header {
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
+}
+
+.box-shadow-light, .project__card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Header Styles */
@@ -227,6 +238,70 @@ ul, ol {
 .projects__chip:hover {
   background-color: #6667AB;
   color: #ffffff;
+}
+
+.project {
+  background-color: #fafafa;
+  padding: 72px 0 200px;
+}
+.project__wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.project__section-title {
+  margin-bottom: 72px;
+  text-align: center;
+}
+.project__card {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 40px 88px 80px;
+}
+.project__subtitle {
+  color: #808080;
+  margin: 8px 0 32px;
+}
+.project__overview {
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #6667AB;
+  color: #ffffff;
+  padding: 32px;
+}
+.project__overview--left {
+  max-width: 43%;
+}
+.project__overview--right {
+  width: 30%;
+  max-width: 40%;
+}
+.project__overview h2 {
+  margin-bottom: 16px;
+}
+.project__img {
+  height: 500px;
+  margin: 64px 0;
+}
+.project__intro {
+  max-width: 768px;
+  margin: 0 auto 32px;
+}
+.project__steps {
+  margin-top: 72px;
+}
+.project__step {
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+.project__step:last-child {
+  margin-bottom: 0;
+}
+.project__step h3 {
+  color: #6667AB;
+}
+.project__step p {
+  max-width: 601px;
 }
 
 .about__wrapper {
