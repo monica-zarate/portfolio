@@ -4,6 +4,7 @@
     top: 0;
     background-color: $white;
     @extend .box-shadow;
+    z-index: 9;
     
     &__wrapper {
         padding: 32px 120px;

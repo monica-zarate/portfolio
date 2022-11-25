@@ -9,7 +9,19 @@
         "description": "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website optimized for a desktop environment and a mobile interface.",
         "chip": "UI/UX Design",
         "discipline": "design",
-        "path": "paper-lantern"
+        "path": "paper-lantern",
+        "tools": ["Adobe Xd 2022", "Figma", "Useberry", "Maze"],
+        "intro": ["To achieve our final prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis."],
+        "steps": [
+            {
+                "name": "Company Conception",
+                "description": "With e-commerce websites' functionalities in mind, I created a website and mobile application for a bookstore that I called Paper Lantern."
+            },
+            {
+                "name": "User Personas",
+                "description": "With e-commerce websites' functionalities in mind, I created a website and mobile application for a bookstore that I called Paper Lantern."
+            }
+        ]
     },
     {
         "id": "2",
@@ -22,16 +34,12 @@
         "chip": "Graphic Design",
         "discipline": "design",
         "path": "guava-punch",
-        "tools": ["Adobe Illustrator 2022", "Adobe Photoshop 2022 ", "Adobe Dimension 2022"],
+        "tools": ["Adobe Illustrator 2022", "Adobe Photoshop 2022", "Adobe Dimension 2022"],
         "intro": ["This project started by developing a logo using shapes and the pen tool on Adobe Illustrator, arranging the components in an orderly manner using layers. Text components were meant to be outlined, to make sure the logo was scalable. A black and white version was requested, to make sure the logo was colour-independent.", "In order to create the promotional poster, we had to include a background image, and at least one 3D element that was placed on a realistic scene, blending in with the background image. Lighting and perspective were an important element of this project.As I had previously created a logo for a fictitious beverage company called Guava Punch, I decided to use that company as a foundation for this project, and develop the promotional poster that included a beverage container."],
         "steps": [
             {
                 "name": "Beverage Company Conception",
-                "description": "First, I selected a name for the company and I defined what kind of drink they sell. I provide as much context as possible for the brand, such as in what places / locations would this drink be found, which colours, shapes and typography would be representative of it, and why would those choices would be a good fit. Finally I defined who the target audience is, their interests, distinctive traits and general demographics they would have."
-            },
-            {
-                "name": "Logo Brainstorming",
-                "description": "The process began by settling on a beverage. I got inspired by a drink I used to enjoy on my childhood which was guava nectar, and decided to add sparkling water as a twist, to make it more interesting. I haven't seen a beverage combining these two elements on Canada. I wanted to create a casual beverage that could be enjoyed by everyone, as a soft drink. I settled on a 12 fl oz can."
+                "description": "I got inspired by a drink I used to enjoy on my childhood which was guava nectar, and decided to add sparkling water as a twist, to make it more interesting. I wanted to create a casual beverage that could be enjoyed by everyone, as a soft drink."
             },
             {
                 "name": "Creative Process",
@@ -43,23 +51,15 @@
             },
             {
                 "name": "Black and White Version",
-                "description": "The selected sketches were translated to Adobe Illustrator on a black and white version. The logos contain a guava fruit, which was traced from a royalty free image, using the pen tool. Balance and hierarchy were applied to create harmony and emphasize the more important information. The horizontal and vertical versions of the logo were completed."
-            },
-            {
-                "name": "Final Version and Brief Document",
-                "description": "The selected colour palette was applied to the logos, making sure enough contrast was present. Compile the information on a company brief document."
+                "description": "The selected sketches were translated to Adobe Illustrator on a black and white version. The guava fruit was traced using the pen tool. Balance and hierarchy were applied to create harmony and emphasize the more important information."
             },
             {
                 "name": "Poster Brainstorming",
-                "description": "To design the poster, the first step was to figure out the scene I wanted to create, I spent some time browsing royalty free images looking for inspiration, with the idea of a picnic or a park involved. Since this is a casual soft drink that is targeted for the general public and its a carbonated beverage, a can would be the most likely container to be used for it. This way it's relatively easy to transport and bring with you if you're out and about. The beverage is meant to be fun, refreshing and energizing, and we tend to associate these adjectives with the summertime, when people are spending more time outdoors and the weather is hotter."
-            },
-            {
-                "name": "Pre-production",
-                "description": "The background image was selected from Adobe Stock, and the can 3D container was taken from the available models Adobe Dimension has. I also created a label that could be placed on the can as a decal, this was done on Adobe Illustrator. The logo has the main hierarchy, but also some informational data was added, like the size of the can and certification logos that would help identify the beverage's ingredients."
+                "description": "Since this is a casual soft drink that is targeted for the general public and its a carbonated beverage, a can would be the most likely container to be used for it. The beverage is meant to be fun, refreshing and energizing, and we tend to associate these adjectives with the summertime, when people are spending more time outdoors and the weather is hotter."
             },
             {
                 "name": "Adobe Dimension",
-                "description": "The image was placed as a background image, and then the container was brought in using a fill colour and the label as a decal, to wrap around the can for a realistic effect. The 3D model perspective was matched to the background image. The most challenging part of the project was the lighting. This was my first time using Adobe Dimension, so it took some time to figure out the lighting options and settings. The final result was built with two light sources, one considered as “natural lighting” recreating the outdoor lighting the background image has, and because the natural light is hitting the can from behind/ to one side, an ambient light was added to help with the illumination of the front of the container, where the label is placed."
+                "description": "The park photo was placed as a background image, then the container was brought in using a fill colour and the label as a decal, to wrap around the can for a realistic effect. The 3D model perspective was matched to the background image. The most challenging part of the project was the lighting. This was my first time using Adobe Dimension, so it took some time to figure out the lighting options and settings. The final result was built with two light sources, one considered as “natural lighting” recreating the outdoor lighting the background image has, and because the natural light is hitting the can from behind/ to one side, an ambient light was added to help with the illumination of the front of the container, where the label is placed."
             },
             {
                 "name": "Adobe Photoshop",

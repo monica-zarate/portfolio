@@ -5,8 +5,9 @@ import { useLocation } from "react-router-dom";
 // Project imports
 import Portfolio from "./portfolio.json";
 import paperLantern from '../assets/imgs/projects/paper-lantern.jpg';
-import guavaPunchPoster from '../assets/imgs/projects/guava-punch-1.jpg';
-import guavaPunchLogo from '../assets/imgs/projects/guava-punch-2.jpg';
+import guavaPunchLogo from '../assets/imgs/projects/guava-punch-1.jpg';
+import guavaPunchPoster from '../assets/imgs/projects/guava-punch-2.jpg';
+import guavaPunchSketches from '../assets/imgs/projects/guava-punch-3.jpg';
 import acnhVillagers from '../assets/imgs/projects/acnh.jpg';
 import apod from '../assets/imgs/projects/apod.jpg';
 
@@ -28,7 +29,7 @@ function ProjectDetails () {
                     projectImgs.push(paperLantern);
                     break;
                 case "guava-punch":
-                    projectImgs.push(guavaPunchLogo, guavaPunchPoster);
+                    projectImgs.push(guavaPunchLogo, guavaPunchPoster, guavaPunchSketches);
                     break;
                 case "acnh":
                     projectImgs.push(acnhVillagers);
@@ -70,14 +71,25 @@ function ProjectDetails () {
                                 <img src={projectImgs[1]} alt="" className="project__img" />
                             </div>
                             <div className="project__steps">
-                                {__.steps.map((step) => {
+                                {__.steps.slice(0,3).map((step) => {
                                     return (
                                         <div className="flex-c project__step">
                                             <h3>{step.name}</h3>
                                             <p>{step.description}</p>
                                         </div>
                                     )
-                                })}     
+                                })}
+                                <div className="flex-c">
+                                    <img src={projectImgs[2]} alt="" className="project__img" />
+                                </div>
+                                {__.steps.slice(3).map((step) => {
+                                        return (
+                                            <div className="flex-c project__step">
+                                                <h3>{step.name}</h3>
+                                                <p>{step.description}</p>
+                                            </div>
+                                        )
+                                    })}
                             </div>
                         </div>
                     </div>
