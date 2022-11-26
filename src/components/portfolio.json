@@ -10,16 +10,41 @@
         "chip": "UI/UX Design",
         "discipline": "design",
         "path": "paper-lantern",
+        "isFeatured": true,
         "tools": ["Adobe Xd 2022", "Figma", "Useberry", "Maze"],
-        "intro": ["To achieve our final prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis."],
+        "intro": ["To achieve the prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis."],
         "steps": [
             {
                 "name": "Company Conception",
                 "description": "With e-commerce websites' functionalities in mind, I created a website and mobile application for a bookstore that I called Paper Lantern."
             },
             {
-                "name": "User Personas",
-                "description": "With e-commerce websites' functionalities in mind, I created a website and mobile application for a bookstore that I called Paper Lantern."
+                "name": "Website",
+                "description": "User Persona: Benjamin is a pet owner who likes to explore new hobbies. Scenario: He's looking for a reference book that can introduce him to indoor gardening while keeping his cat safe. User Flow: Ben browses the Paper Lantern website looking for a specific book and successfully goes through the checkout process."
+            },
+            {
+                "name": "Mobile App",
+                "description": "User Persona: Taylor's a young professional that works at a creative agency. Scenario: They're looking to update their credit card information on the Paper Lantern app, so they can check out faster whenever they need to place an order. User Flow: Taylor launches the Paper Lantern App and successfully adds a new payment method."
+            },
+            {
+                "name": "Wireframes",
+                "description": "I did some research on e-commerce websites and apps from Paper Lantern's main competitors and I sketched out the lo-fi wireframes keeping the personas' main goal and usability in mind."
+            },
+            {
+                "name": "Mockups and Prototypes",
+                "description": "When translating the Website and App Interfaces to their high-fidelity version, I kept in mind principles of design like balance, patterns and unity to create a useful and aesthetically pleasing experience for the users."
+            },
+            {
+                "name": "Website User Testing",
+                "description": "The website prototype was tested using Useberry. All six participants completed the three tasks they were presented with, however, thanks to their feedback and Useberry heat maps I found the users had some difficulties completing one of the tasks given. The search functionality could be improved, as well as the wording of the task. A second iteration of the prototype was completed, with updated labels and navigation options."
+            },
+            {
+                "name": "App User Testing",
+                "description": "The app prototype was tested using Maze. All nine participants completed the three tasks they were presented with. The test has a Usability Score of 76, placing it on a Medium level of usability, which is a sign that there's room for improvement. Similar to the website prototype, users had difficulties with the search functionality. A revised version includes adding placeholder text on the search bar and increased contrast of the interface icons."
+            },
+            {
+                "name": "Final Thoughts",
+                "description": "For future iterations, it would be interesting to test the search functionality again, and add a questionnaire or another opinion scale to enquire how would the users would improve this experience, what was the specific part they struggled with, etc."
             }
         ]
     },
@@ -34,6 +59,7 @@
         "chip": "Graphic Design",
         "discipline": "design",
         "path": "guava-punch",
+        "isFeatured": false,
         "tools": ["Adobe Illustrator 2022", "Adobe Photoshop 2022", "Adobe Dimension 2022"],
         "intro": ["This project started by developing a logo using shapes and the pen tool on Adobe Illustrator, arranging the components in an orderly manner using layers. Text components were meant to be outlined, to make sure the logo was scalable. A black and white version was requested, to make sure the logo was colour-independent.", "In order to create the promotional poster, we had to include a background image, and at least one 3D element that was placed on a realistic scene, blending in with the background image. Lighting and perspective were an important element of this project.As I had previously created a logo for a fictitious beverage company called Guava Punch, I decided to use that company as a foundation for this project, and develop the promotional poster that included a beverage container."],
         "steps": [
@@ -77,7 +103,8 @@
         "description": "Designed and developed a site listing a collection of Animal Crossing villagers. The goal was to include classes and constructor methods. This project considers knowledge of arrays loops and functions in PHP.",
         "chip": "PHP",
         "discipline": "development",
-        "path": "acnh"
+        "path": "acnh",
+        "isFeatured": false
     },
     {
         "id": "4",
@@ -89,6 +116,7 @@
         "description": "Designed and developed a site that consumes NASA APOD API to display the Picture of the Day. The goal was to use AJAX to make at least two requests to an endpoint and display content programmatically.",
         "chip": "Javascript",
         "discipline": "development",
-        "path": "apod"
+        "path": "apod",
+        "isFeatured": true
     }
 ]
