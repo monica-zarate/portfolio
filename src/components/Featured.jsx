@@ -5,7 +5,7 @@ import React from "react";
 import Card from "./Card";
 import Portfolio from "./portfolio.json";
 import pL from '../assets/imgs/projects/paper-lantern-thumb.jpg';
-import apod from '../assets/imgs/projects/apod.jpg';
+import apod from '../assets/imgs/projects/apod-thumb.jpg';
 
 
 function Featured() {

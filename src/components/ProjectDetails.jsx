@@ -14,8 +14,8 @@ import pLTest2 from '../assets/imgs/projects/paper-lantern-7.png';
 import gPLogo from '../assets/imgs/projects/guava-punch-1.jpg';
 import gPPoster from '../assets/imgs/projects/guava-punch-2.jpg';
 import gPSketches from '../assets/imgs/projects/guava-punch-3.jpg';
-import acnhVillagers from '../assets/imgs/projects/acnh.jpg';
-import apod from '../assets/imgs/projects/apod.jpg';
+import acnhVillagers from '../assets/imgs/projects/acnh-thumb.jpg';
+import apod from '../assets/imgs/projects/apod-thumb.jpg';
 
 function ProjectDetails () {
 
