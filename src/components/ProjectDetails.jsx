@@ -4,32 +4,121 @@ import { useLocation } from "react-router-dom";
 
 // Project imports
 import Portfolio from "./portfolio.json";
-import paperLantern from '../assets/imgs/projects/paper-lantern.jpg';
-import guavaPunchLogo from '../assets/imgs/projects/guava-punch-1.jpg';
-import guavaPunchPoster from '../assets/imgs/projects/guava-punch-2.jpg';
-import guavaPunchSketches from '../assets/imgs/projects/guava-punch-3.jpg';
+import pLIntro from '../assets/imgs/projects/paper-lantern-1.png';
+import pLPersona1 from '../assets/imgs/projects/paper-lantern-2.png';
+import pLPersona2 from '../assets/imgs/projects/paper-lantern-3.png';
+import pLWireframes1 from '../assets/imgs/projects/paper-lantern-4.png';
+import pLWireframes2 from '../assets/imgs/projects/paper-lantern-5.png';
+import pLTest1 from '../assets/imgs/projects/paper-lantern-6.png';
+import pLTest2 from '../assets/imgs/projects/paper-lantern-7.png';
+import gPLogo from '../assets/imgs/projects/guava-punch-1.jpg';
+import gPPoster from '../assets/imgs/projects/guava-punch-2.jpg';
+import gPSketches from '../assets/imgs/projects/guava-punch-3.jpg';
 import acnhVillagers from '../assets/imgs/projects/acnh.jpg';
 import apod from '../assets/imgs/projects/apod.jpg';
 
 function ProjectDetails () {
 
+    // Access the correct project through the url path
     let location = useLocation();
-    
     let selectedProjectPath = location.pathname.toString().split("/");
 
+    // [2] is the array's index for the project path
     let selectedProjectObj = Portfolio.map((__) => {
         if (__.path === selectedProjectPath[2]) {
 
+            // Define the page's title
             let selectedProjectDiscipline;
             __.discipline === 'design' ? selectedProjectDiscipline = "UI/UX & Graphic Design Project" : selectedProjectDiscipline = "Web Development Project";
 
+            let projectContent;
             let projectImgs = [];
             switch(__.path){
                 case "paper-lantern":
-                    projectImgs.push(paperLantern);
+                    projectImgs.push(pLIntro, pLPersona1, pLPersona2, pLWireframes1, pLWireframes2, pLTest1, pLTest2);
+                    projectContent = (<>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[0]} alt="" className="project__img" />
+                                        </div>
+                                        {__.intro.map((paragraph) => {
+                                            return <p className="project__intro">{paragraph}</p>
+                                        })}
+                                        <div className="project__steps">
+                                        {__.steps.slice(0,3).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[1]} alt="" className="project__img" />
+                                        </div>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[2]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(3,5).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[3]} alt="" className="project__img" />
+                                        </div>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[4]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(5,7).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[5]} alt="" className="project__img" />
+                                        </div>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[6]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(7).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        </div>
+                                    </>);
                     break;
                 case "guava-punch":
-                    projectImgs.push(guavaPunchLogo, guavaPunchPoster, guavaPunchSketches);
+                    projectImgs.push(gPLogo, gPPoster, gPSketches);
+                    projectContent = (<>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[0]} alt="" className="project__img" />
+                                        </div>
+                                        {__.intro.map((paragraph) => {
+                                            return <p className="project__intro">{paragraph}</p>
+                                        })}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[1]} alt="" className="project__img" />
+                                        </div>
+                                        <div className="project__steps">
+                                        {__.steps.slice(0,3).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[2]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(3).map((step) => {
+                                            return (<div className="flex-c project__step">
+                                                        <h3>{step.name}</h3>
+                                                        <p>{step.description}</p>
+                                                    </div>
+                                            )})}
+                                        </div>
+                                    </>);
                     break;
                 case "acnh":
                     projectImgs.push(acnhVillagers);
@@ -61,36 +150,7 @@ function ProjectDetails () {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="flex-c">
-                                <img src={projectImgs[0]} alt="" className="project__img" />
-                            </div>
-                            {__.intro.map((paragraph) => {
-                                return <p className="project__intro">{paragraph}</p>
-                            })}
-                            <div className="flex-c">
-                                <img src={projectImgs[1]} alt="" className="project__img" />
-                            </div>
-                            <div className="project__steps">
-                                {__.steps.slice(0,3).map((step) => {
-                                    return (
-                                        <div className="flex-c project__step">
-                                            <h3>{step.name}</h3>
-                                            <p>{step.description}</p>
-                                        </div>
-                                    )
-                                })}
-                                <div className="flex-c">
-                                    <img src={projectImgs[2]} alt="" className="project__img" />
-                                </div>
-                                {__.steps.slice(3).map((step) => {
-                                        return (
-                                            <div className="flex-c project__step">
-                                                <h3>{step.name}</h3>
-                                                <p>{step.description}</p>
-                                            </div>
-                                        )
-                                    })}
-                            </div>
+                            {projectContent}
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ function Card({project}) {
     location.pathname === '/' ? path = `${project.discipline}/${project.path}` : path = `${location.pathname}/${project.path}`;
 
     let completed;
-    if (project.path === 'guava-punch') {
+    if (project.path === 'guava-punch' || project.path === 'paper-lantern') {
         completed = <Link to={path} title={project.title} className="flex-c card">
         <img src={project.thumb} alt={project.thumbAlt} className="card__img"/>
         <div className="card__info">

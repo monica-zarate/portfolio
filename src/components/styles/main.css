@@ -266,7 +266,7 @@ ul, ol {
   align-items: flex-start;
   justify-content: space-evenly;
   color: #ffffff;
-  padding: 32px;
+  padding: 32px 0;
   position: relative;
   z-index: 1;
 }
@@ -285,25 +285,26 @@ ul, ol {
 .project__overview--right {
   width: 30%;
   max-width: 40%;
+  margin-left: 30%;
 }
 .project__overview h2 {
   margin-bottom: 16px;
 }
 .project__img {
   height: 500px;
-  margin: 64px 0;
+  margin: 32px;
 }
 .project__intro {
   max-width: 768px;
-  margin: 0 auto 32px;
+  margin: 32px;
 }
 .project__steps {
-  margin-top: 72px;
+  margin-top: 64px;
 }
 .project__step {
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 72px;
+  margin: 32px 0;
 }
 .project__step:last-child {
   margin-bottom: 0;
