@@ -137,7 +137,7 @@
     {
         "id": "4",
         "title": "NASA's APOD Site",
-        "subtitle": "Third party API data request using the Fetch API",
+        "subtitle": "Third party data request using the Fetch API",
         "thumb": "",
         "thumbAlt": "astronomy picture of the day",
         "images": [],
@@ -150,8 +150,20 @@
         "intro": [],
         "steps": [
             {
-                "name": "",
-                "description" : ""
+                "name": "Project Scope",
+                "description" : "The website I built offers three different ways to call the APOD API. On page load, the Picture of the Day gets displayed. Users also have the option to display all the pictures of the current month, or they can also find a specific date."
+            },
+            {
+                "name": "API's Endpoints",
+                "description" : "For the Picture of the Day and a specific date, the endpoint must include a date string as yyyy-mm-dd. I.e: &date=2022-11-01. For the pictures of the month, I'm using a start date. I.e: &start_date=2022-11-01. If no end date is included, this query will retrieve pictures from the start date to the present day. I'm including &thumbs=true at the end of all endpoints, this is for when the APOD is a video, to display the thumbnail images of the video instead."
+            },
+            {
+                "name": "Postman Tests",
+                "description" : "After register to obtain an API key, I performed some test calls on Postman, to make sure the query parameters where being used properly and check the data I was receiving back."
+            },
+            {
+                "name": "fetch()",
+                "description" : "The fetch() method gets invoked when there's a call to the APOD API, passing the query as a parameter. A then() method follows, that transforms the response from the API into a JSON format. A second then() method is called to pass the received data to a function that's in charge of displaying it in the DOM. A ctach() method is chained, to catch any errors from the API call, and display then in the browser's console. The finally() method closes this code block, which is removing a spinner from the DOM once all the data has loaded and it's ready to populate the page."
             }
         ]
     }

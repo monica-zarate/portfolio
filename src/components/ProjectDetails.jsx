@@ -19,7 +19,7 @@ import acnh2 from '../assets/imgs/projects/acnh-2.png';
 import acnh3 from '../assets/imgs/projects/acnh-3.png';
 import acnh4 from '../assets/imgs/projects/acnh-4.png';
 import acnh5 from '../assets/imgs/projects/acnh-5.png';
-import apod from '../assets/imgs/projects/apod-thumb.jpg';
+import apod1 from '../assets/imgs/projects/apod-1.png';
 
 function ProjectDetails () {
 
@@ -186,7 +186,24 @@ function ProjectDetails () {
                                     </>);
                     break;
                 case "apod":
-                    projectImgs.push(apod);
+                    projectImgs.push(apod1);
+                    projectSteps = (<>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[0]} alt="" className="project__img" />
+                                        </div>
+                                        {__.intro.map((paragraph) => {
+                                            return <p className="project__intro">{paragraph}</p>
+                                        })}
+                                        <div className="project__steps">
+                                        {__.steps.map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        </div>
+                                    </>);
+                    break;
             }
 
             return (
