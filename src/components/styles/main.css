@@ -44,14 +44,14 @@
   letter-spacing: 0.06em;
 }
 
-.body-light, body, .body-bulk, .about__text, .project__overview li, .project p, .body-med, .about__links, .about__cta, .intro__cta {
+.body-light, body, .body-bulk, .about__text, .project__overview li, .project p, .body-med, .about__links, .about__cta, .project__step a, .intro__cta {
   font-family: "Poppins Light";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.08em;
 }
 
-.body-med, .about__links, .about__cta, .intro__cta {
+.body-med, .about__links, .about__cta, .project__step a, .intro__cta {
   font-family: "Poppins Medium";
   letter-spacing: 0.04em;
 }
@@ -213,10 +213,6 @@ ul, ol {
 .card__info--title {
   margin: 24px 0 16px;
 }
-.card__info--description {
-  color: #808080;
-}
-
 .projects {
   background-color: #fafafa;
 }
@@ -306,14 +302,15 @@ ul, ol {
   justify-content: space-between;
   margin: 32px 0;
 }
-.project__step:last-child {
-  margin-bottom: 0;
-}
 .project__step h3 {
   color: #6667AB;
 }
 .project__step p {
   max-width: 601px;
+}
+.project__step a {
+  color: #6667AB;
+  text-decoration: underline;
 }
 
 .about__wrapper {

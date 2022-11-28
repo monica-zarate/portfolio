@@ -11,7 +11,7 @@
         "discipline": "design",
         "path": "paper-lantern",
         "isFeatured": true,
-        "tools": ["Adobe Xd 2022", "Figma", "Useberry", "Maze"],
+        "tools": ["Adobe Xd", "Figma", "Useberry", "Maze"],
         "intro": ["To achieve the prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis."],
         "steps": [
             {
@@ -60,7 +60,7 @@
         "discipline": "design",
         "path": "guava-punch",
         "isFeatured": false,
-        "tools": ["Adobe Illustrator 2022", "Adobe Photoshop 2022", "Adobe Dimension 2022"],
+        "tools": ["Adobe Illustrator", "Adobe Photoshop", "Adobe Dimension"],
         "intro": ["This project started by developing a logo using shapes and the pen tool on Adobe Illustrator, arranging the components in an orderly manner using layers. Text components were meant to be outlined, to make sure the logo was scalable. A black and white version was requested, to make sure the logo was colour-independent.", "In order to create the promotional poster, we had to include a background image, and at least one 3D element that was placed on a realistic scene, blending in with the background image. Lighting and perspective were an important element of this project.As I had previously created a logo for a fictitious beverage company called Guava Punch, I decided to use that company as a foundation for this project, and develop the promotional poster that included a beverage container."],
         "steps": [
             {
@@ -96,7 +96,7 @@
     {
         "id": "3",
         "title": "ACNH Villagers Site",
-        "subtitle": "",
+        "subtitle": "PHP classes, constructors and associative arrays",
         "thumb": "",
         "thumbAlt": "animal crossing villagers",
         "images": [],
@@ -104,19 +104,55 @@
         "chip": "PHP",
         "discipline": "development",
         "path": "acnh",
-        "isFeatured": false
+        "isFeatured": false,
+        "tools": ["HTML", "CSS", "PHP", "MAMP"],
+        "intro": ["Using Animal Crossing (a popular video game I like to play) characters as a starting point, this project shows the current residents I have on my island. All items in this collection have shared properties, and I'm looping through them so that I can create a card per character that displays its information.", "I created two types of residents: villagers and NPCs (non-playable characters). The project makes use of a parent class, that's used to create two child classes, allowing for variations amongst the displayed data. The page was built making use of partials for its different sections."],
+        "steps": [
+            {
+                "name": "Project Structure",
+                "description" : "The first step was to create the basic folder structure and initiate the project with an init.php, index.php and functions.php files. The init folder contains the project's constants, like the project's directory and localhost locations, to be able to run the application using MAMP. The Classes are also placed on this file, so they can be accessed globally. The index.php file acts as a container for the page's body. Here I'm importing the head tag, header and footer via global partials. The dynamic data is also included via the resident's card partial. Two foreach() loops were used on this file, to read both child classes and create a card for every item on those two collections."
+            },
+            {
+                "name": "Parent Class",
+                "description" : "The first thing was to declare the parent Class properties, they all remained public, except for their fun facts, in which case a setter method was used to assign those. Inside the Class Methods section, a constructor was created. This Class expects a relational array to be passed as a parameter to be able to create an instance of it. There are two properties that remained optional, that were declared making use of the Null Coalescing operator."
+            },
+            {
+                "name": "Child Classes",
+                "description" : "Two child classes were created for this project, Villager and an NPC. These two make use of the keyword extends to have access to their parent Class of Resident properties and methods. Each of these classes has a distinctive property and constructor method."
+            },
+            {
+                "name": "Data",
+                "description" : "Inside the data folder, two files were created to contain the instances of the Villagers and Npc's classes accordingly. Each resident is built making use of the “new” keyword, the name of the Class, and is passing a relational array as a parameter. All these instances are then included in a Villager or NPC array."
+            },
+            {
+                "name": "Card Partial",
+                "description" : "Once all the data has been created, we're ready to access and display it. A partial called card was created to display all the residents' information. This partial contains an if statement, to display their personality if the resident is a Villager or the service they offer if the resident is an NPC."
+            },
+            {
+                "name": "Final Result",
+                "description" : "The page loads a card for each resident and displays its distinctive information for Villagers and NPCs. All cards contain the character's name, image and other general details like species and birthday. I was pleased with the final result, considering it was my first PHP project. For future iterations, I would like to expand on this project and have the ability to filter residents per type of offer and the possibility to click on each card to access a resident's individual profile page with more information."
+            }
+        ]
     },
     {
         "id": "4",
         "title": "NASA's APOD Site",
-        "subtitle": "",
+        "subtitle": "Third party API data request using the Fetch API",
         "thumb": "",
         "thumbAlt": "astronomy picture of the day",
         "images": [],
-        "description": "Designed and developed a site that consumes NASA APOD API to display the Picture of the Day. The goal was to use AJAX to make at least two requests to an endpoint and display content programmatically.",
+        "description": "Designed and developed a site that consumes the NASA APOD API to display the Astronomy Picture of the Day. The goal was to use the Fetch API to make a request to an endpoint and display content programmatically.",
         "chip": "Javascript",
         "discipline": "development",
         "path": "apod",
-        "isFeatured": true
+        "isFeatured": true,
+        "tools": ["HTML", "CSS", "Javascript", "Postman"],
+        "intro": [],
+        "steps": [
+            {
+                "name": "",
+                "description" : ""
+            }
+        ]
     }
 ]

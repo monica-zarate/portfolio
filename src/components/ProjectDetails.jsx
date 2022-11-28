@@ -14,7 +14,11 @@ import pLTest2 from '../assets/imgs/projects/paper-lantern-7.png';
 import gPLogo from '../assets/imgs/projects/guava-punch-1.jpg';
 import gPPoster from '../assets/imgs/projects/guava-punch-2.jpg';
 import gPSketches from '../assets/imgs/projects/guava-punch-3.jpg';
-import acnhVillagers from '../assets/imgs/projects/acnh-thumb.jpg';
+import acnh1 from '../assets/imgs/projects/acnh-1.png';
+import acnh2 from '../assets/imgs/projects/acnh-2.png';
+import acnh3 from '../assets/imgs/projects/acnh-3.png';
+import acnh4 from '../assets/imgs/projects/acnh-4.png';
+import acnh5 from '../assets/imgs/projects/acnh-5.png';
 import apod from '../assets/imgs/projects/apod-thumb.jpg';
 
 function ProjectDetails () {
@@ -31,12 +35,12 @@ function ProjectDetails () {
             let selectedProjectDiscipline;
             __.discipline === 'design' ? selectedProjectDiscipline = "UI/UX & Graphic Design Project" : selectedProjectDiscipline = "Web Development Project";
 
-            let projectContent;
+            let projectSteps;
             let projectImgs = [];
             switch(__.path){
                 case "paper-lantern":
                     projectImgs.push(pLIntro, pLPersona1, pLPersona2, pLWireframes1, pLWireframes2, pLTest1, pLTest2);
-                    projectContent = (<>
+                    projectSteps = (<>
                                         <div className="flex-c">
                                             <img src={projectImgs[0]} alt="" className="project__img" />
                                         </div>
@@ -83,7 +87,10 @@ function ProjectDetails () {
                                         {__.steps.slice(7).map((step) => {
                                         return (<div className="flex-c project__step">
                                                     <h3>{step.name}</h3>
-                                                    <p>{step.description}</p>
+                                                    <div>
+                                                        <p>{step.description}</p>
+                                                        <p>Visit the Website Prototype <a href="https://xd.adobe.com/view/25880ba9-718b-436e-b3b4-04ce7bf95b87-70db/?fullscreen" title="Paper Lantern: Search and checkout process" target="_blank">here</a>, and the Mobile App Prototype <a href="https://www.figma.com/proto/31WcXdZsapuWQgdD1O0C1k/Paper-Lantern-Phase-2?page-id=2%3A3&node-id=21%3A498&viewport=77%2C424%2C0.25&scaling=scale-down&starting-point-node-id=21%3A498" title="" target="_blank">here</a>.</p>
+                                                    </div>
                                                 </div>
                                         )})}
                                         </div>
@@ -91,7 +98,7 @@ function ProjectDetails () {
                     break;
                 case "guava-punch":
                     projectImgs.push(gPLogo, gPPoster, gPSketches);
-                    projectContent = (<>
+                    projectSteps = (<>
                                         <div className="flex-c">
                                             <img src={projectImgs[0]} alt="" className="project__img" />
                                         </div>
@@ -121,7 +128,62 @@ function ProjectDetails () {
                                     </>);
                     break;
                 case "acnh":
-                    projectImgs.push(acnhVillagers);
+                    projectImgs.push(acnh1, acnh2, acnh3, acnh4, acnh5);
+                    projectSteps = (<>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[0]} alt="" className="project__img" />
+                                        </div>
+                                        {__.intro.map((paragraph) => {
+                                            return <p className="project__intro">{paragraph}</p>
+                                        })}
+                                        <div className="project__steps">
+                                        {__.steps.slice(0,1).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[1]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(1,2).map((step) => {
+                                            return (<div className="flex-c project__step">
+                                                        <h3>{step.name}</h3>
+                                                        <p>{step.description}</p>
+                                                    </div>
+                                            )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[2]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(2,4).map((step) => {
+                                            return (<div className="flex-c project__step">
+                                                        <h3>{step.name}</h3>
+                                                        <p>{step.description}</p>
+                                                    </div>
+                                            )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[3]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(4,5).map((step) => {
+                                            return (<div className="flex-c project__step">
+                                                        <h3>{step.name}</h3>
+                                                        <p>{step.description}</p>
+                                                    </div>
+                                            )})}
+                                        <div className="flex-c">
+                                            <img src={projectImgs[4]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(5).map((step) => {
+                                            return (<div className="flex-c project__step">
+                                                        <h3>{step.name}</h3>
+                                                        <div>
+                                                            <p>{step.description}</p>
+                                                            <p>Visit the project's <a href="https://github.com/monica-zarate/acnh_residents" title="ACNH PHP Project Repository" target="_blank">repository</a>.</p>
+                                                        </div>
+                                                    </div>
+                                            )})}
+                                        </div>
+                                    </>);
                     break;
                 case "apod":
                     projectImgs.push(apod);
@@ -150,7 +212,7 @@ function ProjectDetails () {
                                     </ul>
                                 </div>
                             </div>
-                            {projectContent}
+                            {projectSteps}
                         </div>
                     </div>
                 </div>

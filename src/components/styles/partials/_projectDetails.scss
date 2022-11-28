@@ -99,10 +99,6 @@
         justify-content: space-between;
         margin: 32px 0;
 
-        &:last-child{
-            margin-bottom: 0;
-        }
-
         & h3 {
             @extend .h3;
             color: $primary-color;
@@ -110,6 +106,12 @@
 
         & p {
             max-width: 601px;
+        }
+
+        & a {
+            @extend .body-med;
+            color: $primary-color;
+            text-decoration: underline;
         }
     }
 }
