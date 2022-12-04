@@ -7,15 +7,32 @@
     z-index: 9;
     
     &__wrapper {
-        padding: 32px 128px;
-        justify-content: space-between;
-        max-width: $small-desktop-width;
         margin: 0 auto;
+        justify-content: flex-start;
+        padding: 32px;
+
+        @include tablet {
+            justify-content: space-between;
+            padding: 32px 64px;
+        }
+
+        @include laptop {
+            padding: 32px 128px;
+            max-width: $small-desktop-width;
+        }
     }
 
     &__logo {
         height: 36px;
         width: auto;
+    }
+
+    &__nav {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
     }
 
     &__nav-li {
@@ -30,4 +47,63 @@
             @extend .nav-active;
         }
     }
+
+    &__mobile {
+        @extend .nav-mobile;
+        margin-bottom: 32px;
+    }
+}
+
+// Mobile Nav Styles
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 32px;
+    top: 32px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: $darker;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: $white;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 107px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: $primary-color;
+    padding: 32px 0;
+    font-size: 32px;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 32px;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
 }

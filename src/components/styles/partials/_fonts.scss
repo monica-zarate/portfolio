@@ -28,6 +28,15 @@ $kalam: "Kalam Bold";
     border-bottom: 2px solid $primary-color;
 }
 
+.nav-mobile {
+    font-family: $semi;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 16px * 1.5;
+    letter-spacing: 0.08em;
+    color: $white;
+}
+
 .h1 {
     font-family: $kalam;
     font-size: 32px;

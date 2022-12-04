@@ -17,6 +17,15 @@
   border-bottom: 2px solid #6667AB;
 }
 
+.nav-mobile, .header__mobile {
+  font-family: "Poppins SemiBold";
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+}
+
 .h1, .intro__h1 {
   font-family: "Kalam Bold";
   font-size: 32px;
@@ -121,14 +130,33 @@ ul, ol {
   z-index: 9;
 }
 .header__wrapper {
-  padding: 32px 128px;
-  justify-content: space-between;
-  max-width: 1280px;
   margin: 0 auto;
+  justify-content: flex-start;
+  padding: 32px;
+}
+@media (min-width: 768px) {
+  .header__wrapper {
+    justify-content: space-between;
+    padding: 32px 64px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__wrapper {
+    padding: 32px 128px;
+    max-width: 1280px;
+  }
 }
 .header__logo {
   height: 36px;
   width: auto;
+}
+.header__nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
 }
 .header__nav-li {
   margin-left: 40px;
@@ -136,6 +164,63 @@ ul, ol {
 .header__link {
   color: #000000;
 }
+.header__mobile {
+  margin-bottom: 32px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 32px;
+  top: 32px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #1C1C1E;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #ffffff;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 107px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #6667AB;
+  padding: 32px 0;
+  font-size: 32px;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 32px;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
 .intro {
   flex-direction: column;
   padding: 32px;
