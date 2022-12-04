@@ -26,7 +26,7 @@ function Header() {
     return (
         <header className="header">
             <div className="flex-c header__wrapper">
-                <NavLink to="/">
+                <NavLink to="/" title="Home Page">
                     <img src={logo} alt="Monica Zarate logo" className="header__logo"/>
                 </NavLink>
                 <nav className="header__nav">
