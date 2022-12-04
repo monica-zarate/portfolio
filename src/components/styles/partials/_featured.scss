@@ -4,9 +4,14 @@
     background-color: $section-bg;
 
     &__wrapper {
-        padding: 72px 120px;
-        max-width: $small-desktop-width;
         margin: 0 auto;
+        padding: 32px;
+        max-width: unset;
+
+        @include laptop {
+            padding: 72px 120px;
+            max-width: $small-desktop-width;
+        }
     }
 
     &__title {

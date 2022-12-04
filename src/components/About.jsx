@@ -15,8 +15,8 @@ function About() {
                 <h2 className="about__title">About</h2>
                 <div className="flex-c about__content">
                     <div className="about__text">
-                        <p>I'm a Web Developer and UI/UX Designer who values inclusion, accessibility and agile work.</p>
-                        <p>Being a part of a team that welcomes diversity and encourages me to learn and improving my skills keeps me motivated.</p>
+                        <p>I'm a Web Developer and UX Designer who values inclusion, accessibility and agile work.</p>
+                        <p>Being a part of a team that welcomes diversity and encourages me to learn and to improve my skills keeps me motivated.</p>
                         <p>I like to bring a proactive attitude, empathy and excellent time management skills to all my projects.</p>
                         <p>When I'm not working you'll find me baking something sweet, reading manga and drinking lots of chai lattes.</p>
                         <p className="about__cta">Say hi before you go!</p>

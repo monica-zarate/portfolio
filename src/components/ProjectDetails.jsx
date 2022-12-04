@@ -48,12 +48,6 @@ function ProjectDetails () {
                 case "paper-lantern":
                     projectImgs.push(pLIntro, pLPersona1, pLPersona2, pLWireframes1, pLWireframes2, pLTest1, pLTest2);
                     projectSteps = (<>
-                                        <div className="flex-c">
-                                            <img src={projectImgs[0]} alt="" className="project__img" />
-                                        </div>
-                                        {__.intro.map((paragraph) => {
-                                            return <p className="project__intro">{paragraph}</p>
-                                        })}
                                         <div className="project__steps">
                                         {__.steps.slice(0,3).map((step) => {
                                         return (<div className="flex-c project__step">
@@ -107,12 +101,6 @@ function ProjectDetails () {
                     projectImgs.push(gPLogo, gPPoster, gPSketches);
                     projectSteps = (<>
                                         <div className="flex-c">
-                                            <img src={projectImgs[0]} alt="" className="project__img" />
-                                        </div>
-                                        {__.intro.map((paragraph) => {
-                                            return <p className="project__intro">{paragraph}</p>
-                                        })}
-                                        <div className="flex-c">
                                             <img src={projectImgs[1]} alt="" className="project__img" />
                                         </div>
                                         <div className="project__steps">
@@ -137,12 +125,6 @@ function ProjectDetails () {
                 case "acnh":
                     projectImgs.push(acnh1, acnh2, acnh3, acnh4, acnh5);
                     projectSteps = (<>
-                                        <div className="flex-c">
-                                            <img src={projectImgs[0]} alt="" className="project__img" />
-                                        </div>
-                                        {__.intro.map((paragraph) => {
-                                            return <p className="project__intro">{paragraph}</p>
-                                        })}
                                         <div className="project__steps">
                                         {__.steps.slice(0,1).map((step) => {
                                         return (<div className="flex-c project__step">
@@ -195,12 +177,6 @@ function ProjectDetails () {
                 case "apod":
                     projectImgs.push(apod1, apod2, apod3, apod4);
                     projectSteps = (<>
-                                        <div className="flex-c">
-                                            <img src={projectImgs[0]} alt="" className="project__img" />
-                                        </div>
-                                        {__.intro.map((paragraph) => {
-                                            return <p className="project__intro">{paragraph}</p>
-                                        })}
                                         <div className="project__steps">
                                         {__.steps.slice(0,2).map((step) => {
                                         return (<div className="flex-c project__step">
@@ -270,6 +246,12 @@ function ProjectDetails () {
                                     </ul>
                                 </div>
                             </div>
+                            <div className="flex-c">
+                                <img src={projectImgs[0]} alt="" className="project__img" />
+                            </div>
+                            {__.intro.map((paragraph) => {
+                                return <p className="project__intro">{paragraph}</p>
+                            })}
                             {projectSteps}
                         </div>
                     </div>

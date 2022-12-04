@@ -6,13 +6,24 @@
         max-width: $small-desktop-width;
         justify-content: space-between;
         margin: 0 auto;
-        padding: 40px 120px;
+        padding: 32px;
+        flex-direction: column;
+
+        @include laptop {
+            flex-direction: row;
+            padding: 40px 128px;
+        }
     }
 
     p {
         color: $white;
         text-align: center;
         @extend .footer;
+        margin-bottom: 24px;
+
+        @include laptop {
+            margin: 0;
+        }
     }
 
     &__social {
@@ -22,6 +33,10 @@
             height: 24px;
             max-width: 32px;
             margin-right: 24px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         a {

@@ -3,10 +3,18 @@
 .about {
 
     &__wrapper {
-        padding: 72px 200px 200px;
-        max-width: $small-desktop-width;
         margin: 0 auto;
         flex-direction: column;
+        padding: 32px;
+
+        @include laptop {
+            padding: 64px 64px 96px;
+        }
+
+        @include small-desktop {
+            padding: 72px 200px 200px;
+            max-width: $small-desktop-width;
+        }
     }
 
     &__title {
@@ -16,17 +24,50 @@
     }
 
     &__content {
-        align-items: flex-start;
         width: 100%;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+
+        @include tablet {
+            align-items: center;
+            max-width: 75%;
+            margin: 0 auto;
+        }
+
+        @include laptop {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
+
+        @include small-desktop {
+            justify-content: space-between;
+        }
     }
 
     &__text {
         @extend .body-bulk;
-        max-width: 475px;
+
+        @include laptop {
+            min-width: 50%;
+            margin-right: 32px;
+        }
+
+        @include small-desktop {
+            max-width: 475px;
+        }
 
         p {
             margin-bottom: 32px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 32px;
+
+        @include tablet {
+            width: unset;
         }
     }
 
