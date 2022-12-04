@@ -1,5 +1,5 @@
 // Vendor imports
-import React from "react";
+import React, { useEffect } from "react";
 
 // Project imports
 import Card from "./Card";
@@ -9,6 +9,11 @@ import gP from '../assets/imgs/projects/guava-punch-thumb.jpg';
 
 
 function Design() {
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+
     return (
         <div className="projects">
             <div className="projects__wrapper">
@@ -16,7 +21,7 @@ function Design() {
                 {Portfolio.map((__) => {
                     if (__.discipline === 'design') {
                         __.path === 'paper-lantern' ? __.thumb = pL : __.thumb = gP;
-                        return <Card project={__}/>
+                        return <Card project={__} key={__.id}/>
                     }
                 })}
             </div>

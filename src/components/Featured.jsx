@@ -17,7 +17,7 @@ function Featured() {
                         if (__.isFeatured === true){
                             __.path === 'paper-lantern' ? __.thumb = pL : __.thumb = apod;
                             return(
-                            <Card project={__} />   
+                            <Card project={__} key={__.id}/>   
                         )
                         }
                     })}

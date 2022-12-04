@@ -1,5 +1,5 @@
 // Vendor imports
-import React from "react";
+import React, { useEffect } from "react";
 
 // Project imports
 import Card from "./Card";
@@ -9,6 +9,11 @@ import apod from '../assets/imgs/projects/apod-thumb.jpg';
 
 
 function Development() {
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+
     return (
         <div className="projects">
             <div className="projects__wrapper">
@@ -16,7 +21,7 @@ function Development() {
                 {Portfolio.map((__) => {
                     if (__.discipline === 'development') {
                         __.path === 'acnh' ? __.thumb = acnh : __.thumb = apod;
-                        return <Card project={__}/>   
+                        return <Card project={__} key={__.id}/>   
                     }
                 })}
             </div>

@@ -25,5 +25,9 @@
     &__link{
         color: $black;
         @extend .nav-menu;
+
+        &--active {
+            @extend .nav-active;
+        }
     }
 }

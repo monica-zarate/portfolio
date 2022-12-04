@@ -147,12 +147,8 @@
         "path": "apod",
         "isFeatured": true,
         "tools": ["HTML", "CSS", "Javascript", "Postman"],
-        "intro": [],
+        "intro": ["To practice my Javascript skills, I decided to build my own version of NASA's Astronomy Picture of the Day. This project heavily focuses on the map() array method, writing DRY code and the ability to request data from a third-party API."],
         "steps": [
-            {
-                "name": "Project Scope",
-                "description" : "The website I built offers three different ways to call the APOD API. On page load, the Picture of the Day gets displayed. Users also have the option to display all the pictures of the current month, or they can also find a specific date."
-            },
             {
                 "name": "API's Endpoints",
                 "description" : "For the Picture of the Day and a specific date, the endpoint must include a date string as yyyy-mm-dd. I.e: &date=2022-11-01. For the pictures of the month, I'm using a start date. I.e: &start_date=2022-11-01. If no end date is included, this query will retrieve pictures from the start date to the present day. I'm including &thumbs=true at the end of all endpoints, this is for when the APOD is a video, to display the thumbnail images of the video instead."
@@ -164,6 +160,14 @@
             {
                 "name": "fetch()",
                 "description" : "The fetch() method gets invoked when there's a call to the APOD API, passing the query as a parameter. A then() method follows, that transforms the response from the API into a JSON format. A second then() method is called to pass the received data to a function that's in charge of displaying it in the DOM. A ctach() method is chained, to catch any errors from the API call, and display then in the browser's console. The finally() method closes this code block, which is removing a spinner from the DOM once all the data has loaded and it's ready to populate the page."
+            },
+            {
+                "name": "Content Template Element",
+                "description" : "In order to display the received data, I created a card component that will include the picture, its title, date and explanation, making use of the <template> HTML tag. This allowed me to have the card's skeleton already placed on the page's code, and use it to render the received data programmatically."
+            },
+            {
+                "name": "Final Result",
+                "description" : "This project offers three different ways to call the APOD API. On page load, the Picture of the Day gets displayed. Users also have the option to display all the pictures of the current month, or they can also find a specific date. For future iterations, I would like to re-work the page's layout, specially when having more than one card, to better align the content, as each picture's explanation varies in length."
             }
         ]
     }

@@ -1,5 +1,5 @@
 // Vendor imports
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 // Project imports
@@ -20,8 +20,15 @@ import acnh3 from '../assets/imgs/projects/acnh-3.png';
 import acnh4 from '../assets/imgs/projects/acnh-4.png';
 import acnh5 from '../assets/imgs/projects/acnh-5.png';
 import apod1 from '../assets/imgs/projects/apod-1.png';
+import apod2 from '../assets/imgs/projects/apod-2.png';
+import apod3 from '../assets/imgs/projects/apod-3.png';
+import apod4 from '../assets/imgs/projects/apod-4.png';
 
 function ProjectDetails () {
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
 
     // Access the correct project through the url path
     let location = useLocation();
@@ -186,7 +193,7 @@ function ProjectDetails () {
                                     </>);
                     break;
                 case "apod":
-                    projectImgs.push(apod1);
+                    projectImgs.push(apod1, apod2, apod3, apod4);
                     projectSteps = (<>
                                         <div className="flex-c">
                                             <img src={projectImgs[0]} alt="" className="project__img" />
@@ -195,13 +202,47 @@ function ProjectDetails () {
                                             return <p className="project__intro">{paragraph}</p>
                                         })}
                                         <div className="project__steps">
-                                        {__.steps.map((step) => {
+                                        {__.steps.slice(0,2).map((step) => {
                                         return (<div className="flex-c project__step">
                                                     <h3>{step.name}</h3>
                                                     <p>{step.description}</p>
                                                 </div>
                                         )})}
                                         </div>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[1]} alt="" className="project__img" />
+                                        </div>
+                                        <div className="project__steps">
+                                        {__.steps.slice(2,3).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        </div>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[2]} alt="" className="project__img" />
+                                        </div>
+                                        <div className="project__steps">
+                                        {__.steps.slice(3,4).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <p>{step.description}</p>
+                                                </div>
+                                        )})}
+                                        </div>
+                                        <div className="flex-c">
+                                            <img src={projectImgs[3]} alt="" className="project__img" />
+                                        </div>
+                                        {__.steps.slice(4).map((step) => {
+                                        return (<div className="flex-c project__step">
+                                                    <h3>{step.name}</h3>
+                                                    <div>
+                                                        <p>{step.description}</p>
+                                                        <p>Visit the project's <a href="https://github.com/monica-zarate/nasa-apod" title="APOD Project Repository" target="_blank">repository</a> and the <a href="http://apod.monicazaratecortes.com/" title="Monica's APOD Website" target="_blank">live site</a>.</p>
+                                                    </div>
+                                                </div>
+                                        )})}
                                     </>);
                     break;
             }
