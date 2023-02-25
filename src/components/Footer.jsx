@@ -8,12 +8,10 @@ import mail from "../assets/icons/mail-icon.png";
 
 function Footer() {
 
-    let year = new Date().getFullYear();
-
     return (
         <footer className="footer">
             <ul className="flex-c footer__wrapper">
-                <p>© Monica Zarate {year}</p>
+                <p>© Monica Zarate 2022</p>
                 <p>Designed and developed with 🤍 <br/> in Vancouver, BC</p>
                 <ul className='flex-c footer__social'>
                 <li><a href="https://www.linkedin.com/in/monica-zarate/" title="Monica Zarate's LinkedIn Profile" target="_blank"><img src={linkedin} alt='linkedin icon'/></a></li>
