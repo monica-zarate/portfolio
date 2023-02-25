@@ -17,7 +17,7 @@ function Design() {
     return (
         <div className="projects">
             <div className="projects__wrapper">
-                <h2 className="projects__title">UI/UX & Graphic Design Projects</h2>
+                <h2 className="projects__title">UX Design Projects</h2>
                 {Portfolio.map((__) => {
                     if (__.discipline === 'design') {
                         __.path === 'paper-lantern' ? __.thumb = pL : __.thumb = gP;
