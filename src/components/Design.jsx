@@ -3,9 +3,10 @@ import React, { useEffect } from "react";
 
 // Project imports
 import Card from "./Card";
-import Portfolio from "./portfolio.json";
+import { PROJECTS } from "../data/projects";
 import pL from '../assets/imgs/projects/paper-lantern-thumb.jpg';
 import gP from '../assets/imgs/projects/guava-punch-thumb.jpg';
+import tC from '../assets/imgs/projects/travel-compass-thumb.png';
 
 
 function Design() {
@@ -18,9 +19,18 @@ function Design() {
         <div className="projects">
             <div className="projects__wrapper">
                 <h2 className="projects__title">UX Design Projects</h2>
-                {Portfolio.map((__) => {
+                {PROJECTS.map((__) => {
                     if (__.discipline === 'design') {
-                        __.path === 'paper-lantern' ? __.thumb = pL : __.thumb = gP;
+                        switch(__.path) {
+                            case 'paper-lantern': 
+                                __.thumb = pL;
+                                break;
+                            case 'guava-punch':
+                                __.thumb = gP;
+                                break;
+                            case 'travel-compass':
+                                __.thumb = tC;
+                        }
                         return <Card project={__} key={__.id}/>
                     }
                 })}

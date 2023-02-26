@@ -8,6 +8,7 @@ import PaperLantern from "./projects/PaperLantern";
 import GuavaPunch from "./projects/GuavaPunch";
 import ACNH from "./projects/ACNH";
 import APOD from "./projects/APOD";
+import TravelCompass from "./projects/TravelCompass";
 
 function ProjectDetails () {
 
@@ -40,6 +41,9 @@ function ProjectDetails () {
                     break;
                 case "apod":
                     projectSteps = APOD();
+                    break;
+                case "travel-compass":
+                    projectSteps = TravelCompass();
                     break;
             }
 

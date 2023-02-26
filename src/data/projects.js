@@ -234,4 +234,70 @@ export const PROJECTS = [
       },
     ],
   },
+  {
+    id: "5",
+    title: "Travel Compass",
+    subtitle: "Travel Management Mobile App Interface Design",
+    thumb: require("../assets/imgs/projects/travel-compass-thumb.png"),
+    thumbAlt: "travel compass interface preview",
+    images: [
+      require("../assets/imgs/projects/travel-compass-1.png"),
+      require("../assets/imgs/projects/travel-compass-2.png"),
+      require("../assets/imgs/projects/travel-compass-3.png"),
+      require("../assets/imgs/projects/travel-compass-4.png"),
+      require("../assets/imgs/projects/travel-compass-5.png"),
+    ],
+    description:
+      "Designed the interface of a travel management application. This project includes a first iteration of a mobile interface, from sketching to a prototype.",
+    chip: "UX Design",
+    discipline: "design",
+    path: "travel-compass",
+    isFeatured: false,
+    tools: ["Adobe Xd"],
+    intro: [
+      "The Travel Compass prototype is presented as the first iteration of a travel management tool, it shows an example of how an existing user would create a new trip. The application's functionality would allow users to have all the information related to a trip in one place, you would be able to read the trip's itinerary through a daily breakdown.",
+    ],
+    steps: [
+      {
+        name: "Research & Project Scope",
+        description:
+          "This project started with research on other apps that already exist with similar functionality and features. I couldn't find many apps specifically targeted to leisure travel management; this topic tends to be important for employees on business trips, but I wanted to target the general public. The unique selling proposition the proposed Travel Compass app would have is the ability to save the trip's schedule and access all information even if the user is offline, which might be a common occurrence if the user is visiting a foreign country.",
+      },
+      {
+        name: "Sketching",
+        description:
+          "I spent some time sketching and thinking about how I could organize the basic layout of the app, I started to imagine how the information could be presented to make for an intuitive and user-oriented experience. These drawings helped me to get started on the interface design, but I knew things would likely get reshaped as I made progress.",
+      },
+      {
+        name: "Wireframes",
+        description:
+          "Once I had a rough idea of how I wanted the app to look like, I brought my sketches to Adobe Xd. I started to build wireframes referencing my sketches and adjusting as elements were falling into place. The wireframes were built with different shades of black, to depict the hierarchy of the key information that should be highlighted. I built wireframes for the top-level navigation screens. The built screens revolve around an example of how recorded trip overviews would look like for an existing user, the ability to add a new trip, discover general information about destinations and the user account settings.",
+      },
+      {
+        name: "Colour Palette",
+        description:
+          "Once the wireframes took form, I transitioned to build a high-fidelity mock-up for the app. In order to start building reusable components on Adobe Xd, I wanted to find a suitable colour palette that would help me make design decisions to ensure the interface would have sufficient contrast and white space. I settled on two blue-green hues, and an orange hue to highlight calls to action across the interface. Blue is often associated with a dependable and stable experience. When looking at a blue element, people tend to feel calmer and more peaceful. These emotions are ones we want to have during a trip, where people might experience some anxiety by being in a place, they're not familiar with. By adding green into the mix, I'm also aiming to promote a balanced and soothing experience, as this colour brings out a grounding feeling. I would like the users of this app to feel they can rely on having access to their information at any point of their trip. The orange elements form a complementary colour scheme and add contrast to the interface to be eye-catching enough for call-to-action buttons and links.",
+      },
+      {
+        name: "Adobe Xd Components",
+        description:
+          "Since some elements of the interface are used multiple times across the app, I took advantage of the Component functionality Adobe Xd offers, to create reusable elements that could have multiple states as needed. For example, the button component has an Inactive state to show on a pristine form. I also created card components for the trip details overview and icons to use for the different sections of the interface.",
+      },
+      {
+        name: "Mockups",
+        description:
+          "Once the main components were ready, the final mockup design started to fall into place. The Add New Trip screen was the one that had important modifications compared to its wireframe. The four main categories I included for this first iteration are Transportation, Accommodations, Activities & Food.",
+      },
+      {
+        name: "Prototype",
+        description:
+          "The Travel Compass App prototype offers an overview of the app for an existing user and mocks the ability to add a new trip up. Views for the Discover and Account Settings screens are also available.",
+      },
+      {
+        name: "Final Thoughts",
+        description:
+          "As a next step, I would like to test this first iteration of the app on its target audience. Individuals between 20 to 50 years old who explicitly plan to travel at least once a year would likely find this app useful. Users' feedback would tell me which of the main functionalities of the app is more useful, and how it could be improved for a second iteration.",
+      },
+    ],
+  },
 ];
