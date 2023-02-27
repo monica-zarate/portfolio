@@ -49,6 +49,7 @@ function ProjectDetails () {
                     break;
                 case 'billy':
                     projectSteps = Billy();
+                    break;
                 case "travel-compass-phase2":
                     projectSteps = TravelCompassDev();
                     break;

@@ -7,6 +7,7 @@ import { PROJECTS } from "../../data/projects";
 export default function Billy() {
 
     const project = PROJECTS[5];
+    console.log(project)
     return (
     <>
         <div className="project__steps">
