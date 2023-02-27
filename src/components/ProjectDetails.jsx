@@ -8,7 +8,9 @@ import PaperLantern from "./projects/PaperLantern";
 import GuavaPunch from "./projects/GuavaPunch";
 import ACNH from "./projects/ACNH";
 import APOD from "./projects/APOD";
-import TravelCompass from "./projects/TravelCompass";
+import TravelCompassDesign from "./projects/TravelCompassDesign";
+import Billy from "./projects/Billy";
+import TravelCompassDev from "./projects/TravelCompassDev";
 
 function ProjectDetails () {
 
@@ -42,8 +44,13 @@ function ProjectDetails () {
                 case "apod":
                     projectSteps = APOD();
                     break;
-                case "travel-compass":
-                    projectSteps = TravelCompass();
+                case "travel-compass-phase1":
+                    projectSteps = TravelCompassDesign();
+                    break;
+                case 'billy':
+                    projectSteps = Billy();
+                case "travel-compass-phase2":
+                    projectSteps = TravelCompassDev();
                     break;
             }
 

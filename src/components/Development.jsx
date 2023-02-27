@@ -3,9 +3,10 @@ import React, { useEffect } from "react";
 
 // Project imports
 import Card from "./Card";
-import Portfolio from "./portfolio.json";
-import acnh from '../assets/imgs/projects/acnh-thumb.jpg';
-import apod from '../assets/imgs/projects/apod-thumb.jpg';
+import { PROJECTS } from "../data/projects";
+import acnh from '../assets/imgs/projects/acnh-thumb.png';
+import apod from '../assets/imgs/projects/apod-thumb.png';
+import tC from '../assets/imgs/projects/tc-dev-thumb.png';
 
 
 function Development() {
@@ -18,9 +19,19 @@ function Development() {
         <div className="projects">
             <div className="projects__wrapper">
                 <h2 className="projects__title">Web Development Projects</h2>
-                {Portfolio.map((__) => {
+                {PROJECTS.map((__) => {
                     if (__.discipline === 'development') {
-                        __.path === 'acnh' ? __.thumb = acnh : __.thumb = apod;
+                        switch(__.path) {
+                            case 'acnh':
+                                __.thumb = acnh;
+                                break;
+                            case 'apod':
+                                __.thumb = apod;
+                                break;
+                            case 'travel-compass-phase2':
+                                __.thumb = tC;
+                                break;
+                        }
                         return <Card project={__} key={__.id}/>   
                     }
                 })}

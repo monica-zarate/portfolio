@@ -3,7 +3,7 @@ export const PROJECTS = [
     id: "1",
     title: "Paper Lantern Bookstore",
     subtitle: "Website and mobile app prototype and testing",
-    thumb: "",
+    thumb: require("../assets/imgs/projects/paper-lantern-thumb.png"),
     thumbAlt: "mobile interface preview",
     images: [
       require("../assets/imgs/projects/paper-lantern-1.png"),
@@ -16,7 +16,7 @@ export const PROJECTS = [
     ],
     description:
       "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website optimized for a desktop environment and a mobile interface.",
-    chip: "UI/UX Design",
+    chip: "UX Design",
     discipline: "design",
     path: "paper-lantern",
     isFeatured: true,
@@ -71,7 +71,7 @@ export const PROJECTS = [
     id: "2",
     title: "Guava Punch Beverage Company",
     subtitle: "Logo and promotional Poster",
-    thumb: "",
+    thumb: require("../assets/imgs/projects/guava-punch-thumb.jpg"),
     thumbAlt: "beverage poster mockup",
     images: [
       require("../assets/imgs/projects/guava-punch-1.jpg"),
@@ -131,7 +131,7 @@ export const PROJECTS = [
     id: "3",
     title: "ACNH Villagers Site",
     subtitle: "PHP classes, constructors and associative arrays",
-    thumb: "",
+    thumb: require("../assets/imgs/projects/acnh-thumb.png"),
     thumbAlt: "animal crossing villagers",
     images: [
       require("../assets/imgs/projects/acnh-1.png"),
@@ -142,7 +142,7 @@ export const PROJECTS = [
     ],
     description:
       "Designed and developed a site listing a collection of Animal Crossing villagers. The goal was to include classes and constructor methods. This project considers knowledge of arrays loops and functions in PHP.",
-    chip: "PHP",
+    chip: "Development",
     discipline: "development",
     path: "acnh",
     isFeatured: false,
@@ -188,7 +188,7 @@ export const PROJECTS = [
     id: "4",
     title: "NASA's APOD Site",
     subtitle: "Third party data request using the Fetch API",
-    thumb: "",
+    thumb: require("../assets/imgs/projects/apod-thumb.png"),
     thumbAlt: "astronomy picture of the day",
     images: [
       require("../assets/imgs/projects/apod-1.png"),
@@ -198,7 +198,7 @@ export const PROJECTS = [
     ],
     description:
       "Designed and developed a site that consumes the NASA APOD API to display the Astronomy Picture of the Day. The goal was to use the Fetch API to make a request to an endpoint and display content programmatically.",
-    chip: "Javascript",
+    chip: "Development",
     discipline: "development",
     path: "apod",
     isFeatured: true,
@@ -236,22 +236,22 @@ export const PROJECTS = [
   },
   {
     id: "5",
-    title: "Travel Compass",
+    title: "Travel Compass: Phase 1 Design",
     subtitle: "Travel Management Mobile App Interface Design",
-    thumb: require("../assets/imgs/projects/travel-compass-thumb.png"),
+    thumb: require("../assets/imgs/projects/tc-design-thumb.png"),
     thumbAlt: "travel compass interface preview",
     images: [
-      require("../assets/imgs/projects/travel-compass-1.png"),
-      require("../assets/imgs/projects/travel-compass-2.png"),
-      require("../assets/imgs/projects/travel-compass-3.png"),
-      require("../assets/imgs/projects/travel-compass-4.png"),
-      require("../assets/imgs/projects/travel-compass-5.png"),
+      require("../assets/imgs/projects/tc-1.png"),
+      require("../assets/imgs/projects/tc-design-2.png"),
+      require("../assets/imgs/projects/tc-design-3.png"),
+      require("../assets/imgs/projects/tc-design-4.png"),
+      require("../assets/imgs/projects/tc-design-5.png"),
     ],
     description:
-      "Designed the interface of a travel management application. This project includes a first iteration of a mobile interface, from sketching to a prototype.",
+      "Phase 1 of the Travel Compass Project: Designed the interface of a travel management application. This project includes a first iteration of a mobile interface, from sketching to a prototype.",
     chip: "UX Design",
     discipline: "design",
-    path: "travel-compass",
+    path: "travel-compass-phase1",
     isFeatured: false,
     tools: ["Adobe Xd"],
     intro: [
@@ -297,6 +297,134 @@ export const PROJECTS = [
         name: "Final Thoughts",
         description:
           "As a next step, I would like to test this first iteration of the app on its target audience. Individuals between 20 to 50 years old who explicitly plan to travel at least once a year would likely find this app useful. Users' feedback would tell me which of the main functionalities of the app is more useful, and how it could be improved for a second iteration.",
+      },
+    ],
+  },
+  {
+    id: "6",
+    title: "Billy",
+    subtitle: "Expense Tracker Single Page Application Interface Design",
+    thumb: require("../assets/imgs/projects/billy-thumb.png"),
+    thumbAlt: "Billy interface preview",
+    images: [
+      require("../assets/imgs/projects/billy-1.png"),
+      require("../assets/imgs/projects/billy-2.png"),
+      require("../assets/imgs/projects/billy-3.png"),
+      require("../assets/imgs/projects/billy-4.png"),
+      require("../assets/imgs/projects/billy-5.png"),
+    ],
+    description:
+      "Designed the interface of an expense-tracking application. This project includes a first iteration of an interface for a desktop environment, from sketching to a prototype.",
+    chip: "UX Design",
+    discipline: "design",
+    path: "billy",
+    isFeatured: false,
+    tools: ["Figma"],
+    intro: [
+      "Billy's prototype is presented as the first iteration of an expense tracker tool that helps users manage their expenses and income, it shows an example of how an existing user would add a new expense. The application's functionality would offer users an easy-to-read overview of all the information related to their personal finances in one place. Billy is targeted at people who are new to expense tracking and budgeting.",
+    ],
+    steps: [
+      {
+        name: "App Conception",
+        description:
+          "The idea came because I found the most popular expense tracker websites and apps are too complicated and have a lot of information that can be overwhelming and difficult to understand for new users. The proposed interface was conceived with a minimalistic approach, with a simple navigation pattern that offers easy-to-read information and an intuitive design.",
+      },
+      {
+        name: "Project Scope & Research",
+        description:
+          "Once I'd decided on the basic functionality for the app, I did some research on other apps that already exist with similar functionality and features. The best-rated applications were too robust since they offered a more aggressive approach to keeping their users' expenses in check with their budget, sending alerts when expenses were going over budget or making use of the envelope budgeting system, which sounds like an effective way to administer personal finances, but I found their interface suffered because they fit a lot of information in one place, which reflects in a very cluttered interface with a lot of numbers associated with a single expense.",
+      },
+      {
+        name: "Sketching",
+        description:
+          "When I sketched out the first layout for Billy, I thought of people who might be new to expense tracking and budgeting, and what would be the most important and valuable information to include for them, to aid their financial decisions. The three main sections: Transactions, Accounts & Budgets were added as elements for the main navigation. For the Transactions Section, I decided to include a Graph View and a List View, so people can choose the best way for them to read the information.",
+      },
+      {
+        name: "Wireframes",
+        description:
+          "Once I had a rough idea of how I wanted the app to look, I brought my sketches to Figma. I started to build wireframes referencing my sketches and adjusting as elements were falling into place. I built wireframes for the top-level navigation screens using different shades of black, to depict the hierarchy of the key information that should be highlighted, like call-to-action buttons.",
+      },
+      {
+        name: "Colour Palette",
+        description:
+          "To start building the high-fidelity mock-ups for the app I needed to find a suitable colour palette that would help me make design decisions to ensure the interface would have sufficient contrast and white space. The app's colour palette consists of green and violet that create a complementary colour scheme. Hue variations help with hierarchy and offer visual variety while remaining consistent. Since Billy is an app that's closely related to the concept of money, I decided to use green as the base colour. Aside from the reference to bills and money, green is also tending to have a soothing effect, which is a feeling we want to evoke when people are dealing with their finances, so they don't experience it as a stressful situation to be in. I chose violet as a complement, because it offers a good contrast with the green elements, it's used mainly on buttons and call-to-action sections. Purple is often related to spirituality, and the way I intended to use it here is to awake awareness into an important topic of life, which are personal finances. Beyond offering a way to manage and track expenses and budgets, having a healthy financial life offers the ability to make mindful decisions and can help to lead a more enjoyable life.",
+      },
+      {
+        name: "Branding",
+        description:
+          "For Billy's logo, I decided to use a piggy bank illustration, to emphasize the importance of savings and planning when it comes to personal finances. The application is making use of the font Raleway, in different weights and sizes to help with hierarchy and make the pages easy to scan. A sans-serif font was chosen to help with web readability on the user's device.",
+      },
+      {
+        name: "Mockups",
+        description:
+          "Once the basic elements were in place, I started building components on Figma for the elements that are used more than once across the app's interface. The main navigation panel came together to offer a top-level hierarchy pattern. The elements on the interface where conceived under the 8 points rule to create harmonious balance. This can be found on paddings, font sizes and line heights, widths and heights of icons, buttons, and containers. Since Billy is intended to be used as an application, (instead of a tradition website), the navigation menu is occupying a fixed space to the left-hand side of the layout, for the remaining area, where all the content is being presented, I'm using a nine-column grid to keep all elements aligned and promote consistency across pages.",
+      },
+      {
+        name: "Prototype",
+        description:
+          "Billy's app prototype offers an overview of the app for an existing user and mocks the ability to add a new expense. The prototype offers the user the ability to navigate the three main sections, and to change the view for the Transactions section from Chart to List.",
+      },
+      {
+        name: "Final Thoughts",
+        description:
+          "As a next step, I would like to test this version of the app on its target audience. Individuals between 18 to 30 years old who might be joining the workforce or are in their first years as employees or freelancers that receive some sort of income. Users' feedback would provide valuable information and how much Billy is solving their pain points. How could the budgeting section be more useful? How important is their bank accounts integration to plan and make better financial decisions? These would be the kind of questions I'd ask during user testing and interviews.",
+      },
+    ],
+  },
+  {
+    id: "7",
+    title: "Travel Compass: Phase 2 Development",
+    subtitle: "React Native Application for Android devices",
+    thumb: require("../assets/imgs/projects/tc-dev-thumb.png"),
+    thumbAlt: "travel compass interface preview",
+    images: [
+      require("../assets/imgs/projects/tc-1.png"),
+      require("../assets/imgs/projects/tc-dev-2.png"),
+      require("../assets/imgs/projects/tc-dev-3.png"),
+      require("../assets/imgs/projects/tc-dev-4.png"),
+    ],
+    description:
+      "Phase 2 of the Travel Compass Project: Developed an Android application using React Native. The goal was to build the front end based on the Design from Phase 1.",
+    chip: "Development",
+    discipline: "development",
+    path: "travel-compass-phase2",
+    isFeatured: false,
+    tools: ["React Native", "Expo", "Android Studio"],
+    intro: [
+      "After the Design Phase was completed, I wanted to expand the Travel Compass Project by taking the high-fidelity mockups into a native application. I developed an Android application using React Native, Expo and Android Studio as a mobile emulator.",
+      "Travel Compass is a travel management application. Its main purpose is to serve as an information hub, where users can store all the information related to a given trip, like flight information, accommodation check-in and check-out dates and times, and other activities users might want to do during a holiday. It's intended for 20- to 50-year-old individuals who explicitly plan to travel for leisure at least once a year.",
+      "As a hypothetical existing user, on the Home Screen, we can see how the app would look like if we had a trip happening today and a list of any upcoming trips. By clicking on one of the Trip Overview Cards, we have access to the Trip Schedule Details.",
+    ],
+    steps: [
+      {
+        name: "Navigation Set-up & Screens",
+        description:
+          "This app uses bottom tabs navigation for its four main sections: Home, Discover, Notifications and Account. The Home Screen is making use of stacked navigation for the Add New Trip and Trip Details Screens. In order to achieve the desired navigation patterns, I'm using the \"React Navigation\" library, in particular the Stack and the Bottom Tabs navigators. In order to set up the navigation patterns, I started with the Bottom Tabs navigation, to define the four main sections the application has. I created a file per screen and placed the <Navigation Container> in App.js as the root element to manage the linking of the app. As an immediate child element, I'm placing an instance of the Bottom Tab Navigator that was assigned to a variable. Finally, the Screens are placed inside the <Tab.Navigator>, linking to the correct component. The same approach was taken for the Stacked Navigation, which takes place on the Home Screen.",
+      },
+      {
+        name: "Data File",
+        description:
+          "One of the most important aspects of this project was deciding how the data should be structured. For this first iteration, I've created two data objects, one containing the information the user sees on the preview cards, and the second one containing an example of a trip's schedule, this information is accessed via the Current Trip Screen, to see which activities are happening on which days. For future iterations of this project, when a back-end integration takes place, I'd most likely re-structure the data architecture to have one single array of trips and each trip would have its own schedule. For the purposes of mocking up the app's functionality, I approached the data this way, because of time constraints.",
+      },
+      {
+        name: "Screens Content",
+        description:
+          "Once the data was in place, I started populating each Screen with the appropriate content. I'm making use of Native Components like View, Flat List and Style Sheet. I'm also integrating the \"React Native Elements\" library, in order to access more UI elements that I could further customize and implement theming.",
+      },
+      {
+        name: "Theme & Styles",
+        description:
+          "The app's design started to come together once I started implementing the RNE Theming. In order to help style components that will be used across different Screens, I've applied the styling that was defined during Phase 1 of this project to the Button, Text and Icon Components, I'm also making use of a Theme Colour Palette to have the app's palette available as a constant. Further styling is applied using the Native Style Sheet Component on each screen according to its particular design.",
+      },
+      {
+        name: "Splash Screen & Icons",
+        description:
+          "The application logo was implemented on a splash screen image and together with an app icon were added on the app.json file to help with branding and make for a more genuine experience when launching the app.",
+      },
+      {
+        name: "Final Result",
+        description:
+          "I had fun building this project, it was the first time I worked with React Native and I appreciate having the experience of stepping outside of my comfort zone in terms of developing a website or application for web. For future iterations, I would like to include a back-end integration, so the app can get tested with real data.",
       },
     ],
   },

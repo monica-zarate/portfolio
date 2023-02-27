@@ -4,9 +4,9 @@ import React, { useEffect } from "react";
 // Project imports
 import Card from "./Card";
 import { PROJECTS } from "../data/projects";
-import pL from '../assets/imgs/projects/paper-lantern-thumb.jpg';
-import gP from '../assets/imgs/projects/guava-punch-thumb.jpg';
-import tC from '../assets/imgs/projects/travel-compass-thumb.png';
+import pL from '../assets/imgs/projects/paper-lantern-thumb.png';
+import gP from '../assets/imgs/projects/guava-punch-thumb.png';
+import tC from '../assets/imgs/projects/tc-design-thumb.png';
 
 
 function Design() {
@@ -28,7 +28,7 @@ function Design() {
                             case 'guava-punch':
                                 __.thumb = gP;
                                 break;
-                            case 'travel-compass':
+                            case 'travel-compass-phase1':
                                 __.thumb = tC;
                         }
                         return <Card project={__} key={__.id}/>
