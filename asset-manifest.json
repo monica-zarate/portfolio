@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6974ec3f.css",
-    "main.js": "/static/js/main.85fadca0.js",
+    "main.css": "/static/css/main.05b45d5d.css",
+    "main.js": "/static/js/main.af5e9df0.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/guava-punch-thumb.png": "/static/media/guava-punch-thumb.7dfe8b902e5ac109d8ec.png",
     "static/media/tc-dev-thumb.png": "/static/media/tc-dev-thumb.1cbd50d70e10fca2569d.png",
@@ -13,7 +13,6 @@
     "static/media/paper-lantern-3.png": "/static/media/paper-lantern-3.f882804f7d6795dba4a5.png",
     "static/media/tc-1.png": "/static/media/tc-1.5df92b9b857bdeb04fcb.png",
     "static/media/about.png": "/static/media/about.0c84ecd1d1f3c015795a.png",
-    "static/media/guava-punch-thumb.jpg": "/static/media/guava-punch-thumb.c8d641ad329f39b5ace1.jpg",
     "static/media/guava-punch-1.jpg": "/static/media/guava-punch-1.958f8ce08eb75e5cfd27.jpg",
     "static/media/apod-thumb.png": "/static/media/apod-thumb.a3c53dbf8774fff9339a.png",
     "static/media/acnh-thumb.png": "/static/media/acnh-thumb.24a8dbc95f8215bc24e0.png",
@@ -56,12 +55,12 @@
     "static/media/github-icon-black.svg": "/static/media/github-icon-black.ea7cc6b988d7e2aa87c036b140a686fa.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.ff575a9bafe8f1b2933bfaafd47bf4ee.svg",
     "index.html": "/index.html",
-    "main.6974ec3f.css.map": "/static/css/main.6974ec3f.css.map",
-    "main.85fadca0.js.map": "/static/js/main.85fadca0.js.map",
+    "main.05b45d5d.css.map": "/static/css/main.05b45d5d.css.map",
+    "main.af5e9df0.js.map": "/static/js/main.af5e9df0.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6974ec3f.css",
-    "static/js/main.85fadca0.js"
+    "static/css/main.05b45d5d.css",
+    "static/js/main.af5e9df0.js"
   ]
 }
