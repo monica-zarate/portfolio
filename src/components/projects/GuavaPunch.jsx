@@ -6,7 +6,7 @@ import { PROJECTS } from "../../data/projects";
 
 export default function GuavaPunch() {
 
-    const project = PROJECTS[1];
+    const project = PROJECTS[0];
     return (
     <>
         <div className="flex-c">

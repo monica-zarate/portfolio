@@ -1,77 +1,9 @@
 export const PROJECTS = [
   {
     id: "1",
-    title: "Paper Lantern Bookstore",
-    subtitle: "Website and mobile app prototype and testing",
-    thumb: require("../assets/imgs/projects/paper-lantern-thumb.png"),
-    thumbAlt: "mobile interface preview",
-    images: [
-      require("../assets/imgs/projects/paper-lantern-1.png"),
-      require("../assets/imgs/projects/paper-lantern-2.png"),
-      require("../assets/imgs/projects/paper-lantern-3.png"),
-      require("../assets/imgs/projects/paper-lantern-4.png"),
-      require("../assets/imgs/projects/paper-lantern-5.png"),
-      require("../assets/imgs/projects/paper-lantern-6.png"),
-      require("../assets/imgs/projects/paper-lantern-7.png"),
-    ],
-    description:
-      "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website optimized for a desktop environment and a mobile interface.",
-    chip: "UX Design",
-    discipline: "design",
-    path: "paper-lantern",
-    isFeatured: true,
-    tools: ["Adobe Xd", "Figma", "Useberry", "Maze"],
-    intro: [
-      "To achieve the prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis.",
-    ],
-    steps: [
-      {
-        name: "Company Conception",
-        description:
-          "With e-commerce websites' functionalities in mind, I created a website and mobile application for a bookstore that I called Paper Lantern.",
-      },
-      {
-        name: "Website",
-        description:
-          "User Persona: Benjamin is a pet owner who likes to explore new hobbies. Scenario: He's looking for a reference book that can introduce him to indoor gardening while keeping his cat safe. User Flow: Ben browses the Paper Lantern website looking for a specific book and successfully goes through the checkout process.",
-      },
-      {
-        name: "Mobile App",
-        description:
-          "User Persona: Taylor's a young professional that works at a creative agency. Scenario: They're looking to update their credit card information on the Paper Lantern app, so they can check out faster whenever they need to place an order. User Flow: Taylor launches the Paper Lantern App and successfully adds a new payment method.",
-      },
-      {
-        name: "Wireframes",
-        description:
-          "I did some research on e-commerce websites and apps from Paper Lantern's main competitors and I sketched out the lo-fi wireframes keeping the personas' main goal and usability in mind.",
-      },
-      {
-        name: "Mockups and Prototypes",
-        description:
-          "When translating the Website and App Interfaces to their high-fidelity version, I kept in mind principles of design like balance, patterns and unity to create a useful and aesthetically pleasing experience for the users.",
-      },
-      {
-        name: "Website User Testing",
-        description:
-          "The website prototype was tested using Useberry. All six participants completed the three tasks they were presented with, however, thanks to their feedback and Useberry heat maps I found the users had some difficulties completing one of the tasks given. The search functionality could be improved, as well as the wording of the task. A second iteration of the prototype was completed, with updated labels and navigation options.",
-      },
-      {
-        name: "App User Testing",
-        description:
-          "The app prototype was tested using Maze. All nine participants completed the three tasks they were presented with. The test has a Usability Score of 76, placing it on a Medium level of usability, which is a sign that there's room for improvement. Similar to the website prototype, users had difficulties with the search functionality. A revised version includes adding placeholder text on the search bar and increased contrast of the interface icons.",
-      },
-      {
-        name: "Final Thoughts",
-        description:
-          "For future iterations, it would be interesting to test the search functionality again, and add a questionnaire or another opinion scale to enquire how would the users would improve this experience, what was the specific part they struggled with, etc.",
-      },
-    ],
-  },
-  {
-    id: "2",
-    title: "Guava Punch Beverage Company",
+    title: "Guava Punch: Logo & Poster",
     subtitle: "Logo and promotional Poster",
-    thumb: require("../assets/imgs/projects/guava-punch-thumb.jpg"),
+    thumb: require("../assets/imgs/projects/guava-punch-thumb.png"),
     thumbAlt: "beverage poster mockup",
     images: [
       require("../assets/imgs/projects/guava-punch-1.jpg"),
@@ -128,8 +60,76 @@ export const PROJECTS = [
     ],
   },
   {
+    id: "2",
+    title: "Paper Lantern Bookstore: Website and App",
+    subtitle: "Website and mobile app prototype and testing",
+    thumb: require("../assets/imgs/projects/paper-lantern-thumb.png"),
+    thumbAlt: "mobile interface preview",
+    images: [
+      require("../assets/imgs/projects/paper-lantern-1.png"),
+      require("../assets/imgs/projects/paper-lantern-2.png"),
+      require("../assets/imgs/projects/paper-lantern-3.png"),
+      require("../assets/imgs/projects/paper-lantern-4.png"),
+      require("../assets/imgs/projects/paper-lantern-5.png"),
+      require("../assets/imgs/projects/paper-lantern-6.png"),
+      require("../assets/imgs/projects/paper-lantern-7.png"),
+    ],
+    description:
+      "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website optimized for a desktop environment and a mobile interface.",
+    chip: "UX Design",
+    discipline: "design",
+    path: "paper-lantern",
+    isFeatured: false,
+    tools: ["Adobe Xd", "Figma", "Useberry", "Maze"],
+    intro: [
+      "To achieve the prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis.",
+    ],
+    steps: [
+      {
+        name: "Company Conception",
+        description:
+          "With e-commerce websites' functionalities in mind, I created a website and mobile application for a bookstore that I called Paper Lantern.",
+      },
+      {
+        name: "Website",
+        description:
+          "User Persona: Benjamin is a pet owner who likes to explore new hobbies. Scenario: He's looking for a reference book that can introduce him to indoor gardening while keeping his cat safe. User Flow: Ben browses the Paper Lantern website looking for a specific book and successfully goes through the checkout process.",
+      },
+      {
+        name: "Mobile App",
+        description:
+          "User Persona: Taylor's a young professional that works at a creative agency. Scenario: They're looking to update their credit card information on the Paper Lantern app, so they can check out faster whenever they need to place an order. User Flow: Taylor launches the Paper Lantern App and successfully adds a new payment method.",
+      },
+      {
+        name: "Wireframes",
+        description:
+          "I did some research on e-commerce websites and apps from Paper Lantern's main competitors and I sketched out the lo-fi wireframes keeping the personas' main goal and usability in mind.",
+      },
+      {
+        name: "Mockups and Prototypes",
+        description:
+          "When translating the Website and App Interfaces to their high-fidelity version, I kept in mind principles of design like balance, patterns and unity to create a useful and aesthetically pleasing experience for the users.",
+      },
+      {
+        name: "Website User Testing",
+        description:
+          "The website prototype was tested using Useberry. All six participants completed the three tasks they were presented with, however, thanks to their feedback and Useberry heat maps I found the users had some difficulties completing one of the tasks given. The search functionality could be improved, as well as the wording of the task. A second iteration of the prototype was completed, with updated labels and navigation options.",
+      },
+      {
+        name: "App User Testing",
+        description:
+          "The app prototype was tested using Maze. All nine participants completed the three tasks they were presented with. The test has a Usability Score of 76, placing it on a Medium level of usability, which is a sign that there's room for improvement. Similar to the website prototype, users had difficulties with the search functionality. A revised version includes adding placeholder text on the search bar and increased contrast of the interface icons.",
+      },
+      {
+        name: "Final Thoughts",
+        description:
+          "For future iterations, it would be interesting to test the search functionality again, and add a questionnaire or another opinion scale to enquire how would the users would improve this experience, what was the specific part they struggled with, etc.",
+      },
+    ],
+  },
+  {
     id: "3",
-    title: "ACNH Villagers Site",
+    title: "ACNH Villagers: Website",
     subtitle: "PHP classes, constructors and associative arrays",
     thumb: require("../assets/imgs/projects/acnh-thumb.png"),
     thumbAlt: "animal crossing villagers",
@@ -186,7 +186,7 @@ export const PROJECTS = [
   },
   {
     id: "4",
-    title: "NASA's APOD Site",
+    title: "NASA's APOD: Website",
     subtitle: "Third party data request using the Fetch API",
     thumb: require("../assets/imgs/projects/apod-thumb.png"),
     thumbAlt: "astronomy picture of the day",
@@ -201,7 +201,7 @@ export const PROJECTS = [
     chip: "Development",
     discipline: "development",
     path: "apod",
-    isFeatured: true,
+    isFeatured: false,
     tools: ["HTML", "CSS", "Javascript", "Postman"],
     intro: [
       "To practice my Javascript skills, I decided to build my own version of NASA's Astronomy Picture of the Day. This project heavily focuses on the map() array method, writing DRY code and the ability to request data from a third-party API.",
@@ -302,7 +302,7 @@ export const PROJECTS = [
   },
   {
     id: "6",
-    title: "Billy",
+    title: "Billy Expense Tracker: SPA",
     subtitle: "Expense Tracker Single Page Application Interface Design",
     thumb: require("../assets/imgs/projects/billy-thumb.png"),
     thumbAlt: "Billy interface preview",
@@ -318,7 +318,7 @@ export const PROJECTS = [
     chip: "UX Design",
     discipline: "design",
     path: "billy",
-    isFeatured: false,
+    isFeatured: true,
     tools: ["Figma"],
     intro: [
       "Billy's prototype is presented as the first iteration of an expense tracker tool that helps users manage their expenses and income, it shows an example of how an existing user would add a new expense. The application's functionality would offer users an easy-to-read overview of all the information related to their personal finances in one place. Billy is targeted at people who are new to expense tracking and budgeting.",
@@ -388,7 +388,7 @@ export const PROJECTS = [
     chip: "Development",
     discipline: "development",
     path: "travel-compass-phase2",
-    isFeatured: false,
+    isFeatured: true,
     tools: ["React Native", "Expo", "Android Studio"],
     intro: [
       "After the Design Phase was completed, I wanted to expand the Travel Compass Project by taking the high-fidelity mockups into a native application. I developed an Android application using React Native, Expo and Android Studio as a mobile emulator.",

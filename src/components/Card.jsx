@@ -8,7 +8,7 @@ function Card({project}) {
 
     let path = "";
 
-    location.pathname === '/' ? path = `${project.discipline}/${project.path}` : path = `${location.pathname}/${project.path}`;
+    location.pathname === '/' ? path = `work/${project.path}` : path = `${location.pathname}/${project.path}`;
 
     return (
         <Link to={path} title={project.title} className="flex-c card">

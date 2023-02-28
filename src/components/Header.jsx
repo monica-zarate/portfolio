@@ -31,8 +31,7 @@ function Header() {
                 </NavLink>
                 <nav className="header__nav">
                     <ul className="flex-c header__nav-ul">
-                        <li className="header__nav-li"><NavLink to="/design" title="Design" className={({isActive}) => isActive ? "header__link--active" : "header__link"}>design</NavLink></li>
-                        <li className="header__nav-li"><NavLink to="/development" title="Development" className={({isActive}) => isActive ? "header__link--active" : "header__link"}>development</NavLink></li>
+                        <li className="header__nav-li"><NavLink to="/work" title="Work" className={({isActive}) => isActive ? "header__link--active" : "header__link"}>work</NavLink></li>
                         <li className="header__nav-li"><NavLink to="/about" title="About" className={({isActive}) => isActive ? "header__link--active" : "header__link"}>about</NavLink></li>
                     </ul>
                 </nav>

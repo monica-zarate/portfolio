@@ -6,7 +6,7 @@ import { PROJECTS } from "../../data/projects";
 
 export default function PaperLantern() {
 
-    const project = PROJECTS[0];
+    const project = PROJECTS[1];
     return (
     <>
         <div className="project__steps">

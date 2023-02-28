@@ -7,8 +7,7 @@ import "./components/styles/main.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Design from "./components/Design";
-import Development from "./components/Development";
+import Work from "./components/Work";
 import ProjectDetails from "./components/ProjectDetails";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
@@ -20,10 +19,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} exact></Route>
-          <Route path="/design" element={<Design />}></Route>
-          <Route path="/design/:path" element={<ProjectDetails />}></Route>
-          <Route path="/development" element={<Development />}></Route>
-          <Route path="/development/:path" element={<ProjectDetails />}></Route>
+          <Route path="/work" element={<Work />}></Route>
+          <Route path="/work/:path" element={<ProjectDetails />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
