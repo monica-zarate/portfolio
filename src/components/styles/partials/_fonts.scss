@@ -1,13 +1,14 @@
 // Project Fonts
-$light: "Poppins Light";
-$medium: "Poppins Medium";
-$semi: "Poppins SemiBold";
+$extra-light: "Source Sans Extra Light";
+$light: "Source Sans Light";
+$regular: "Source Sans Regular";
+$bold: "Source Sans Bold";
 $kalam: "Kalam Bold";
 
 // Text Styles
 
 .nav-menu {
-    font-family: $semi;
+    font-family: $bold;
     font-size: 16px;
     text-transform: uppercase;
     line-height: 16px * 1.5;
@@ -29,7 +30,7 @@ $kalam: "Kalam Bold";
 }
 
 .nav-mobile {
-    font-family: $semi;
+    font-family: $bold;
     font-size: 16px;
     text-transform: uppercase;
     line-height: 16px * 1.5;
@@ -40,47 +41,33 @@ $kalam: "Kalam Bold";
 .h1 {
     font-family: $kalam;
     font-size: 32px;
-    line-height: 32px * 1.5;
+    line-height: 32px;
 }
 
 .h2 {
-    font-family: $medium;
-    font-size: 24px;
-    line-height: 24px * 1.5;
-    letter-spacing: 0.04em;
+    font-family: $light;
+    font-size: 32px;
+    line-height: 32px;
 }
 
 .h3 {
-    font-family: $medium;
-    font-size: 20px;
-    line-height: 20px * 1.5;
-    letter-spacing: 0.02em;
+    font-family: $regular;
+    font-size: 24px;
+    line-height: 24px * 1.4;
+    margin-bottom: 24px;
 }
 
-.project-title {
-    font-family: $light;
-    font-size: 40px;
-    line-height: 80px;
-    letter-spacing: 0.06em;
+.h4 {
+    font-family: $bold;
+    font-size: 16px;
+    line-height: 16px * 1.6;
+    text-transform: uppercase;
 }
 
 .body-light {
-    font-family: $light;
-    font-size: 16px;
-    line-height: 16px * 1.5;
-    letter-spacing: 0.08em;
-}
-
-.body-med {
-    @extend .body-light;
-    font-family: $medium;
-    letter-spacing: 0.04em;
-}
-
-.body-bulk {
-    @extend .body-light;
-    line-height: 32px;
-    letter-spacing: 0.04em;
+    font-family: $regular;
+    font-size: 20px;
+    line-height: 20px * 1.4;
 }
 
 .chips {

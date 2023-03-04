@@ -1,8 +1,8 @@
 // Project Details Page Styles
 
 .project {
-    background-color: $section-bg;
-    padding: 32px;
+    @extend .grid;
+    background-color: $light;
 
     @include tablet {
         padding: 32px 64px;
@@ -16,8 +16,8 @@
         padding: 72px 0 200px;
     }
 
-    & p {
-        @extend .body-bulk;
+    &__hero {
+        padding: 32px;
     }
 
     &__wrapper {
@@ -25,12 +25,26 @@
         max-width: $laptop-width;
     }
 
-    &__section-title{
-        @extend .h2;
-        text-align: center;
+    &__section {
+        padding: 32px 32px 40px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+
+        @include tablet {
+            font-size: 40px;
+            line-height: 80px;
+        }
+    }
+
+    &__subtitle {
+        color: $gray;
+    }
+
+    &__discipline{
         color: $gray;
         margin-bottom: 32px;
-        font-size: 16px;
 
         @include laptop {
             font-size: 24px;
@@ -42,48 +56,11 @@
         }
     }
 
-    &__card {
-        background-color: $white;
-        border-radius: 25px;
-        @extend .box-shadow-light;
-        padding: 16px;
-
-        @include tablet {
-            padding: 32px;
-        }
-
-        @include laptop {
-            padding: 40px 88px 80px;
-        }
-    }
-
-    &__title{
-        @extend .project-title;
-        font-size: 24px;
-        line-height: 48px;
-
-        @include tablet {
-            font-size: 40px;
-            line-height: 80px;
-        }
-    }
-
-    &__subtitle {
-        @extend .h3;
-        color: $gray;
-        margin: 8px 0 32px;
-    }
-
     &__overview {
         align-items: flex-start;
         justify-content: space-evenly;
-        color: $white;
-        background-color: $primary-color;
-        @extend .box-shadow-light;
-        border-radius: 5px;
         flex-direction: column;
-        padding: 16px;
-        margin-bottom: 32px;
+        margin-bottom: 40px;
 
         @include tablet {
             flex-direction: row;
@@ -121,21 +98,11 @@
                 margin-left: 30%;
             }
         }
-
-        & h2 {
-            @extend .h2;
-            margin-bottom: 16px;
-        }
-
-        & li {
-            @extend .body-bulk;
-        }
     }
 
     &__img {
         width: 100%;
         height: auto;
-        margin: 0 0 24px 0;
 
         @include small-desktop {
             height: 500px;
@@ -143,25 +110,11 @@
         }
     }
 
-    &__steps {
-        margin-top: 64px;
+    & p {
+        margin-bottom: 24px;
     }
 
-    &__step{
-        align-items: flex-start;
-        margin: 32px 0;
-        flex-direction: column;
-
-        & h3 {
-            @extend .h3;
-            color: $primary-color;
-            margin-bottom: 16px;
-        }
-
-        & a {
-            @extend .body-med;
-            color: $primary-color;
-            text-decoration: underline;
-        }
+    & a {
+        text-decoration: underline;
     }
 }

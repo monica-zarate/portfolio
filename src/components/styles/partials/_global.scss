@@ -11,6 +11,7 @@
 body {
     min-height: 100vh;
     @extend .body-light;
+    color: $dark;
 }
 
 a {
@@ -35,4 +36,36 @@ ul, ol {
 
 .box-shadow-light {
     box-shadow: 0px 4px 4px $box-shadow-dark;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-12-col {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.design {
+    color: $design;
+}
+
+.design-bg{
+    background-color: $design;
+}
+
+.design-bg-light {
+    background-color: $design-light;
+}
+
+.dev {
+    color: $development;
+}
+
+.dev-bg {
+    background-color: $development;
+}
+
+.dev-bg-light {
+    background-color: $development-light;
 }

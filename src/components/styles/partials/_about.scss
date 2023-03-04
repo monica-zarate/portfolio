@@ -45,7 +45,6 @@
     }
 
     &__text {
-        @extend .body-bulk;
 
         @include laptop {
             min-width: 50%;
@@ -72,12 +71,10 @@
     }
 
     &__cta {
-        @extend .body-med;
         color: $primary-color;
     }
 
     &__links {
-        @extend .body-med;
         color: $primary-color;
         text-decoration: underline;
     }

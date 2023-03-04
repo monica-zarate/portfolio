@@ -1,5 +1,5 @@
 .nav-menu, .header__link, .nav-active, .header__link--active {
-  font-family: "Poppins SemiBold";
+  font-family: "Source Sans Bold";
   font-size: 16px;
   text-transform: uppercase;
   line-height: 24px;
@@ -18,7 +18,7 @@
 }
 
 .nav-mobile, .not-found__btn, .header__mobile {
-  font-family: "Poppins SemiBold";
+  font-family: "Source Sans Bold";
   font-size: 16px;
   text-transform: uppercase;
   line-height: 24px;
@@ -29,45 +29,33 @@
 .h1, .intro__h1 {
   font-family: "Kalam Bold";
   font-size: 32px;
-  line-height: 48px;
-}
-
-.h2, .not-found__title, .about__title, .project__overview h2, .project__section-title, .projects__title, .featured__title {
-  font-family: "Poppins Medium";
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.04em;
-}
-
-.h3, .project__step h3, .project__subtitle, .card__info--title {
-  font-family: "Poppins Medium";
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-}
-
-.project-title, .project__title {
-  font-family: "Poppins Light";
-  font-size: 40px;
-  line-height: 80px;
-  letter-spacing: 0.06em;
-}
-
-.body-light, body, .body-bulk, .not-found__text, .about__text, .project__overview li, .project p, .body-med, .about__links, .about__cta, .project__step a, .intro__cta {
-  font-family: "Poppins Light";
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-}
-
-.body-med, .about__links, .about__cta, .project__step a, .intro__cta {
-  font-family: "Poppins Medium";
-  letter-spacing: 0.04em;
-}
-
-.body-bulk, .not-found__text, .about__text, .project__overview li, .project p {
   line-height: 32px;
-  letter-spacing: 0.04em;
+}
+
+.h2, .not-found__title, .about__title, .projects__title, .featured__title {
+  font-family: "Source Sans Light";
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.h3, .card__info--title {
+  font-family: "Source Sans Regular";
+  font-size: 24px;
+  line-height: 33.6px;
+  margin-bottom: 24px;
+}
+
+.h4 {
+  font-family: "Source Sans Bold";
+  font-size: 16px;
+  line-height: 25.6px;
+  text-transform: uppercase;
+}
+
+.body-light, body {
+  font-family: "Source Sans Regular";
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .chips, .projects__chip--active, .projects__chip, .card__info--chip {
@@ -96,6 +84,7 @@
 
 body {
   min-height: 100vh;
+  color: #222222;
 }
 
 a {
@@ -117,8 +106,40 @@ ul, ol {
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
 }
 
-.box-shadow-light, .project__overview, .project__card {
+.box-shadow-light {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.grid, .project {
+  display: grid;
+}
+
+.grid-12-col {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.design {
+  color: #f8c828;
+}
+
+.design-bg {
+  background-color: #f8c828;
+}
+
+.design-bg-light {
+  background-color: #fbe087;
+}
+
+.dev {
+  color: #2858f8;
+}
+
+.dev-bg {
+  background-color: #2858f8;
+}
+
+.dev-bg-light {
+  background-color: #87a2fb;
 }
 
 /* Header Styles */
@@ -178,7 +199,7 @@ ul, ol {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #1C1C1E;
+  background: #222222;
 }
 
 /* Position and sizing of clickable cross button */
@@ -384,8 +405,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .project {
-  background-color: #fafafa;
-  padding: 32px;
+  background-color: "Source Sans Light";
 }
 @media (min-width: 768px) {
   .project {
@@ -402,45 +422,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
     padding: 72px 0 200px;
   }
 }
+.project__hero {
+  padding: 32px;
+}
 .project__wrapper {
   margin: 0 auto;
   max-width: 1024px;
 }
-.project__section-title {
-  text-align: center;
-  color: #808080;
-  margin-bottom: 32px;
-  font-size: 16px;
-}
-@media (min-width: 1024px) {
-  .project__section-title {
-    font-size: 24px;
-    margin-bottom: 48px;
-  }
-}
-@media (min-width: 1280px) {
-  .project__section-title {
-    margin-bottom: 72px;
-  }
-}
-.project__card {
-  background-color: #ffffff;
-  border-radius: 25px;
-  padding: 16px;
-}
-@media (min-width: 768px) {
-  .project__card {
-    padding: 32px;
-  }
-}
-@media (min-width: 1024px) {
-  .project__card {
-    padding: 40px 88px 80px;
-  }
+.project__section {
+  padding: 32px 32px 40px;
 }
 .project__title {
-  font-size: 24px;
-  line-height: 48px;
+  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   .project__title {
@@ -450,17 +443,27 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .project__subtitle {
   color: #808080;
-  margin: 8px 0 32px;
+}
+.project__discipline {
+  color: #808080;
+  margin-bottom: 32px;
+}
+@media (min-width: 1024px) {
+  .project__discipline {
+    font-size: 24px;
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1280px) {
+  .project__discipline {
+    margin-bottom: 72px;
+  }
 }
 .project__overview {
   align-items: flex-start;
   justify-content: space-evenly;
-  color: #ffffff;
-  background-color: #6667AB;
-  border-radius: 5px;
   flex-direction: column;
-  padding: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .project__overview {
@@ -503,13 +506,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     margin-left: 30%;
   }
 }
-.project__overview h2 {
-  margin-bottom: 16px;
-}
 .project__img {
   width: 100%;
   height: auto;
-  margin: 0 0 24px 0;
 }
 @media (min-width: 1280px) {
   .project__img {
@@ -517,20 +516,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: auto;
   }
 }
-.project__steps {
-  margin-top: 64px;
+.project p {
+  margin-bottom: 24px;
 }
-.project__step {
-  align-items: flex-start;
-  margin: 32px 0;
-  flex-direction: column;
-}
-.project__step h3 {
-  color: #6667AB;
-  margin-bottom: 16px;
-}
-.project__step a {
-  color: #6667AB;
+.project a {
   text-decoration: underline;
 }
 
@@ -723,4 +712,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @font-face {
   font-family: "Kalam Bold";
   src: url("../../assets/fonts/kalam-bold.ttf");
+}
+@font-face {
+  font-family: "Source Sans Extra Light";
+  src: url("../../assets/fonts/sourcesanspro-extralight.ttf");
+}
+@font-face {
+  font-family: "Source Sans Light";
+  src: url("../../assets/fonts/sourcesanspro-light.ttf");
+}
+@font-face {
+  font-family: "Source Sans Regular";
+  src: url("../../assets/fonts/sourcesanspro-regular.ttf");
+}
+@font-face {
+  font-family: "Source Sans Bold";
+  src: url("../../assets/fonts/sourcesanspro-bold.ttf");
 }/*# sourceMappingURL=main.css.map */
