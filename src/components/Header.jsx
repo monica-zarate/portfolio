@@ -36,8 +36,7 @@ function Header() {
                     </ul>
                 </nav>
                 {matches && <Menu className="header__mobile" right width="50%" noOverlay isOpen={isNavVisible} onStateChange={(state) => handleStateChange(state)}>
-                    <Link to="/design" title="Design" className="header__mobile" onClick={closeNav}>design</Link>
-                    <Link to="/development" title="Development" className="header__mobile" onClick={closeNav}>development</Link>
+                    <Link to="/work" title="Work" className="header__mobile" onClick={closeNav}>work</Link>
                     <Link to="/about" title="About" className="header__mobile" onClick={closeNav}>about</Link>
                 </Menu>}
             </div>
