@@ -1,32 +1,40 @@
 // Project Details Page Styles
 
 .project {
-    @extend .grid;
-    background-color: $light;
-
-    @include tablet {
-        padding: 32px 64px;
-    }
-
-    @include laptop {
-        padding: 72px 72px 96px;
-    }
-
-    @include small-desktop {
-        padding: 72px 0 200px;
-    }
+    background-color: $light-bg;
 
     &__hero {
         padding: 32px;
+
+        @include tablet {
+            padding: 32px 64px;
+        }
+
+        @include laptop {
+            padding: 56px 128px;
+        }
     }
 
     &__wrapper {
         margin: 0 auto;
-        max-width: $laptop-width;
     }
 
     &__section {
         padding: 32px 32px 40px;
+        width: 100vw;
+
+        @include tablet {
+            padding: 32px 64px 48px;
+        }
+
+        @include laptop {
+            padding: 80px 128px;
+        }
+    }
+
+    &__section-content {
+        max-width: $tablet-width;
+        margin: 0 auto;
     }
 
     &__title {
@@ -39,7 +47,7 @@
     }
 
     &__subtitle {
-        color: $gray;
+        color: $dark-gray;
     }
 
     &__discipline{
@@ -58,20 +66,12 @@
 
     &__overview {
         align-items: flex-start;
-        justify-content: space-evenly;
         flex-direction: column;
         margin-bottom: 40px;
 
         @include tablet {
             flex-direction: row;
-        }
-
-        @include laptop {
-            padding: 32px 24px;
-        }
-
-        @include small-desktop {
-            padding: 48px;
+            justify-content: flex-start;
         }
 
         &--left {
@@ -80,7 +80,7 @@
             @include tablet {
                 width: 45%;
                 max-width: 45%;
-                margin: 0;
+                margin: 0 64px 0 0;
             }
 
             @include small-desktop {
@@ -100,13 +100,24 @@
         }
     }
 
+    &__ctas {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
+
+    &__ctas a {
+        margin-bottom: 24px;
+    }
+
     &__img {
         width: 100%;
         height: auto;
+        @extend .box-shadow;
 
         @include small-desktop {
-            height: 500px;
-            width: auto;
+            height: auto;
+            width: 768px;
         }
     }
 
@@ -114,7 +125,13 @@
         margin-bottom: 24px;
     }
 
-    & a {
-        text-decoration: underline;
+    &__nav {
+        display: block;
+        margin-bottom: 80px;
     }
+
+    &__nav span {
+        margin-left: 16px;
+    }
+
 }

@@ -37,9 +37,8 @@ export default function ProjectDetails () {
             }
 
             // Define the project's discipline to display appropriate background colour
-            let discipline;
-            __.discipline === 'development' ? discipline = 'dev' : discipline = 'design';
-
+            let discipline = __.discipline === 'development' ? 'dev' : 'design';
+            
             return (
                 <div className="project">
                     <div className={`flex-c project__hero ${discipline}-bg`}>
@@ -47,62 +46,75 @@ export default function ProjectDetails () {
                     </div>
                     <div className="project__wrapper">
                         <div className="project__section">
-                            <h2 className="project__title h2">{__.title}</h2>
-                            <h3 className="project__subtitle h3">{__.subtitle}</h3>
-                            <h4 className="project__discipline h4">{selectedProjectDiscipline}</h4>
-                            <div className="flex-c project__overview">
-                                <div className="project__overview--left">
-                                    <h3 className="h3">Overview</h3>
-                                    <p>{__.description}</p>
+                            <div className="project__section-content">
+                                <h2 className="project__title h2">{__.title}</h2>
+                                <h3 className="project__subtitle h3">{__.subtitle}</h3>
+                                <h4 className="project__discipline h4">{selectedProjectDiscipline}</h4>
+                                <div className="flex-c project__overview">
+                                    <div className="project__overview--left">
+                                        <h3 className="h3">Overview</h3>
+                                        <p>{__.description}</p>
+                                    </div>
+                                    <div className="project__overview--right">
+                                        <h3 className="h3">Tools</h3>
+                                        <ul>
+                                            {__.tools.map((tool) => {
+                                                return (
+                                                    <li>{tool}</li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div className="project__overview--right">
-                                    <h3 className="h3">Tools</h3>
-                                    <ul>
-                                        {__.tools.map((tool) => {
-                                            return (
-                                                <li>{tool}</li>
-                                            )
-                                        })}
-                                    </ul>
+                                <div className="flex-c project__ctas">
+                                    {__.links.repo && <a href={__.links.repo} title={__.links.repoTitle} target="_blank" className={`${discipline}-btn`}>GitHub Repository</a>}
+                                    {__.links.figmaPrototype && <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" className={`${discipline}-btn`}>Figma Prototype</a>}
+                                    {__.links.xdPrototype && <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" className={`${discipline}-btn`}>Adobe Xd Prototype</a>}
+                                    {__.links.site && <a href={__.links.site} title={__.links.siteTitle} target="_blank" className={`${discipline}-btn`}>Project's Website</a>}
                                 </div>
                             </div>
                         </div>
                         <div className={`project__section ${discipline}-bg-light`}>
-                            <div>
-                                <FontAwesomeIcon icon={faMinus}/>
-                                <h3 className="h3">Introduction</h3>
+                            <div className="project__section-content">
+                                <div>
+                                    <FontAwesomeIcon icon={faMinus}/>
+                                    <h3 className="h3">Introduction</h3>
+                                </div>
+                                {__.intro.map((paragraph) => {
+                                    return <p className="">{paragraph}</p>
+                                })}
                             </div>
-                            {__.intro.map((paragraph) => {
-                                return <p className="">{paragraph}</p>
-                            })}
                         </div>
                         <div className="">
                             {__.steps.map((step, index) => {
-                                let sectionBgColour;
-                                index % 2 == 0 ? sectionBgColour = '' : sectionBgColour = discipline + "-bg-light";
+                                let sectionBgColour = index % 2 == 0 ? '' : discipline + '-bg-light';
                             return (<div className={`project__section ${sectionBgColour}`}>
-                                <div>
-                                    <FontAwesomeIcon icon={faMinus}/>
-                                    <h3 className="h3">{step.name}</h3>
-                                </div>
-                                {step.description.map((paragraph) => {
-                                    return <p>{paragraph}</p>
-                                })}
-                                {step.imgs && step.imgs.map((img) => {
-                                    return (
-                                        <div className="flex-c">
-                                            <img src={img} alt={step.name} className="project__img" />
-                                        </div>
-                                    )
-                                })}
+                                <div className="project__section-content">
+                                    <div>
+                                        <FontAwesomeIcon icon={faMinus}/>
+                                        <h3 className="h3">{step.name}</h3>
+                                    </div>
+                                    {step.description.map((paragraph) => {
+                                        return <p>{paragraph}</p>
+                                    })}
+                                    {step.imgs && step.imgs.map((img) => {
+                                        return (
+                                            <div className="flex-c">
+                                                <img src={img} alt={step.name} className="project__img" />
+                                            </div>
+                                        )
+                                    })}
+                                    </div>
                                 </div>
                             )})}
                         </div>
+                        <Link to={workSectionPath} className='project__section project__nav'>
+                            <div className="project__section-content">
+                                <FontAwesomeIcon icon={faChevronLeft} className="dark-color"/>
+                                <span className="secondary-btn">Back to Projects Page</span>
+                            </div>
+                        </Link>
                     </div>
-                    <Link to={workSectionPath} className='project__section'>
-                        <FontAwesomeIcon icon={faChevronLeft} />
-                        <span>Back to Projects Page</span>
-                    </Link>
                 </div>
             )
         }

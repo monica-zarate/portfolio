@@ -38,14 +38,6 @@ ul, ol {
     box-shadow: 0px 4px 4px $box-shadow-dark;
 }
 
-.grid {
-    display: grid;
-}
-
-.grid-12-col {
-    grid-template-columns: repeat(12, 1fr);
-}
-
 .design {
     color: $design;
 }
@@ -58,6 +50,14 @@ ul, ol {
     background-color: $design-light;
 }
 
+.design-btn {
+    color: $dark;
+    @extend .h4;
+    font-size: 20px;
+    padding-bottom: 4px;
+    border-bottom: solid 2px $design;
+}
+
 .dev {
     color: $development;
 }
@@ -68,4 +68,29 @@ ul, ol {
 
 .dev-bg-light {
     background-color: $development-light;
+}
+
+.dev-btn {
+    color: $dark;
+    @extend .h4;
+    font-size: 20px;
+    padding-bottom: 4px;
+    border-bottom: solid 2px $development;
+}
+
+.primary-btn {
+    background-color: $primary-color;
+    color: $light-bg;
+}
+
+.secondary-btn {
+    color: $dark;
+    @extend .h4;
+    font-size: 20px;
+    padding-bottom: 4px;
+    border-bottom: solid 2px $primary-color;
+}
+
+.dark-color {
+    color: $dark;
 }
