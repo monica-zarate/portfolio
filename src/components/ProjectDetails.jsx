@@ -50,7 +50,7 @@ export default function ProjectDetails () {
                                 <h2 className="project__title h2">{__.title}</h2>
                                 <h3 className="project__subtitle h3">{__.subtitle}</h3>
                                 <h4 className="project__discipline h4">{selectedProjectDiscipline}</h4>
-                                <div className="flex-c project__overview">
+                                <div className="project__overview">
                                     <div className="project__overview--left">
                                         <h3 className="h3">Overview</h3>
                                         <p>{__.description}</p>
@@ -60,7 +60,10 @@ export default function ProjectDetails () {
                                         <ul>
                                             {__.tools.map((tool) => {
                                                 return (
-                                                    <li>{tool}</li>
+                                                    <li className="flex-c">
+                                                        <img src={tool.icon} alt={tool.name} />
+                                                        <p>{tool.name}</p>
+                                                    </li>
                                                 )
                                             })}
                                         </ul>
@@ -107,6 +110,14 @@ export default function ProjectDetails () {
                                     </div>
                                 </div>
                             )})}
+                        </div>
+                        <div className={`project__section ${discipline}-bg-light`}>
+                            <div className="project__section-content">
+                                {__.links.repo && <p>Find the project's repository <a href={__.links.repo} title={__.links.repoTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
+                                {__.links.figmaPrototype && <p>Find the project's Figma Prototype <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
+                                {__.links.xdPrototype && <p>Find the project's Adobe Xd Prototype <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
+                                {__.links.site && <p>Find the project's website <a href={__.links.site} title={__.links.siteTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
+                            </div>
                         </div>
                         <Link to={workSectionPath} className='project__section project__nav'>
                             <div className="project__section-content">

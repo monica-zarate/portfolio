@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     @extend .body-light;
     color: $dark;
+    background-color: $light-bg;
 }
 
 a {

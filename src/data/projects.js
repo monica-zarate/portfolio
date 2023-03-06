@@ -1,3 +1,22 @@
+const toolsIcons = {
+  ps: require("../assets/icons/tools/photoshop.png"),
+  ai: require("../assets/icons/tools/illustrator.png"),
+  dn: require("../assets/icons/tools/dimension.png"),
+  xd: require("../assets/icons/tools/xd.png"),
+  figma: require("../assets/icons/tools/figma.png"),
+  maze: require("../assets/icons/tools/maze.png"),
+  useberry: require("../assets/icons/tools/useberry.png"),
+  html: require("../assets/icons/tools/html.png"),
+  css: require("../assets/icons/tools/css.png"),
+  php: require("../assets/icons/tools/php.png"),
+  mamp: require("../assets/icons/tools/mamp.png"),
+  js: require("../assets/icons/tools/javascript.png"),
+  postman: require("../assets/icons/tools/postman.png"),
+  react: require("../assets/icons/tools/react.png"),
+  expo: require("../assets/icons/tools/expo.png"),
+  android: require("../assets/icons/tools/android.png"),
+};
+
 export const PROJECTS = [
   {
     id: "1",
@@ -25,10 +44,14 @@ export const PROJECTS = [
       site: "",
       siteTitle: "",
     },
-    tools: ["Adobe Illustrator", "Adobe Photoshop", "Adobe Dimension"],
+    tools: [
+      { name: "Adobe Illustrator", icon: toolsIcons.ai },
+      { name: "Adobe Photoshop", icon: toolsIcons.ps },
+      { name: "Adobe Dimension", icon: toolsIcons.dn },
+    ],
     intro: [
       "This project started by developing a logo using shapes and the pen tool on Adobe Illustrator, arranging the components in an orderly manner using layers. Text components were meant to be outlined, to make sure the logo was scalable. A black and white version was requested, to make sure the logo was colour-independent.",
-      "In order to create the promotional poster, we had to include a background image, and at least one 3D element that was placed on a realistic scene, blending in with the background image. Lighting and perspective were an important element of this project.As I had previously created a logo for a fictitious beverage company called Guava Punch, I decided to use that company as a foundation for this project, and develop the promotional poster that included a beverage container.",
+      "In order to create the promotional poster, we had to include a background image, and at least one 3D element that was placed on a realistic scene, blending in with the background image. Lighting and perspective were an important element of this project. As I had previously created a logo for a fictitious beverage company called Guava Punch, I decided to use that company as a foundation for this project, and develop the promotional poster that included a beverage container.",
     ],
     steps: [
       {
@@ -112,7 +135,12 @@ export const PROJECTS = [
       site: "",
       siteTitle: "",
     },
-    tools: ["Adobe Xd", "Figma", "Useberry", "Maze"],
+    tools: [
+      { name: "Adobe Xd", icon: toolsIcons.xd },
+      { name: "Figma", icon: toolsIcons.figma },
+      { name: "Useberry", icon: toolsIcons.useberry },
+      { name: "Maze", icon: toolsIcons.maze },
+    ],
     intro: [
       "To achieve the prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis.",
     ],
@@ -204,7 +232,12 @@ export const PROJECTS = [
       site: "",
       siteTitle: "",
     },
-    tools: ["HTML", "CSS", "PHP", "MAMP"],
+    tools: [
+      { name: "HTML", icon: toolsIcons.html },
+      { name: "CSS", icon: toolsIcons.css },
+      { name: "PHP", icon: toolsIcons.php },
+      { name: "MAMP", icon: toolsIcons.mamp },
+    ],
     intro: [
       "Using Animal Crossing (a popular video game I like to play) characters as a starting point, this project shows the current residents I have on my island. All items in this collection have shared properties, and I'm looping through them so that I can create a card per character that displays its information.",
       "I created two types of residents: villagers and NPCs (non-playable characters). The project makes use of a parent class, that's used to create two child classes, allowing for variations amongst the displayed data. The page was built making use of partials for its different sections.",
@@ -280,7 +313,12 @@ export const PROJECTS = [
       site: "http://apod.monicazarate.com",
       siteTitle: "Monica's APOD Website",
     },
-    tools: ["HTML", "CSS", "Javascript", "Postman"],
+    tools: [
+      { name: "HTML", icon: toolsIcons.html },
+      { name: "CSS", icon: toolsIcons.css },
+      { name: "Javascript", icon: toolsIcons.js },
+      { name: "Postman", icon: toolsIcons.postman },
+    ],
     intro: [
       "To practice my Javascript skills, I decided to build my own version of NASA's Astronomy Picture of the Day. This project heavily focuses on the map() array method, writing DRY code and the ability to request data from a third-party API.",
     ],
@@ -349,7 +387,7 @@ export const PROJECTS = [
       site: "",
       siteTitle: "",
     },
-    tools: ["Adobe Xd"],
+    tools: [{ name: "Adobe Xd", icon: toolsIcons.xd }],
     intro: [
       "The Travel Compass prototype is presented as the first iteration of a travel management tool, it shows an example of how an existing user would create a new trip. The application's functionality would allow users to have all the information related to a trip in one place, you would be able to read the trip's itinerary through a daily breakdown.",
     ],
@@ -444,7 +482,7 @@ export const PROJECTS = [
       site: "",
       siteTitle: "",
     },
-    tools: ["Figma"],
+    tools: [{ name: "Figma", icon: toolsIcons.figma }],
     intro: [
       "Billy's prototype is presented as the first iteration of an expense tracker tool that helps users manage their expenses and income, it shows an example of how an existing user would add a new expense. The application's functionality would offer users an easy-to-read overview of all the information related to their personal finances in one place. Billy is targeted at people who are new to expense tracking and budgeting.",
     ],
@@ -547,7 +585,11 @@ export const PROJECTS = [
       site: "",
       siteTitle: "",
     },
-    tools: ["React Native", "Expo", "Android Studio"],
+    tools: [
+      { name: "React Native", icon: toolsIcons.react },
+      { name: "Expo", icon: toolsIcons.expo },
+      { name: "Android Studio", icon: toolsIcons.android },
+    ],
     intro: [
       "After the Design Phase was completed, I wanted to expand the Travel Compass Project by taking the high-fidelity mockups into a native application. I developed an Android application using React Native, Expo and Android Studio as a mobile emulator.",
       "Travel Compass is a travel management application. Its main purpose is to serve as an information hub, where users can store all the information related to a given trip, like flight information, accommodation check-in and check-out dates and times, and other activities users might want to do during a holiday. It's intended for 20- to 50-year-old individuals who explicitly plan to travel for leisure at least once a year.",
