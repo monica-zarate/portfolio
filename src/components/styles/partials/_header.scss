@@ -36,11 +36,12 @@
     }
 
     &__nav-li {
-        margin-left: 40px
+        margin-left: 40px;
+        position: relative;
     }
 
     &__link{
-        color: $black;
+        // color: $black;
         @extend .nav-menu;
 
         &--active {

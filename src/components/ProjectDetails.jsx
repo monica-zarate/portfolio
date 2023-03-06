@@ -4,6 +4,8 @@ import { useLocation, Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faMinus } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Project imports
 import { PROJECTS } from "../data/projects";
@@ -12,7 +14,10 @@ export default function ProjectDetails () {
 
     useEffect(() => {
         window.scrollTo(0,0);
-    }, []);
+        AOS.init();
+    },[]);
+
+    
 
     // Access the correct project through the url path
     let location = useLocation();
@@ -42,7 +47,7 @@ export default function ProjectDetails () {
             return (
                 <div className="project">
                     <div className={`flex-c project__hero ${discipline}-bg`}>
-                        <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img" />
+                        <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img" data-aos="fade-in" data-aos-duration="750" data-aos-easing="ease-in"/>
                     </div>
                     <div className="project__wrapper">
                         <div className="project__section">
@@ -103,7 +108,7 @@ export default function ProjectDetails () {
                                     {step.imgs && step.imgs.map((img) => {
                                         return (
                                             <div className="flex-c">
-                                                <img src={img} alt={step.name} className="project__img" />
+                                                <img src={img} alt={step.name} className="project__img" data-aos="fade-in" data-aos-duration="750" data-aos-easing="ease-in"/>
                                             </div>
                                         )
                                     })}
@@ -111,7 +116,7 @@ export default function ProjectDetails () {
                                 </div>
                             )})}
                         </div>
-                        <div className={`project__section ${discipline}-bg-light`}>
+                        <div className={"project__section"}>
                             <div className="project__section-content">
                                 {__.links.repo && <p>Find the project's repository <a href={__.links.repo} title={__.links.repoTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
                                 {__.links.figmaPrototype && <p>Find the project's Figma Prototype <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
@@ -121,8 +126,10 @@ export default function ProjectDetails () {
                         </div>
                         <Link to={workSectionPath} className='project__section project__nav'>
                             <div className="project__section-content">
-                                <FontAwesomeIcon icon={faChevronLeft} className="dark-color"/>
-                                <span className="secondary-btn">Back to Projects Page</span>
+                                <div className="flex-c project__nav-wrap">
+                                    <FontAwesomeIcon icon={faChevronLeft} className="dark-color"/>
+                                    <span className="secondary-btn">Back to Projects Page</span>
+                                </div>
                             </div>
                         </Link>
                     </div>

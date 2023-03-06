@@ -1,20 +1,26 @@
 .nav-menu, .header__link, .nav-active, .header__link--active {
-  font-family: "Source Sans Bold";
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 4px;
+  color: #222222;
+  font-size: 20px;
 }
-.nav-menu:hover, .header__link:hover, .nav-active:hover, .header__link--active:hover {
-  border-bottom: 2px solid #6667AB;
-  color: #6667AB;
+.nav-menu::before, .header__link::before, .nav-active::before, .header__link--active::before {
+  content: "";
+  background-color: #6667AB;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu:hover::before, .header__link:hover::before, .nav-active:hover::before, .header__link--active:hover::before {
+  bottom: 0;
+  height: 100%;
+  background-color: #a5a6ce;
 }
 
 .nav-active, .header__link--active {
   color: #6667AB;
-  border-bottom: 2px solid #6667AB;
 }
 
 .nav-mobile, .not-found__btn, .header__mobile {
@@ -45,7 +51,7 @@
   margin-bottom: 24px;
 }
 
-.h4, .secondary-btn, .dev-btn, .design-btn {
+.h4, .secondary-btn, .dev-btn, .design-btn, .nav-menu, .header__link, .nav-active, .header__link--active {
   font-family: "Source Sans Bold";
   font-size: 16px;
   line-height: 25.6px;
@@ -67,11 +73,10 @@
 .card-description, .card__info--description, .footer, .footer p {
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0.02em;
 }
 
 .footer, .footer p {
-  letter-spacing: 0.04em;
+  font-size: 16px;
 }
 
 *,
@@ -125,9 +130,24 @@ ul, ol {
 
 .design-btn {
   color: #222222;
+  font-family: "Source Sans Regular";
   font-size: 20px;
-  padding-bottom: 4px;
-  border-bottom: solid 2px #f8c828;
+  position: relative;
+}
+.design-btn::before {
+  content: "";
+  background-color: #fbe087;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.design-btn:hover::before {
+  bottom: 0;
+  height: 100%;
 }
 
 .dev {
@@ -144,9 +164,24 @@ ul, ol {
 
 .dev-btn {
   color: #222222;
+  font-family: "Source Sans Regular";
   font-size: 20px;
-  padding-bottom: 4px;
-  border-bottom: solid 2px #5eb36c;
+  position: relative;
+}
+.dev-btn::before {
+  content: "";
+  background-color: #a1d2a9;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.dev-btn:hover::before {
+  bottom: 0;
+  height: 100%;
 }
 
 .primary-btn {
@@ -157,8 +192,6 @@ ul, ol {
 .secondary-btn {
   color: #222222;
   font-size: 20px;
-  padding-bottom: 4px;
-  border-bottom: solid 2px #6667AB;
 }
 
 .dark-color {
@@ -203,9 +236,7 @@ ul, ol {
 }
 .header__nav-li {
   margin-left: 40px;
-}
-.header__link {
-  color: #000000;
+  position: relative;
 }
 .header__mobile {
   margin-bottom: 32px;
@@ -325,9 +356,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   height: 24px;
 }
 
-.featured {
-  background-color: #fafafa;
-}
 .featured__wrapper {
   margin: 0 auto;
   padding: 32px;
@@ -529,11 +557,31 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 .project__nav {
-  display: block;
   margin-bottom: 80px;
+  display: block;
+}
+.project__nav-wrap {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.project__nav-wrap::before {
+  content: "";
+  background-color: #a5a6ce;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 6px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.project__nav-wrap:hover::before {
+  bottom: 0;
+  height: 100%;
 }
 .project__nav span {
-  margin-left: 16px;
+  margin-left: 8px;
 }
 
 .about__wrapper {
@@ -680,6 +728,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .footer__wrapper {
     flex-direction: row;
     padding: 40px 128px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__wrapper {
+    padding: 48px 128px;
+    max-width: 1024px;
   }
 }
 .footer p {

@@ -8,25 +8,32 @@ $kalam: "Kalam Bold";
 // Text Styles
 
 .nav-menu {
-    font-family: $bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    line-height: 16px * 1.5;
-    letter-spacing: 0.08em;
-    border-bottom: 2px solid $white;
-    padding-bottom: 4px;
+    color: $dark;
+    @extend .h4;
+    font-size: 20px;
     
-    // Add hover animation
-    &:hover {
-        border-bottom: 2px solid $primary-color;
-        color: $primary-color;
+    &::before {
+        content: '';
+        background-color: $primary-color;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        height: 4px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover::before {
+        bottom: 0;
+        height: 100%;
+        background-color: $primary-light;
     }
 }
 
 .nav-active {
     @extend .nav-menu;
     color: $primary-color;
-    border-bottom: 2px solid $primary-color;
 }
 
 .nav-mobile {
@@ -79,10 +86,9 @@ $kalam: "Kalam Bold";
 .card-description {
     font-size: 12px;
     line-height: 18px;
-    letter-spacing: 0.02em;
 }
 
 .footer {
     @extend .card-description;
-    letter-spacing: 0.04em;
+    font-size: 16px;
 }

@@ -13,6 +13,11 @@
             flex-direction: row;
             padding: 40px 128px;
         }
+
+        @include laptop {
+            padding: 48px 128px;
+            max-width: $laptop-width;
+        }
     }
 
     p {
