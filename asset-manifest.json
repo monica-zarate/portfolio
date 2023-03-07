@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa0eacb8.css",
-    "main.js": "/static/js/main.941ca075.js",
+    "main.css": "/static/css/main.fe93b040.css",
+    "main.js": "/static/js/main.e942613b.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/billy-thumb.jpg": "/static/media/billy-thumb.5463a77813fc24af2283.jpg",
     "static/media/travel-compass-thumb.png": "/static/media/travel-compass-thumb.eec03e4e09b4fb6bc0d3.png",
@@ -14,6 +14,7 @@
     "static/media/tc.png": "/static/media/tc.f28d812a880b11326d57.png",
     "static/media/guava-punch-thumb.jpg": "/static/media/guava-punch-thumb.c8d641ad329f39b5ace1.jpg",
     "static/media/guava-punch-1.jpg": "/static/media/guava-punch-1.958f8ce08eb75e5cfd27.jpg",
+    "static/media/bc-alphapipe-rb-bold.ttf": "/static/media/bc-alphapipe-rb-bold.0e5457b6f8e31385209f.ttf",
     "static/media/paper-lantern-thumb.jpg": "/static/media/paper-lantern-thumb.a872c79d08b945862c6a.jpg",
     "static/media/apod.png": "/static/media/apod.a053e1b402fbacb00ee3.png",
     "static/media/sourcesanspro-regular.ttf": "/static/media/sourcesanspro-regular.df87f53caf449a3b7572.ttf",
@@ -60,12 +61,12 @@
     "static/media/github-icon-black.svg": "/static/media/github-icon-black.ea7cc6b988d7e2aa87c036b140a686fa.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.ff575a9bafe8f1b2933bfaafd47bf4ee.svg",
     "index.html": "/index.html",
-    "main.aa0eacb8.css.map": "/static/css/main.aa0eacb8.css.map",
-    "main.941ca075.js.map": "/static/js/main.941ca075.js.map",
+    "main.fe93b040.css.map": "/static/css/main.fe93b040.css.map",
+    "main.e942613b.js.map": "/static/js/main.e942613b.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa0eacb8.css",
-    "static/js/main.941ca075.js"
+    "static/css/main.fe93b040.css",
+    "static/js/main.e942613b.js"
   ]
 }
