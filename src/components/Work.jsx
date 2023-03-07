@@ -55,8 +55,8 @@ export default function Work() {
             <div className="projects__wrapper">
                 <h2 className="projects__title">Projects</h2>
                 <div className="flex-c projects__chips">
-                    <span id="design" className={designProjects === true ? "projects__chip--active" : "projects__chip"}>UX Design</span>
-                    <span id="dev" className={devProjects === true ? "projects__chip--active" : "projects__chip"}>Development</span>
+                    <span id="design" className={designProjects === true ? "design-chip--active" : "design-chip"}>UX Design</span>
+                    <span id="dev" className={devProjects === true ? "dev-chip--active" : "dev-chip"}>Development</span>
                 </div>
                 {printProjects()}
             </div>

@@ -10,13 +10,25 @@ function Card({project}) {
 
     location.pathname === '/' ? path = `work/${project.path}` : path = `${location.pathname}/${project.path}`;
 
+    // Define the project's discipline to display appropriate background colour
+    let discipline = project.discipline === 'development' ? 'dev' : 'design';
+
     return (
         <Link to={path} title={project.title} className="flex-c card">
             <img src={project.images.thumb} alt={project.images.thumbAlt} className="card__img"/>
-            <div className="card__info">
-                <span className="card__info--chip">{project.chip}</span>
+            <div className="flex-c card__info">
+                <span className={`card-${discipline}-chip`}>{project.chip}</span>
                 <h3 className="card__info--title">{project.title}</h3>
                 <p className="card__info--description">{project.description}</p>
+                <ul className="flex-c card__tools">
+                    {project.featuredTools.map((__) => {
+                        return (
+                            <li className="flex-c">
+                                <img src={__.icon} alt={__.name} className="card__tool-icon"/>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
         </Link>
     );

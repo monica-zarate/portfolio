@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 
 // Project imports
-import logo from "../assets/imgs/logo.svg";
+import logo from "../assets/imgs/monica-logo.svg";
 
 function Header() {
 
@@ -26,7 +26,7 @@ function Header() {
     return (
         <header className="header">
             <div className="flex-c header__wrapper">
-                <NavLink to="/" title="Home Page">
+                <NavLink to="/" title="Home Page" className="flex-c">
                     <img src={logo} alt="Monica Zarate logo" className="header__logo"/>
                 </NavLink>
                 <nav className="header__nav">

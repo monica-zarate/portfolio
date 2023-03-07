@@ -4,6 +4,7 @@ $light: "Source Sans Light";
 $regular: "Source Sans Regular";
 $bold: "Source Sans Bold";
 $kalam: "Kalam Bold";
+$alphapipe: "BC Alphapipe L Regular";
 
 // Text Styles
 
@@ -17,17 +18,15 @@ $kalam: "Kalam Bold";
         background-color: $primary-color;
         position: absolute;
         left: 0;
-        bottom: 0px;
-        width: 100%;
+        bottom: -4px;
+        width: 50%;
         height: 4px;
         z-index: -1;
         transition: all .3s ease-in-out;
     }
 
     &:hover::before {
-        bottom: 0;
-        height: 100%;
-        background-color: $primary-light;
+        width: 100%;
     }
 }
 
@@ -46,7 +45,8 @@ $kalam: "Kalam Bold";
 }
 
 .h1 {
-    font-family: $kalam;
+    font-family: $alphapipe;
+    text-transform: capitalize;
     font-size: 32px;
     line-height: 32px;
 }
@@ -55,6 +55,7 @@ $kalam: "Kalam Bold";
     font-family: $light;
     font-size: 32px;
     line-height: 32px;
+    color: $secondary-color;
 }
 
 .h3 {

@@ -8,11 +8,7 @@
         padding: 32px;
 
         @include laptop {
-            padding: 64px 64px 96px;
-        }
-
-        @include small-desktop {
-            padding: 72px 200px 200px;
+            padding: 72px 120px;
             max-width: $small-desktop-width;
         }
     }
@@ -47,7 +43,6 @@
     &__text {
 
         @include laptop {
-            min-width: 50%;
             margin-right: 32px;
         }
 
@@ -71,11 +66,16 @@
     }
 
     &__cta {
-        color: $primary-color;
+        color: $secondary-color;
+    }
+
+    &__links-wrap {
+        position: relative;
+        display: block;
     }
 
     &__links {
-        color: $primary-color;
-        text-decoration: underline;
+        @extend .nav-menu;
+        position: inherit;
     }
 }

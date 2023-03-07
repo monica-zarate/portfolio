@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     @extend .body-light;
     color: $dark;
-    background-color: $light-bg;
+    background-color: $white;
 }
 
 a {
@@ -58,22 +58,21 @@ ul, ol {
     font-size: 20px;
     position: relative;
 
-        &::before {
-            content: '';
-            background-color: $design-light;
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 4px;
-            z-index: -1;
-            transition: all .3s ease-in-out;
-        }
-    
-        &:hover::before {
-            bottom: 0;
-            height: 100%;
-        }
+    &::before {
+        content: '';
+        background-color: $design;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 50%;
+        height: 4px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
 }
 
 .dev {
@@ -97,19 +96,18 @@ ul, ol {
 
     &::before {
         content: '';
-        background-color: $development-light;
+        background-color: $development;
         position: absolute;
         left: 0;
-        bottom: -2px;
-        width: 100%;
+        bottom: -4px;
+        width: 50%;
         height: 4px;
         z-index: -1;
         transition: all .3s ease-in-out;
     }
 
     &:hover::before{
-        bottom: 0;
-        height: 100%;
+        width: 100%;
     }
 }
 
@@ -118,12 +116,76 @@ ul, ol {
     color: $light-bg;
 }
 
-.secondary-btn {
-    color: $dark;
-    @extend .h4;
-    font-size: 20px;
-}
-
 .dark-color {
     color: $dark;
+}
+
+.chip-btn {
+    color: $dark;
+    border-radius: 50px;
+    padding: 4px 16px;
+    min-width: 120px;
+    @extend .chips;
+    cursor: pointer;
+    text-align: center;
+    background-color: $dark;
+    color: $white;
+}
+
+.design-chip{
+    @extend .chip-btn;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    font-family: $bold;
+    transition: all .3s ease-in-out;
+
+    &--active{
+        @extend .design-chip;
+        color: $dark;
+        background-color: $design;
+    }
+    &:hover{
+        @extend .box-shadow;
+        transform: scale(1.05);
+        background-color: $design;
+        color: $dark;
+    }
+}
+
+.dev-chip{
+    @extend .chip-btn;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    font-family: $bold;
+    transition: all .3s ease-in-out;
+
+    &--active{
+        @extend .dev-chip;
+        color: $dark;
+        background-color: $development;
+    }
+    &:hover{
+        @extend .box-shadow;
+        transform: scale(1.05);
+        background-color: $development;
+        color: $dark;
+    }
+}
+
+.card-design-chip{
+    @extend .chip-btn;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    font-family: $bold;
+    color: $dark;
+    background-color: $design;
+}
+
+.card-dev-chip{
+    @extend .chip-btn;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    font-family: $bold;
+    color: $dark;
+    background-color: $development;
 }

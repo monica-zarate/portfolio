@@ -1,26 +1,24 @@
-.nav-menu, .header__link, .nav-active, .header__link--active {
+.nav-menu, .about__links, .project__nav-wrap span, .header__link, .nav-active, .header__link--active {
   color: #222222;
   font-size: 20px;
 }
-.nav-menu::before, .header__link::before, .nav-active::before, .header__link--active::before {
+.nav-menu::before, .about__links::before, .project__nav-wrap span::before, .header__link::before, .nav-active::before, .header__link--active::before {
   content: "";
-  background-color: #6667AB;
+  background-color: #e087fb;
   position: absolute;
   left: 0;
-  bottom: 0px;
-  width: 100%;
+  bottom: -4px;
+  width: 50%;
   height: 4px;
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
-.nav-menu:hover::before, .header__link:hover::before, .nav-active:hover::before, .header__link--active:hover::before {
-  bottom: 0;
-  height: 100%;
-  background-color: #a5a6ce;
+.nav-menu:hover::before, .about__links:hover::before, .project__nav-wrap span:hover::before, .header__link:hover::before, .nav-active:hover::before, .header__link--active:hover::before {
+  width: 100%;
 }
 
 .nav-active, .header__link--active {
-  color: #6667AB;
+  color: #e087fb;
 }
 
 .nav-mobile, .not-found__btn, .header__mobile {
@@ -33,7 +31,8 @@
 }
 
 .h1, .intro__h1 {
-  font-family: "Kalam Bold";
+  font-family: "BC Alphapipe L Regular";
+  text-transform: capitalize;
   font-size: 32px;
   line-height: 32px;
 }
@@ -42,6 +41,7 @@
   font-family: "Source Sans Light";
   font-size: 32px;
   line-height: 32px;
+  color: #217f04;
 }
 
 .h3, .card__info--title {
@@ -51,7 +51,7 @@
   margin-bottom: 24px;
 }
 
-.h4, .secondary-btn, .dev-btn, .design-btn, .nav-menu, .header__link, .nav-active, .header__link--active {
+.h4, .dev-btn, .design-btn, .nav-menu, .about__links, .project__nav-wrap span, .header__link, .nav-active, .header__link--active {
   font-family: "Source Sans Bold";
   font-size: 16px;
   line-height: 25.6px;
@@ -64,7 +64,7 @@
   line-height: 28px;
 }
 
-.chips, .projects__chip--active, .projects__chip, .card__info--chip {
+.chips, .chip-btn, .card-dev-chip, .card-design-chip, .dev-chip, .dev-chip--active, .design-chip, .design-chip--active {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.04em;
@@ -90,7 +90,7 @@
 body {
   min-height: 100vh;
   color: #222222;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 a {
@@ -108,7 +108,7 @@ ul, ol {
   align-items: center;
 }
 
-.box-shadow, .not-found__btn, .project__img, .card, .header {
+.box-shadow, .not-found__btn, .project__img, .card:hover, .header, .dev-chip:hover, .dev-chip--active:hover, .design-chip:hover, .design-chip--active:hover {
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -117,15 +117,15 @@ ul, ol {
 }
 
 .design {
-  color: #f8c828;
+  color: #fbe087;
 }
 
 .design-bg {
-  background-color: #f8c828;
+  background-color: #fbe087;
 }
 
 .design-bg-light {
-  background-color: #fbe087;
+  background-color: #fef9e6;
 }
 
 .design-btn {
@@ -139,27 +139,26 @@ ul, ol {
   background-color: #fbe087;
   position: absolute;
   left: 0;
-  bottom: -2px;
-  width: 100%;
+  bottom: -4px;
+  width: 50%;
   height: 4px;
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
 .design-btn:hover::before {
-  bottom: 0;
-  height: 100%;
+  width: 100%;
 }
 
 .dev {
-  color: #5eb36c;
+  color: #87a2fb;
 }
 
 .dev-bg {
-  background-color: #5eb36c;
+  background-color: #87a2fb;
 }
 
 .dev-bg-light {
-  background-color: #a1d2a9;
+  background-color: #e6ecfe;
 }
 
 .dev-btn {
@@ -170,32 +169,85 @@ ul, ol {
 }
 .dev-btn::before {
   content: "";
-  background-color: #a1d2a9;
+  background-color: #87a2fb;
   position: absolute;
   left: 0;
-  bottom: -2px;
-  width: 100%;
+  bottom: -4px;
+  width: 50%;
   height: 4px;
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
 .dev-btn:hover::before {
-  bottom: 0;
-  height: 100%;
+  width: 100%;
 }
 
 .primary-btn {
-  background-color: #6667AB;
+  background-color: #e087fb;
   color: #f2f2f2;
-}
-
-.secondary-btn {
-  color: #222222;
-  font-size: 20px;
 }
 
 .dark-color {
   color: #222222;
+}
+
+.chip-btn, .card-dev-chip, .card-design-chip, .dev-chip, .dev-chip--active, .design-chip, .design-chip--active {
+  color: #222222;
+  border-radius: 50px;
+  padding: 4px 16px;
+  min-width: 120px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.design-chip, .design-chip--active {
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  font-family: "Source Sans Bold";
+  transition: all 0.3s ease-in-out;
+}
+.design-chip--active {
+  color: #222222;
+  background-color: #fbe087;
+}
+.design-chip:hover, .design-chip--active:hover {
+  transform: scale(1.05);
+  background-color: #fbe087;
+  color: #222222;
+}
+
+.dev-chip, .dev-chip--active {
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  font-family: "Source Sans Bold";
+  transition: all 0.3s ease-in-out;
+}
+.dev-chip--active {
+  color: #222222;
+  background-color: #87a2fb;
+}
+.dev-chip:hover, .dev-chip--active:hover {
+  transform: scale(1.05);
+  background-color: #87a2fb;
+  color: #222222;
+}
+
+.card-design-chip {
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  font-family: "Source Sans Bold";
+  color: #222222;
+  background-color: #fbe087;
+}
+
+.card-dev-chip {
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  font-family: "Source Sans Bold";
+  color: #222222;
+  background-color: #87a2fb;
 }
 
 /* Header Styles */
@@ -223,7 +275,7 @@ ul, ol {
   }
 }
 .header__logo {
-  height: 36px;
+  height: 50px;
   width: auto;
 }
 .header__nav {
@@ -279,7 +331,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #6667AB;
+  background: #e087fb;
   padding: 32px 0;
   font-size: 32px;
 }
@@ -335,10 +387,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-bottom: 16px;
 }
 .intro__h1--highlight {
-  color: #6667AB;
+  color: #e087fb;
 }
 .intro__cta {
-  color: #6667AB;
+  color: #217f04;
   margin: 36px 0 16px;
 }
 .intro__social {
@@ -356,6 +408,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   height: 24px;
 }
 
+.featured {
+  background-color: #f2f2f2;
+}
 .featured__wrapper {
   margin: 0 auto;
   padding: 32px;
@@ -376,11 +431,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background-color: #ffffff;
   color: #000000;
   border-radius: 8px;
-  margin: 0 auto 32px;
+  margin: 0 auto 64px;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   max-width: 345px;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .card {
+    height: 340px;
+  }
+}
+.card:hover {
+  transform: scale(1.005);
 }
 @media (min-width: 1024px) {
   .card {
@@ -400,18 +464,27 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 .card__info {
+  height: 100%;
   padding: 32px 50px;
-}
-.card__info--chip {
-  background-color: #EFEFEF;
-  border-radius: 50px;
-  padding: 4px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .card__info--title {
-  margin: 24px 0 16px;
+  margin: 24px 0;
 }
+.card__tools {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.card__tool-icon {
+  height: 32px;
+  width: auto;
+  margin: 24px 8px 0 0;
+}
+
 .projects {
-  background-color: #fafafa;
+  background-color: #f2f2f2;
 }
 .projects__wrapper {
   margin: 0 auto;
@@ -433,26 +506,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   max-width: 264px;
   justify-content: space-between;
 }
-.projects__chip {
-  background-color: #EFEFEF;
-  border-radius: 50px;
-  padding: 4px 16px;
-  min-width: 120px;
-  cursor: pointer;
-  text-align: center;
-}
-.projects__chip:hover {
-  background-color: #6667AB;
-  color: #ffffff;
-}
-.projects__chip--active {
-  border-radius: 50px;
-  padding: 4px 16px;
-  min-width: 120px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #6667AB;
-  color: #ffffff;
+@media (min-width: 1024px) {
+  .projects__chips {
+    margin-bottom: 64px;
+  }
 }
 
 .project__hero {
@@ -565,23 +622,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: -moz-fit-content;
   width: fit-content;
 }
-.project__nav-wrap::before {
-  content: "";
-  background-color: #a5a6ce;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 6px;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-.project__nav-wrap:hover::before {
-  bottom: 0;
-  height: 100%;
-}
-.project__nav span {
+.project__nav-wrap span {
   margin-left: 8px;
+}
+.project__nav-wrap svg {
+  height: 16px;
 }
 
 .about__wrapper {
@@ -591,12 +636,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 @media (min-width: 1024px) {
   .about__wrapper {
-    padding: 64px 64px 96px;
-  }
-}
-@media (min-width: 1280px) {
-  .about__wrapper {
-    padding: 72px 200px 200px;
+    padding: 72px 120px;
     max-width: 1280px;
   }
 }
@@ -629,7 +669,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 @media (min-width: 1024px) {
   .about__text {
-    min-width: 50%;
     margin-right: 32px;
   }
 }
@@ -652,11 +691,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 .about__cta {
-  color: #6667AB;
+  color: #217f04;
+}
+.about__links-wrap {
+  position: relative;
+  display: block;
 }
 .about__links {
-  color: #6667AB;
-  text-decoration: underline;
+  position: inherit;
 }
 
 .not-found {
@@ -707,7 +749,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .not-found__btn {
   text-transform: capitalize;
-  background-color: #6667AB;
+  background-color: #e087fb;
   margin: 0 32px;
   padding: 12px 24px;
   border-radius: 5px;
@@ -715,7 +757,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Footer */
 .footer, .footer p {
-  background-color: #6667AB;
+  background-color: #217f04;
 }
 .footer__wrapper {
   max-width: 1280px;
@@ -795,4 +837,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @font-face {
   font-family: "Source Sans Bold";
   src: url("../../assets/fonts/sourcesanspro-bold.ttf");
+}
+@font-face {
+  font-family: "BC Alphapipe L Regular";
+  src: url("../../assets/fonts/bc-alphapipe-l-regular.ttf");
 }/*# sourceMappingURL=main.css.map */

@@ -23,7 +23,7 @@ export const PROJECTS = [
     title: "Guava Punch: Logo & Poster",
     subtitle: "Logo and promotional Poster",
     images: {
-      thumb: require("../assets/imgs/projects/guava-punch-thumb.png"),
+      thumb: require("../assets/imgs/projects/guava-punch-thumb.jpg"),
       thumbAlt: "guava punch poster mockup",
       featuredImg: require("../assets/imgs/projects/guava-punch.jpg"),
       featuredImgAlt: "guava punch poster mockup",
@@ -45,6 +45,11 @@ export const PROJECTS = [
       siteTitle: "",
     },
     tools: [
+      { name: "Adobe Illustrator", icon: toolsIcons.ai },
+      { name: "Adobe Photoshop", icon: toolsIcons.ps },
+      { name: "Adobe Dimension", icon: toolsIcons.dn },
+    ],
+    featuredTools: [
       { name: "Adobe Illustrator", icon: toolsIcons.ai },
       { name: "Adobe Photoshop", icon: toolsIcons.ps },
       { name: "Adobe Dimension", icon: toolsIcons.dn },
@@ -108,10 +113,10 @@ export const PROJECTS = [
   },
   {
     id: "2",
-    title: "Paper Lantern Bookstore: Website and App",
+    title: "Paper Lantern Bookstore: Web and App",
     subtitle: "Website and mobile app prototype and testing",
     images: {
-      thumb: require("../assets/imgs/projects/paper-lantern-thumb.png"),
+      thumb: require("../assets/imgs/projects/paper-lantern-thumb.jpg"),
       thumbAlt: "paper lantern mobile interface preview",
       featuredImg: require("../assets/imgs/projects/paper-lantern.png"),
       featuredImgAlt: "paper lantern interface preview",
@@ -140,6 +145,10 @@ export const PROJECTS = [
       { name: "Figma", icon: toolsIcons.figma },
       { name: "Useberry", icon: toolsIcons.useberry },
       { name: "Maze", icon: toolsIcons.maze },
+    ],
+    featuredTools: [
+      { name: "Adobe Xd", icon: toolsIcons.xd },
+      { name: "Figma", icon: toolsIcons.figma },
     ],
     intro: [
       "To achieve the prototypes, I based my design decisions on User Personas, User Scenarios and User Flows. The interfaces started with low-fidelity wireframes, which evolved into high-fidelity mockups. The project's final stage consisted of testing our prototypes and applying revisions after users' feedback and data analysis.",
@@ -211,7 +220,7 @@ export const PROJECTS = [
     title: "ACNH Villagers: Website",
     subtitle: "PHP classes, constructors and associative arrays",
     images: {
-      thumb: require("../assets/imgs/projects/acnh-thumb.png"),
+      thumb: require("../assets/imgs/projects/acnh-thumb.jpg"),
       thumbAlt: "animal crossing villagers website mockup",
       featuredImg: require("../assets/imgs/projects/acnh.png"),
       featuredImgAlt: "animal crossing villagers website mockup",
@@ -238,6 +247,7 @@ export const PROJECTS = [
       { name: "PHP", icon: toolsIcons.php },
       { name: "MAMP", icon: toolsIcons.mamp },
     ],
+    featuredTools: [{ name: "PHP", icon: toolsIcons.php }],
     intro: [
       "Using Animal Crossing (a popular video game I like to play) characters as a starting point, this project shows the current residents I have on my island. All items in this collection have shared properties, and I'm looping through them so that I can create a card per character that displays its information.",
       "I created two types of residents: villagers and NPCs (non-playable characters). The project makes use of a parent class, that's used to create two child classes, allowing for variations amongst the displayed data. The page was built making use of partials for its different sections.",
@@ -292,7 +302,7 @@ export const PROJECTS = [
     title: "NASA's APOD: Website",
     subtitle: "Third party data request using the Fetch API",
     images: {
-      thumb: require("../assets/imgs/projects/apod-thumb.png"),
+      thumb: require("../assets/imgs/projects/apod-thumb.jpg"),
       thumbAlt: "astronomy picture of the day mockup website",
       featuredImg: require("../assets/imgs/projects/apod.png"),
       featuredImgAlt: "astronomy picture of the day mockup website",
@@ -319,6 +329,7 @@ export const PROJECTS = [
       { name: "Javascript", icon: toolsIcons.js },
       { name: "Postman", icon: toolsIcons.postman },
     ],
+    featuredTools: [{ name: "Javascript", icon: toolsIcons.js }],
     intro: [
       "To practice my Javascript skills, I decided to build my own version of NASA's Astronomy Picture of the Day. This project heavily focuses on the map() array method, writing DRY code and the ability to request data from a third-party API.",
     ],
@@ -365,7 +376,7 @@ export const PROJECTS = [
     title: "Travel Compass: Phase 1 Design",
     subtitle: "Travel Management Mobile App Interface Design",
     images: {
-      thumb: require("../assets/imgs/projects/tc-design-thumb.png"),
+      thumb: require("../assets/imgs/projects/travel-compass-thumb.png"),
       thumbAlt: "travel compass mobile interface preview",
       featuredImg: require("../assets/imgs/projects/tc.png"),
       featuredImgAlt: "travel compass mobile interface preview",
@@ -388,6 +399,7 @@ export const PROJECTS = [
       siteTitle: "",
     },
     tools: [{ name: "Adobe Xd", icon: toolsIcons.xd }],
+    featuredTools: [{ name: "Adobe Xd", icon: toolsIcons.xd }],
     intro: [
       "The Travel Compass prototype is presented as the first iteration of a travel management tool, it shows an example of how an existing user would create a new trip. The application's functionality would allow users to have all the information related to a trip in one place, you would be able to read the trip's itinerary through a daily breakdown.",
     ],
@@ -460,7 +472,7 @@ export const PROJECTS = [
     title: "Billy Expense Tracker: SPA",
     subtitle: "Expense Tracker Single Page Application Interface Design",
     images: {
-      thumb: require("../assets/imgs/projects/billy-thumb.png"),
+      thumb: require("../assets/imgs/projects/billy-thumb.jpg"),
       thumbAlt: "Billy interface preview",
       featuredImg: require("../assets/imgs/projects/billy.png"),
       featuredImgAlt: "Billy interface preview",
@@ -483,6 +495,7 @@ export const PROJECTS = [
       siteTitle: "",
     },
     tools: [{ name: "Figma", icon: toolsIcons.figma }],
+    featuredTools: [{ name: "Figma", icon: toolsIcons.figma }],
     intro: [
       "Billy's prototype is presented as the first iteration of an expense tracker tool that helps users manage their expenses and income, it shows an example of how an existing user would add a new expense. The application's functionality would offer users an easy-to-read overview of all the information related to their personal finances in one place. Billy is targeted at people who are new to expense tracking and budgeting.",
     ],
@@ -564,7 +577,7 @@ export const PROJECTS = [
     title: "Travel Compass: Phase 2 Development",
     subtitle: "React Native Application for Android devices",
     images: {
-      thumb: require("../assets/imgs/projects/tc-dev-thumb.png"),
+      thumb: require("../assets/imgs/projects/travel-compass-thumb.png"),
       thumbAlt: "travel compass mobile interface preview",
       featuredImg: require("../assets/imgs/projects/tc.png"),
       featuredImgAlt: "travel compass mobile interface preview",
@@ -590,6 +603,7 @@ export const PROJECTS = [
       { name: "Expo", icon: toolsIcons.expo },
       { name: "Android Studio", icon: toolsIcons.android },
     ],
+    featuredTools: [{ name: "React Native", icon: toolsIcons.react }],
     intro: [
       "After the Design Phase was completed, I wanted to expand the Travel Compass Project by taking the high-fidelity mockups into a native application. I developed an Android application using React Native, Expo and Android Studio as a mobile emulator.",
       "Travel Compass is a travel management application. Its main purpose is to serve as an information hub, where users can store all the information related to a given trip, like flight information, accommodation check-in and check-out dates and times, and other activities users might want to do during a holiday. It's intended for 20- to 50-year-old individuals who explicitly plan to travel for leisure at least once a year.",

@@ -118,20 +118,20 @@ export default function ProjectDetails () {
                         </div>
                         <div className={"project__section"}>
                             <div className="project__section-content">
-                                {__.links.repo && <p>Find the project's repository <a href={__.links.repo} title={__.links.repoTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
-                                {__.links.figmaPrototype && <p>Find the project's Figma Prototype <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
-                                {__.links.xdPrototype && <p>Find the project's Adobe Xd Prototype <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
-                                {__.links.site && <p>Find the project's website <a href={__.links.site} title={__.links.siteTitle} target="_blank" className={`${discipline}-btn`}>here</a>.</p>}
+                                {__.links.repo && <p>Find the project's <a href={__.links.repo} title={__.links.repoTitle} target="_blank" className={`${discipline}-btn`}>Github Repository</a>.</p>}
+                                {__.links.figmaPrototype && <p>Find the project's <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" className={`${discipline}-btn`}>Figma Prototype</a>.</p>}
+                                {__.links.xdPrototype && <p>Find the project's <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" className={`${discipline}-btn`}>Adobe Xd Prototype</a>.</p>}
+                                {__.links.site && <p>Find the project's <a href={__.links.site} title={__.links.siteTitle} target="_blank" className={`${discipline}-btn`}>website</a>.</p>}
                             </div>
                         </div>
-                        <Link to={workSectionPath} className='project__section project__nav'>
+                        <div className='project__section project__nav'>
                             <div className="project__section-content">
-                                <div className="flex-c project__nav-wrap">
+                                <Link to={workSectionPath} className="flex-c project__nav-wrap">
                                     <FontAwesomeIcon icon={faChevronLeft} className="dark-color"/>
-                                    <span className="secondary-btn">Back to Projects Page</span>
-                                </div>
+                                    <span>Back to Projects Page</span>
+                                </Link>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                 </div>
             )

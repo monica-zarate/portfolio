@@ -4,12 +4,22 @@
     background-color: $white;
     color: $black;
     border-radius: 8px;
-    margin: 0 auto 32px;
-    @extend .box-shadow;
+    margin: 0 auto 64px;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
     max-width: 345px;
+    transition: all .3s ease-in-out;
+
+    @include laptop {
+        height: 340px;
+    }
+
+
+    &:hover {
+        @extend .box-shadow;
+        transform: scale(1.005);
+    }
 
     @include laptop {
         flex-direction: row;
@@ -28,22 +38,30 @@
     }
 
     &__info {
+        height: 100%;
         padding: 32px 50px;
-
-        &--chip {
-            background-color: $chips-bg;
-            border-radius: 50px;
-            padding: 4px 16px;
-            @extend .chips;
-        }
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
     
         &--title {
-            margin: 24px 0 16px;
+            margin: 24px 0;
             @extend .h3;
         }
     
         &--description {
             @extend .card-description;
         }
+    }
+
+    &__tools {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    &__tool-icon {
+        height: 32px;
+        width: auto;
+        margin: 24px 8px 0 0;
     }
 }
