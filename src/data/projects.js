@@ -113,7 +113,7 @@ export const PROJECTS = [
   },
   {
     id: "2",
-    title: "Paper Lantern Bookstore: Web and App",
+    title: "Paper Lantern Bookstore",
     subtitle: "Website and mobile app prototype and testing",
     images: {
       thumb: require("../assets/imgs/projects/paper-lantern-thumb.jpg"),
@@ -122,7 +122,7 @@ export const PROJECTS = [
       featuredImgAlt: "paper lantern interface preview",
     },
     description:
-      "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website optimized for a desktop environment and a mobile interface.",
+      "Designed, developed and tested a prototype for a fictitious bookstore. The project includes a website and a mobile interface.",
     chip: "UX Design",
     discipline: "design",
     path: "paper-lantern",
@@ -226,7 +226,7 @@ export const PROJECTS = [
       featuredImgAlt: "animal crossing villagers website mockup",
     },
     description:
-      "Designed and developed a site listing a collection of Animal Crossing villagers. The goal was to include classes and constructor methods. This project considers knowledge of arrays loops and functions in PHP.",
+      "Designed and developed a site listing a collection of Animal Crossing villagers. The project includes classes and constructor methods and knowledge of arrays loops and functions in PHP.",
     chip: "Development",
     discipline: "development",
     path: "acnh",
@@ -308,7 +308,7 @@ export const PROJECTS = [
       featuredImgAlt: "astronomy picture of the day mockup website",
     },
     description:
-      "Designed and developed a site that consumes the NASA APOD API to display the Astronomy Picture of the Day. The goal was to use the Fetch API to make a request to an endpoint and display content programmatically.",
+      "Designed and developed a site that consumes the NASA APOD API to display the Astronomy Picture of the Day. The project uses the Fetch API to make a request to an endpoint.",
     chip: "Development",
     discipline: "development",
     path: "apod",

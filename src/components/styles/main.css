@@ -210,11 +210,11 @@ ul, ol {
 }
 .design-chip--active {
   color: #222222;
-  background-color: #fbe087;
+  background-color: #fce59a;
 }
 .design-chip:hover, .design-chip--active:hover {
   transform: scale(1.05);
-  background-color: #fbe087;
+  background-color: #fce59a;
   color: #222222;
 }
 
@@ -226,11 +226,11 @@ ul, ol {
 }
 .dev-chip--active {
   color: #222222;
-  background-color: #87a2fb;
+  background-color: #c0cefd;
 }
 .dev-chip:hover, .dev-chip--active:hover {
   transform: scale(1.05);
-  background-color: #87a2fb;
+  background-color: #c0cefd;
   color: #222222;
 }
 
@@ -239,7 +239,7 @@ ul, ol {
   text-transform: uppercase;
   font-family: "Source Sans Bold";
   color: #222222;
-  background-color: #fbe087;
+  background-color: #fce59a;
 }
 
 .card-dev-chip {
@@ -247,7 +247,7 @@ ul, ol {
   text-transform: uppercase;
   font-family: "Source Sans Bold";
   color: #222222;
-  background-color: #87a2fb;
+  background-color: #c0cefd;
 }
 
 /* Header Styles */
@@ -388,6 +388,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .intro__h1--highlight {
   color: #e087fb;
+  font-family: "BC Alphapipe RB Bold";
 }
 .intro__cta {
   color: #217f04;
@@ -478,8 +479,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   justify-content: flex-start;
 }
 .card__tool-icon {
-  height: 32px;
-  width: auto;
+  height: auto;
+  width: 32px;
   margin: 24px 8px 0 0;
 }
 
@@ -841,4 +842,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @font-face {
   font-family: "BC Alphapipe L Regular";
   src: url("../../assets/fonts/bc-alphapipe-l-regular.ttf");
+}
+@font-face {
+  font-family: "BC Alphapipe RB Bold";
+  src: url("../../assets/fonts/bc-alphapipe-rb-bold.ttf");
 }/*# sourceMappingURL=main.css.map */

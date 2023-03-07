@@ -142,12 +142,12 @@ ul, ol {
     &--active{
         @extend .design-chip;
         color: $dark;
-        background-color: $design;
+        background-color: $design-chip;
     }
     &:hover{
         @extend .box-shadow;
         transform: scale(1.05);
-        background-color: $design;
+        background-color: $design-chip;
         color: $dark;
     }
 }
@@ -162,12 +162,12 @@ ul, ol {
     &--active{
         @extend .dev-chip;
         color: $dark;
-        background-color: $development;
+        background-color: $development-chip;
     }
     &:hover{
         @extend .box-shadow;
         transform: scale(1.05);
-        background-color: $development;
+        background-color: $development-chip;
         color: $dark;
     }
 }
@@ -178,7 +178,7 @@ ul, ol {
     text-transform: uppercase;
     font-family: $bold;
     color: $dark;
-    background-color: $design;
+    background-color: $design-chip;
 }
 
 .card-dev-chip{
@@ -187,5 +187,5 @@ ul, ol {
     text-transform: uppercase;
     font-family: $bold;
     color: $dark;
-    background-color: $development;
+    background-color: $development-chip;
 }
