@@ -1,6 +1,7 @@
 /* Footer */
 .footer {
-    background-color: $secondary-color;
+    border-top: 4px solid $primary-color;
+    background-color: $dark;
     
     &__wrapper {
         max-width: $small-desktop-width;
@@ -21,10 +22,11 @@
     }
 
     p {
-        color: $white;
+        color: $light-bg;
         text-align: center;
         @extend .footer;
         margin-bottom: 24px;
+        border-top: unset;
 
         @include laptop {
             margin: 0;
@@ -48,8 +50,9 @@
             height: 24px;
         }
 
-        img {
+        svg {
             height: 24px;
+            color: $light-bg;
 
         }
     }

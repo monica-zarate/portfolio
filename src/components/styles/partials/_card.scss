@@ -10,6 +10,7 @@
     flex-direction: column;
     max-width: 345px;
     transition: all .3s ease-in-out;
+    border: 1px solid $light-border;
 
     @include laptop {
         height: 340px;
@@ -34,6 +35,7 @@
         @include laptop {
             border-radius: 8px 0 0 8px;
             width: 340px;
+            height: 338px;
         }
     }
 
@@ -42,16 +44,22 @@
         padding: 32px 50px;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: flex-start;
     
         &--title {
-            margin: 24px 0;
+            margin-bottom: 24px;
             @extend .h3;
         }
     
         &--description {
             @extend .card-description;
+            margin-bottom: 24px;
         }
+    }
+
+    &__chip {
+        color: $gray;
+        margin-bottom: 24px;
     }
 
     &__tools {
@@ -62,6 +70,6 @@
     &__tool-icon {
         height: auto;
         width: 32px;
-        margin: 24px 8px 0 0;
+        margin-right: 8px;
     }
 }

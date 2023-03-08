@@ -3,7 +3,7 @@
 .intro {
     flex-direction: column;
     padding: 32px;
-    border-bottom: 1px solid rgba(102, 103, 171, 0.25);
+    border-bottom: 1px solid $light-border;
 
     @include laptop {
         flex-direction: row;
@@ -39,14 +39,15 @@
         margin-bottom: 16px;
 
         &--highlight {
-            color: $primary-color;
-            font-family: $alphapipe-bold;
+            color: $secondary-color;
+            font-family: $urbanist-semi;
         }
     }
 
     &__cta {
         color: $secondary-color;
         margin: 36px 0 16px;
+        font-family: $urbanist-semi;
     }
 
     &__social {
@@ -61,8 +62,9 @@
             height: 24px;
         }
 
-        img {
+        svg {
             height: 24px;
+            color: $dark;
             
         }
     }

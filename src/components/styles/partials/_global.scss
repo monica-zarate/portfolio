@@ -35,23 +35,15 @@ ul, ol {
     box-shadow: 0px 4px 4px 2px $box-shadow;
 }
 
-.box-shadow-light {
-    box-shadow: 0px 4px 4px $box-shadow-dark;
+.projects-bg{
+    background-color: $projects;
 }
 
-.design {
-    color: $design;
+.projects-bg-light {
+    background-color: $projects-light;
 }
 
-.design-bg{
-    background-color: $design;
-}
-
-.design-bg-light {
-    background-color: $design-light;
-}
-
-.design-btn {
+.projects-btn {
     color: $dark;
     @extend .h4;
     font-family: $regular;
@@ -60,7 +52,7 @@ ul, ol {
 
     &::before {
         content: '';
-        background-color: $design;
+        background-color: $projects;
         position: absolute;
         left: 0;
         bottom: -4px;
@@ -71,42 +63,6 @@ ul, ol {
     }
 
     &:hover::before {
-        width: 100%;
-    }
-}
-
-.dev {
-    color: $development;
-}
-
-.dev-bg {
-    background-color: $development;
-}
-
-.dev-bg-light {
-    background-color: $development-light;
-}
-
-.dev-btn {
-    color: $dark;
-    @extend .h4;
-    font-family: $regular;
-    font-size: 20px;
-    position: relative;
-
-    &::before {
-        content: '';
-        background-color: $development;
-        position: absolute;
-        left: 0;
-        bottom: -4px;
-        width: 50%;
-        height: 4px;
-        z-index: -1;
-        transition: all .3s ease-in-out;
-    }
-
-    &:hover::before{
         width: 100%;
     }
 }
@@ -127,65 +83,20 @@ ul, ol {
     min-width: 120px;
     @extend .chips;
     cursor: pointer;
-    text-align: center;
     background-color: $dark;
     color: $white;
-}
-
-.design-chip{
-    @extend .chip-btn;
-    letter-spacing: 0.5;
-    text-transform: uppercase;
-    font-family: $bold;
     transition: all .3s ease-in-out;
 
-    &--active{
-        @extend .design-chip;
+    &--active {
+        @extend .chip-btn;
         color: $dark;
-        background-color: $design-chip;
+        background-color: $projects;
     }
-    &:hover{
+
+    &:hover {
         @extend .box-shadow;
         transform: scale(1.05);
-        background-color: $design-chip;
+        background-color: $projects;
         color: $dark;
     }
-}
-
-.dev-chip{
-    @extend .chip-btn;
-    letter-spacing: 0.5;
-    text-transform: uppercase;
-    font-family: $bold;
-    transition: all .3s ease-in-out;
-
-    &--active{
-        @extend .dev-chip;
-        color: $dark;
-        background-color: $development-chip;
-    }
-    &:hover{
-        @extend .box-shadow;
-        transform: scale(1.05);
-        background-color: $development-chip;
-        color: $dark;
-    }
-}
-
-.card-design-chip{
-    @extend .chip-btn;
-    letter-spacing: 0.5;
-    text-transform: uppercase;
-    font-family: $bold;
-    color: $dark;
-    background-color: $design-chip;
-}
-
-.card-dev-chip{
-    @extend .chip-btn;
-    letter-spacing: 0.5;
-    text-transform: uppercase;
-    font-family: $bold;
-    color: $dark;
-    background-color: $development-chip;
 }

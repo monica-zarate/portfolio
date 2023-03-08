@@ -17,8 +17,8 @@ function Card({project}) {
         <Link to={path} title={project.title} className="flex-c card">
             <img src={project.images.thumb} alt={project.images.thumbAlt} className="card__img"/>
             <div className="flex-c card__info">
-                <span className={`card-${discipline}-chip`}>{project.chip}</span>
                 <h3 className="card__info--title">{project.title}</h3>
+                <span className="h4 card__chip">{project.chip}</span>
                 <p className="card__info--description">{project.description}</p>
                 <ul className="flex-c card__tools">
                     {project.featuredTools.map((__) => {

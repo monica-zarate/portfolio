@@ -1,11 +1,12 @@
 // Vendor imports
 import React from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+ 
 // Project imports
 import monicaPhoto from "../assets/imgs/monica-zarate.jpg";
-import githubBlack from "../assets/icons/github-icon-black.svg";
-import linkedinBlack from "../assets/icons/linkedin-icon-black.svg";
-import mailBlack from "../assets/icons/mail-icon-black.png";
 
 function Intro() {
     return (
@@ -16,9 +17,9 @@ function Intro() {
                     <p>Vancouver BC-based UX Designer and Web Developer. Looking to create products that make a positive impact on minority groups.</p>
                     <p className="intro__cta">Let's work together!</p>
                     <ul className='flex-c intro__social'>
-                        <li><a href="https://www.linkedin.com/in/monica-zarate/" title="Monica Zarate's LinkedIn Profile" target="_blank"><img src={linkedinBlack} alt='linkedin icon'/></a></li>
-                        <li><a href="https://github.com/monica-zarate" title="Monica Zarate's Github Profile" target="_blank"><img src={githubBlack} alt='github icon'/></a></li>
-                        <li><a href="mailto:hello@monicazarate.com" title="hello@monicazarate.com" target="_blank"><img src={mailBlack} alt='mail icon'/></a></li>
+                        <li><a href="https://www.linkedin.com/in/monica-zarate/" title="Monica Zarate's LinkedIn Profile" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                        <li><a href="https://github.com/monica-zarate" title="Monica Zarate's Github Profile" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></li>
+                        <li><a href="mailto:hello@monicazarate.com" title="hello@monicazarate.com" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a></li>
                     </ul>
                 </div>
             </div>

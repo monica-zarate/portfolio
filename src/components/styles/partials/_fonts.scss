@@ -3,9 +3,10 @@ $extra-light: "Source Sans Extra Light";
 $light: "Source Sans Light";
 $regular: "Source Sans Regular";
 $bold: "Source Sans Bold";
-$kalam: "Kalam Bold";
 $alphapipe: "BC Alphapipe L Regular";
 $alphapipe-bold: "BC Alphapipe RB Bold";
+$urbanist-light: "Urbanist Light";
+$urbanist-semi: "Urbanist Semi Bold";
 
 // Text Styles
 
@@ -46,17 +47,16 @@ $alphapipe-bold: "BC Alphapipe RB Bold";
 }
 
 .h1 {
-    font-family: $alphapipe;
+    font-family: $urbanist-light;
     text-transform: capitalize;
     font-size: 32px;
     line-height: 32px;
 }
 
 .h2 {
-    font-family: $light;
+    font-family: $urbanist-semi;
     font-size: 32px;
     line-height: 32px;
-    color: $secondary-color;
 }
 
 .h3 {
@@ -82,7 +82,9 @@ $alphapipe-bold: "BC Alphapipe RB Bold";
 .chips {
     font-size: 12px;
     line-height: 12px * 1.5;
-    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $bold;
 }
 
 .card-description {

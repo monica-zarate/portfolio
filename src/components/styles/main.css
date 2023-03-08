@@ -31,17 +31,16 @@
 }
 
 .h1, .intro__h1 {
-  font-family: "BC Alphapipe L Regular";
+  font-family: "Urbanist Light";
   text-transform: capitalize;
   font-size: 32px;
   line-height: 32px;
 }
 
 .h2, .not-found__title, .about__title, .projects__title, .featured__title {
-  font-family: "Source Sans Light";
+  font-family: "Urbanist Semi Bold";
   font-size: 32px;
   line-height: 32px;
-  color: #217f04;
 }
 
 .h3, .card__info--title {
@@ -51,7 +50,7 @@
   margin-bottom: 24px;
 }
 
-.h4, .dev-btn, .design-btn, .nav-menu, .about__links, .project__nav-wrap span, .header__link, .nav-active, .header__link--active {
+.h4, .projects-btn, .nav-menu, .about__links, .project__nav-wrap span, .header__link, .nav-active, .header__link--active {
   font-family: "Source Sans Bold";
   font-size: 16px;
   line-height: 25.6px;
@@ -64,10 +63,12 @@
   line-height: 28px;
 }
 
-.chips, .chip-btn, .card-dev-chip, .card-design-chip, .dev-chip, .dev-chip--active, .design-chip, .design-chip--active {
+.chips, .chip-btn, .chip-btn--active {
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Source Sans Bold";
 }
 
 .card-description, .card__info--description, .footer, .footer p {
@@ -108,33 +109,25 @@ ul, ol {
   align-items: center;
 }
 
-.box-shadow, .not-found__btn, .project__img, .card:hover, .header, .dev-chip:hover, .dev-chip--active:hover, .design-chip:hover, .design-chip--active:hover {
+.box-shadow, .not-found__btn, .project__img, .card:hover, .header, .chip-btn:hover, .chip-btn--active:hover {
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
 }
 
-.box-shadow-light {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.design {
-  color: #fbe087;
-}
-
-.design-bg {
+.projects-bg {
   background-color: #fbe087;
 }
 
-.design-bg-light {
+.projects-bg-light {
   background-color: #fef9e6;
 }
 
-.design-btn {
+.projects-btn {
   color: #222222;
   font-family: "Source Sans Regular";
   font-size: 20px;
   position: relative;
 }
-.design-btn::before {
+.projects-btn::before {
   content: "";
   background-color: #fbe087;
   position: absolute;
@@ -145,40 +138,7 @@ ul, ol {
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
-.design-btn:hover::before {
-  width: 100%;
-}
-
-.dev {
-  color: #87a2fb;
-}
-
-.dev-bg {
-  background-color: #87a2fb;
-}
-
-.dev-bg-light {
-  background-color: #e6ecfe;
-}
-
-.dev-btn {
-  color: #222222;
-  font-family: "Source Sans Regular";
-  font-size: 20px;
-  position: relative;
-}
-.dev-btn::before {
-  content: "";
-  background-color: #87a2fb;
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 50%;
-  height: 4px;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-.dev-btn:hover::before {
+.projects-btn:hover::before {
   width: 100%;
 }
 
@@ -191,63 +151,24 @@ ul, ol {
   color: #222222;
 }
 
-.chip-btn, .card-dev-chip, .card-design-chip, .dev-chip, .dev-chip--active, .design-chip, .design-chip--active {
+.chip-btn, .chip-btn--active {
   color: #222222;
   border-radius: 50px;
   padding: 4px 16px;
   min-width: 120px;
   cursor: pointer;
-  text-align: center;
   background-color: #222222;
   color: #ffffff;
-}
-
-.design-chip, .design-chip--active {
-  letter-spacing: 0.5;
-  text-transform: uppercase;
-  font-family: "Source Sans Bold";
   transition: all 0.3s ease-in-out;
 }
-.design-chip--active {
+.chip-btn--active {
   color: #222222;
-  background-color: #fce59a;
+  background-color: #fbe087;
 }
-.design-chip:hover, .design-chip--active:hover {
+.chip-btn:hover, .chip-btn--active:hover {
   transform: scale(1.05);
-  background-color: #fce59a;
+  background-color: #fbe087;
   color: #222222;
-}
-
-.dev-chip, .dev-chip--active {
-  letter-spacing: 0.5;
-  text-transform: uppercase;
-  font-family: "Source Sans Bold";
-  transition: all 0.3s ease-in-out;
-}
-.dev-chip--active {
-  color: #222222;
-  background-color: #c0cefd;
-}
-.dev-chip:hover, .dev-chip--active:hover {
-  transform: scale(1.05);
-  background-color: #c0cefd;
-  color: #222222;
-}
-
-.card-design-chip {
-  letter-spacing: 0.5;
-  text-transform: uppercase;
-  font-family: "Source Sans Bold";
-  color: #222222;
-  background-color: #fce59a;
-}
-
-.card-dev-chip {
-  letter-spacing: 0.5;
-  text-transform: uppercase;
-  font-family: "Source Sans Bold";
-  color: #222222;
-  background-color: #c0cefd;
 }
 
 /* Header Styles */
@@ -387,12 +308,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-bottom: 16px;
 }
 .intro__h1--highlight {
-  color: #e087fb;
-  font-family: "BC Alphapipe RB Bold";
+  color: #217f04;
+  font-family: "Urbanist Semi Bold";
 }
 .intro__cta {
   color: #217f04;
   margin: 36px 0 16px;
+  font-family: "Urbanist Semi Bold";
 }
 .intro__social {
   justify-content: unset;
@@ -405,13 +327,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .intro__social a {
   height: 24px;
 }
-.intro__social img {
+.intro__social svg {
   height: 24px;
+  color: #222222;
 }
 
-.featured {
-  background-color: #f2f2f2;
-}
 .featured__wrapper {
   margin: 0 auto;
   padding: 32px;
@@ -438,6 +358,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   flex-direction: column;
   max-width: 345px;
   transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(102, 103, 171, 0.25);
 }
 @media (min-width: 1024px) {
   .card {
@@ -462,6 +383,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .card__img {
     border-radius: 8px 0 0 8px;
     width: 340px;
+    height: 338px;
   }
 }
 .card__info {
@@ -469,10 +391,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 32px 50px;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .card__info--title {
-  margin: 24px 0;
+  margin-bottom: 24px;
+}
+.card__info--description {
+  margin-bottom: 24px;
+}
+.card__chip {
+  color: #808080;
+  margin-bottom: 24px;
 }
 .card__tools {
   flex-direction: row;
@@ -481,12 +410,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .card__tool-icon {
   height: auto;
   width: 32px;
-  margin: 24px 8px 0 0;
+  margin-right: 8px;
 }
 
-.projects {
-  background-color: #f2f2f2;
-}
 .projects__wrapper {
   margin: 0 auto;
   padding: 32px;
@@ -693,6 +619,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .about__cta {
   color: #217f04;
+  font-family: "Urbanist Semi Bold";
 }
 .about__links-wrap {
   position: relative;
@@ -758,7 +685,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Footer */
 .footer, .footer p {
-  background-color: #217f04;
+  border-top: 4px solid #e087fb;
+  background-color: #222222;
 }
 .footer__wrapper {
   max-width: 1280px;
@@ -780,9 +708,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 .footer p {
-  color: #ffffff;
+  color: #f2f2f2;
   text-align: center;
   margin-bottom: 24px;
+  border-top: unset;
 }
 @media (min-width: 1024px) {
   .footer p {
@@ -803,26 +732,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .footer__social a {
   height: 24px;
 }
-.footer__social img {
+.footer__social svg {
   height: 24px;
+  color: #f2f2f2;
 }
 
-@font-face {
-  font-family: "Poppins Light";
-  src: url("../../assets/fonts/poppins-light.ttf");
-}
-@font-face {
-  font-family: "Poppins Medium";
-  src: url("../../assets/fonts/poppins-medium.ttf");
-}
-@font-face {
-  font-family: "Poppins SemiBold";
-  src: url("../../assets/fonts/poppins-semibold.ttf");
-}
-@font-face {
-  font-family: "Kalam Bold";
-  src: url("../../assets/fonts/kalam-bold.ttf");
-}
 @font-face {
   font-family: "Source Sans Extra Light";
   src: url("../../assets/fonts/sourcesanspro-extralight.ttf");
@@ -840,10 +754,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   src: url("../../assets/fonts/sourcesanspro-bold.ttf");
 }
 @font-face {
-  font-family: "BC Alphapipe L Regular";
-  src: url("../../assets/fonts/bc-alphapipe-l-regular.ttf");
+  font-family: "Urbanist Light";
+  src: url("../../assets/fonts/urbanist-light.ttf");
 }
 @font-face {
-  font-family: "BC Alphapipe RB Bold";
-  src: url("../../assets/fonts/bc-alphapipe-rb-bold.ttf");
+  font-family: "Urbanist Semi Bold";
+  src: url("../../assets/fonts/urbanist-semibold.ttf");
 }/*# sourceMappingURL=main.css.map */

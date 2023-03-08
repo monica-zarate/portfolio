@@ -113,7 +113,7 @@ export const PROJECTS = [
   },
   {
     id: "2",
-    title: "Paper Lantern Bookstore",
+    title: "Paper Lantern: Web & App Prototype",
     subtitle: "Website and mobile app prototype and testing",
     images: {
       thumb: require("../assets/imgs/projects/paper-lantern-thumb.jpg"),
@@ -373,7 +373,7 @@ export const PROJECTS = [
   },
   {
     id: "5",
-    title: "Travel Compass: Phase 1 Design",
+    title: "Travel Compass: Phase 1 App Prototype",
     subtitle: "Travel Management Mobile App Interface Design",
     images: {
       thumb: require("../assets/imgs/projects/travel-compass-thumb.png"),
@@ -469,7 +469,7 @@ export const PROJECTS = [
   },
   {
     id: "6",
-    title: "Billy Expense Tracker: SPA",
+    title: "Billy Expense Tracker: SPA Prototype",
     subtitle: "Expense Tracker Single Page Application Interface Design",
     images: {
       thumb: require("../assets/imgs/projects/billy-thumb.jpg"),
