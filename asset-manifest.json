@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1f4b695b.css",
-    "main.js": "/static/js/main.bb12c7e4.js",
+    "main.js": "/static/js/main.0abefbea.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/billy-thumb.jpg": "/static/media/billy-thumb.5463a77813fc24af2283.jpg",
     "static/media/travel-compass-thumb.png": "/static/media/travel-compass-thumb.eec03e4e09b4fb6bc0d3.png",
@@ -54,11 +54,11 @@
     "static/media/monica-logo.svg": "/static/media/monica-logo.041f6bf882c2c34ef1b9913794cf15dc.svg",
     "index.html": "/index.html",
     "main.1f4b695b.css.map": "/static/css/main.1f4b695b.css.map",
-    "main.bb12c7e4.js.map": "/static/js/main.bb12c7e4.js.map",
+    "main.0abefbea.js.map": "/static/js/main.0abefbea.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f4b695b.css",
-    "static/js/main.bb12c7e4.js"
+    "static/js/main.0abefbea.js"
   ]
 }
