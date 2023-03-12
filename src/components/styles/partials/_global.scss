@@ -35,6 +35,10 @@ ul, ol {
     box-shadow: 0px 4px 4px 2px $box-shadow;
 }
 
+.box-shadow-light {
+    box-shadow: 0px 4px 4px $box-shadow-dark;
+}
+
 .projects-bg{
     background-color: $projects;
 }

@@ -1,4 +1,8 @@
 // Card Component Styles
+.card-wrap {
+    width: fit-content;
+    margin: 0 auto;
+}
 
 .card {
     background-color: $white;
@@ -11,6 +15,7 @@
     max-width: 345px;
     transition: all .3s ease-in-out;
     border: 1px solid $light-border;
+    @extend .box-shadow-light;
 
     @include laptop {
         height: 340px;
@@ -19,7 +24,6 @@
 
     &:hover {
         @extend .box-shadow;
-        transform: scale(1.005);
     }
 
     @include laptop {

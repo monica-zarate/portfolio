@@ -113,6 +113,10 @@ ul, ol {
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
 }
 
+.box-shadow-light, .card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .projects-bg {
   background-color: #fbe087;
 }
@@ -286,6 +290,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .intro__img {
   border-radius: 50%;
+  border: 2px solid #fbe087;
 }
 .intro__text-wrapper {
   max-width: 300px;
@@ -330,6 +335,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .intro__social svg {
   height: 24px;
   color: #222222;
+  transition: all 0.3s ease-in-out;
+}
+.intro__social svg:hover {
+  color: #e087fb;
 }
 
 .featured__wrapper {
@@ -348,6 +357,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-align: center;
 }
 
+.card-wrap {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .card {
   background-color: #ffffff;
   color: #000000;
@@ -364,9 +379,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .card {
     height: 340px;
   }
-}
-.card:hover {
-  transform: scale(1.005);
 }
 @media (min-width: 1024px) {
   .card {
@@ -735,6 +747,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .footer__social svg {
   height: 24px;
   color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social svg:hover {
+  color: #e087fb;
 }
 
 @font-face {
