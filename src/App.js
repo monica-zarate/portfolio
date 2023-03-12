@@ -1,11 +1,6 @@
 // Vendor imports
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 // Project imports
@@ -22,7 +17,6 @@ function App() {
   const location = useLocation();
 
   return (
-    // <Router>
     <div className="App">
       <Header />
       <AnimatePresence mode="wait">
@@ -36,7 +30,6 @@ function App() {
       </AnimatePresence>
       <Footer />
     </div>
-    // </Router>
   );
 }
 
