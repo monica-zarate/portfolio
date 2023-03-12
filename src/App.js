@@ -1,6 +1,12 @@
 // Vendor imports
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 // Project imports
 import "./components/styles/main.css";
@@ -13,20 +19,24 @@ import About from "./components/About";
 import NotFound from "./components/NotFound";
 
 function App() {
+  const location = useLocation();
+
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Routes>
+    // <Router>
+    <div className="App">
+      <Header />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} exact></Route>
           <Route path="/work" element={<Work />}></Route>
           <Route path="/work/:path" element={<ProjectDetails />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
-        <Footer />
-      </div>
-    </Router>
+      </AnimatePresence>
+      <Footer />
+    </div>
+    // </Router>
   );
 }
 

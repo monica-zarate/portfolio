@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion as m } from "framer-motion";
 
 // Project imports
 import aboutImg from '../assets/imgs/about.png';
@@ -10,7 +11,7 @@ function About() {
     }, []);
 
     return (
-        <div className="about">
+        <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3, ease: 'easeInOut'}} exit={{opacity: 0}} className="about">
             <div className="about__wrapper">
                 <h2 className="about__title">Hello there! 👋</h2>
                 <div className="flex-c about__content">
@@ -30,7 +31,7 @@ function About() {
                     <img src={aboutImg} alt="Monica Zarate" className="about__img"/>
                 </div>
             </div>
-        </div>
+        </m.div>
     )
 }
 

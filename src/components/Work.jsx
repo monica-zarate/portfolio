@@ -1,5 +1,6 @@
 // Vendor imports
 import React, { useEffect, useState } from "react";
+import { motion as m } from "framer-motion";
 
 // Project imports
 import Card from "./Card";
@@ -51,7 +52,7 @@ export default function Work() {
     };
 
     return (
-        <div className="projects">
+        <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3, ease: 'easeInOut'}} exit={{opacity: 0}} className="projects">
             <div className="projects__wrapper">
                 <h2 className="projects__title">Projects</h2>
                 <div className="flex-c projects__chips">
@@ -60,6 +61,6 @@ export default function Work() {
                 </div>
                 {printProjects()}
             </div>
-        </div>
+        </m.div>
     )
 }

@@ -1,7 +1,7 @@
 // Vendor imports
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 function Card({project}) {
 
@@ -15,7 +15,7 @@ function Card({project}) {
     let discipline = project.discipline === 'development' ? 'dev' : 'design';
 
     return (
-        <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.95 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}} className="card-wrap">
+        <m.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.95 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}} className="card-wrap">
             <Link to={path} title={project.title} className="flex-c card">
                 <img src={project.images.thumb} alt={project.images.thumbAlt} className="card__img"/>
                 <div className="flex-c card__info">
@@ -33,7 +33,7 @@ function Card({project}) {
                     </ul>
                 </div>
             </Link>
-        </motion.div>
+        </m.div>
     );
 };
 

@@ -1,11 +1,10 @@
 // Vendor imports
 import React, { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
+import { motion as m } from "framer-motion";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faMinus } from '@fortawesome/free-solid-svg-icons';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 // Project imports
 import { PROJECTS } from "../data/projects";
@@ -14,7 +13,6 @@ export default function ProjectDetails () {
 
     useEffect(() => {
         window.scrollTo(0,0);
-        AOS.init();
     },[]);
 
     // Access the correct project through the url path
@@ -40,9 +38,9 @@ export default function ProjectDetails () {
             }
             
             return (
-                <div className="project">
+                <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, ease: 'easeInOut'}} exit={{opacity: 0}} className="project">
                     <div className="flex-c project__hero projects-bg">
-                        <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img" data-aos="fade-in" data-aos-duration="750" data-aos-easing="ease-in"/>
+                        <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img"/>
                     </div>
                     <div className="project__wrapper">
                         <div className="project__section">
@@ -103,7 +101,7 @@ export default function ProjectDetails () {
                                     {step.imgs && step.imgs.map((img) => {
                                         return (
                                             <div className="flex-c">
-                                                <img src={img} alt={step.name} className="project__img" data-aos="fade-in" data-aos-duration="750" data-aos-easing="ease-in"/>
+                                                <img src={img} alt={step.name} className="project__img"/>
                                             </div>
                                         )
                                     })}
@@ -128,7 +126,7 @@ export default function ProjectDetails () {
                             </div>
                         </div>
                     </div>
-                </div>
+                </m.div>
             )
         }
     })

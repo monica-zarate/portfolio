@@ -4,7 +4,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { motion } from "framer-motion";
+import { motion as m } from "framer-motion";
  
 // Project imports
 import monicaPhoto from "../assets/imgs/monica-zarate.jpg";
@@ -18,15 +18,15 @@ function Intro() {
                     <p>Vancouver BC-based UX Designer and Web Developer. Looking to create products that make a positive impact on minority groups.</p>
                     <p className="intro__cta">Let's work together!</p>
                     <ul className='flex-c intro__social'>
-                        <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}}>
+                        <m.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}}>
                             <a href="https://www.linkedin.com/in/monica-zarate/" title="Monica Zarate's LinkedIn Profile" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
-                        </motion.li>
-                        <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}}>
+                        </m.li>
+                        <m.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}}>
                             <a href="https://github.com/monica-zarate" title="Monica Zarate's Github Profile" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
-                        </motion.li>
-                        <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}}>
+                        </m.li>
+                        <m.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}}>
                             <a href="mailto:hello@monicazarate.com" title="hello@monicazarate.com" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
-                        </motion.li>
+                        </m.li>
                     </ul>
                 </div>
             </div>
