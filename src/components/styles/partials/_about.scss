@@ -64,6 +64,14 @@
         @include tablet {
             width: unset;
         }
+
+        @include laptop {
+            max-width: 40%;
+        }
+
+        @include small-desktop {
+            max-width: 50%;
+        }
     }
 
     &__cta {
