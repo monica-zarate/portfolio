@@ -97,11 +97,13 @@ ul, ol {
         background-color: $projects;
     }
 
-    &:hover {
-        @extend .box-shadow;
-        transform: scale(1.05);
-        background-color: $projects;
-        color: $dark;
+    @include tablet {
+        &:hover {
+            box-shadow: 0px 4px 4px 2px $box-shadow;
+            transform: scale(1.05);
+            background-color: $projects;
+            color: $dark;
+        }
     }
 }
 
