@@ -341,8 +341,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #222222;
   transition: all 0.3s ease-in-out;
 }
-.intro__social svg:hover {
-  color: #e087fb;
+@media (min-width: 768px) {
+  .intro__social svg:hover {
+    color: #e087fb;
+  }
 }
 
 .featured__wrapper {
@@ -756,8 +758,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #f2f2f2;
   transition: all 0.3s ease-in-out;
 }
-.footer__social svg:hover {
-  color: #e087fb;
+@media (min-width: 768px) {
+  .footer__social svg:hover {
+    color: #e087fb;
+  }
 }
 
 @font-face {

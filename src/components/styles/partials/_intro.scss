@@ -68,8 +68,10 @@
             color: $dark;
             transition: all .3s ease-in-out;
            
-            &:hover {
-                color: $primary-color;
+            @include tablet {
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
     }
