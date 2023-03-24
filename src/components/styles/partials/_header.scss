@@ -41,7 +41,6 @@
     }
 
     &__link{
-        // color: $black;
         @extend .nav-menu;
 
         &--active {
@@ -92,12 +91,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
     position: fixed;
     height: 100%;
-    top: 107px;
+    top: 114px;
 }
 
 /* General sidebar styles */
 .bm-menu {
-    background: $primary-color;
+    background: $dark;
     padding: 32px 0;
     font-size: 32px;
 }
