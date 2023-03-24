@@ -645,6 +645,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: unset;
   }
 }
+@media (min-width: 1024px) {
+  .about__img {
+    max-width: 40%;
+  }
+}
+@media (min-width: 1280px) {
+  .about__img {
+    max-width: 50%;
+  }
+}
 .about__cta {
   color: #217f04;
   font-family: "Urbanist Semi Bold";
