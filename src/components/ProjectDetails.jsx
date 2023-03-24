@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { motion as m } from "framer-motion";
+import SEO from "./SEO";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faMinus } from '@fortawesome/free-solid-svg-icons';
@@ -22,6 +23,12 @@ export default function ProjectDetails () {
 
     // [2] is the array's index for the project path
     let selectedProjectObj = PROJECTS.map((__) => {
+
+        const seoData = {
+            title: `Monica Zarate - ${__.title}`,
+            description: `Monica Zarate ${__.discipline} project. ${__.description}`,
+        };
+
         if (__.path === selectedProjectPath[2]) {
 
             // Define the page's title
@@ -39,6 +46,7 @@ export default function ProjectDetails () {
             
             return (
                 <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, ease: 'easeInOut'}} exit={{opacity: 0}} className="project">
+                    <SEO title={seoData.title} description={seoData.description}/>
                     <div className="flex-c project__hero projects-bg">
                         <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img"/>
                     </div>
