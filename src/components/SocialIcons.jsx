@@ -8,11 +8,11 @@ import { motion as m } from "framer-motion";
 
 export default function SocialIcons(device, component) {
 
-    const linkedInIcon = (<a href="https://www.linkedin.com/in/monica-zarate/" title="Monica Zarate's LinkedIn Profile" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>);
+    const linkedInIcon = (<a href="https://www.linkedin.com/in/monica-zarate/" title="Monica Zarate's LinkedIn Profile" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>);
 
-    const gitHubIcon = (<a href="https://github.com/monica-zarate" title="Monica Zarate's Github Profile" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>);
+    const gitHubIcon = (<a href="https://github.com/monica-zarate" title="Monica Zarate's Github Profile" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>);
 
-    const emailIcon = (<a href="mailto:hello@monicazarate.com" title="hello@monicazarate.com" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>);
+    const emailIcon = (<a href="mailto:hello@monicazarate.com" title="hello@monicazarate.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope}/></a>);
 
     let socialLinks = '';
 
