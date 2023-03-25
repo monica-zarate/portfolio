@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // Project imports
-import notFoundImg from '../assets/imgs/not-found.svg';
+import notFoundImg from '../assets/imgs/not-found.png';
 
 function NotFound() {
 

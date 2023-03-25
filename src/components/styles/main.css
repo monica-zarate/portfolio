@@ -672,7 +672,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .not-found__wrapper {
   margin: 0 auto;
-  flex-direction: column;
   padding: 32px;
 }
 @media (min-width: 1024px) {
@@ -701,7 +700,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 .not-found__text p {
-  margin: 32px;
+  margin: 32px 0;
 }
 .not-found__img {
   width: 100%;
@@ -714,11 +713,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 .not-found__btn {
-  text-transform: capitalize;
-  background-color: #e087fb;
-  margin: 0 32px;
+  display: block;
+  background-color: #222222;
   padding: 12px 24px;
-  border-radius: 5px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .not-found__btn {
+    max-width: 250px;
+  }
+  .not-found__btn:hover {
+    background-color: #e087fb;
+    color: #222222;
+  }
 }
 
 /* Footer */

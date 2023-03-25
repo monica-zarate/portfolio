@@ -5,7 +5,6 @@
 
     &__wrapper {
         margin: 0 auto;
-        flex-direction: column;
         padding: 32px;
 
         @include laptop {
@@ -37,7 +36,7 @@
     &__text {
 
         p {
-            margin: 32px;
+            margin: 32px 0;
         }
     }
 
@@ -52,12 +51,19 @@
     }
 
     &__btn {
+        display: block;
         @extend .nav-mobile;
         @extend .box-shadow;
-        text-transform: capitalize;
-        background-color: $primary-color;
-        margin: 0 32px;
+        background-color: $dark;
         padding: 12px 24px;
-        border-radius: 5px;
+        text-align: center;
+
+        @include tablet {
+            max-width: 250px;
+            &:hover {
+                background-color: $primary-color;
+                color: $dark;
+            }
+        }
     }
 }
