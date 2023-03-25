@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1e6f771.css",
-    "main.js": "/static/js/main.46409c4d.js",
+    "main.css": "/static/css/main.19831a51.css",
+    "main.js": "/static/js/main.d4cb52fd.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/billy-thumb.jpg": "/static/media/billy-thumb.5463a77813fc24af2283.jpg",
-    "static/media/travel-compass-thumb.png": "/static/media/travel-compass-thumb.eec03e4e09b4fb6bc0d3.png",
     "static/media/guava-punch.jpg": "/static/media/guava-punch.b7bb1be6b92d65cfb0a1.jpg",
     "static/media/paper-lantern-1.png": "/static/media/paper-lantern-1.4935a71c39e80da4e700.png",
     "static/media/paper-lantern-2.png": "/static/media/paper-lantern-2.f882804f7d6795dba4a5.png",
@@ -32,8 +30,10 @@
     "static/media/acnh-3.png": "/static/media/acnh-3.7dc6ce990ffb70c73c30.png",
     "static/media/tc-design-4.png": "/static/media/tc-design-4.3872b1767a4afde9303b.png",
     "static/media/tc-dev-2.png": "/static/media/tc-dev-2.43d85b00fe667ad53122.png",
+    "static/media/travel-compass-thumb.png": "/static/media/travel-compass-thumb.acfde80995291482ce4b.png",
     "static/media/acnh-4.png": "/static/media/acnh-4.d270174ade6782b19ea3.png",
     "static/media/paper-lantern-3.png": "/static/media/paper-lantern-3.dfa995f8170071cd735d.png",
+    "static/media/billy-thumb.jpg": "/static/media/billy-thumb.b9638d1bcfe83e1a5066.jpg",
     "static/media/monica-zarate.jpg": "/static/media/monica-zarate.6f2ed352336204cb4865.jpg",
     "static/media/tc-design-1.png": "/static/media/tc-design-1.10422f322670e13a78e2.png",
     "static/media/apod-2.png": "/static/media/apod-2.acbff9fd485483c8109d.png",
@@ -49,16 +49,16 @@
     "static/media/billy-2.png": "/static/media/billy-2.67c3afdeb77157cd7140.png",
     "static/media/urbanist-light.ttf": "/static/media/urbanist-light.55ed2929e37cd5fd9b62.ttf",
     "static/media/urbanist-semibold.ttf": "/static/media/urbanist-semibold.7da44a6d82965ce3d957.ttf",
-    "static/media/not-found.svg": "/static/media/not-found.cf6ae6d3a0ae401d1ab26dcf0c5d8f11.svg",
+    "static/media/not-found.png": "/static/media/not-found.2c1d01844b00c9adef83.png",
     "static/media/react.png": "/static/media/react.2185a561f90a938cd19f.png",
     "static/media/monica-logo.svg": "/static/media/monica-logo.041f6bf882c2c34ef1b9913794cf15dc.svg",
     "index.html": "/index.html",
-    "main.c1e6f771.css.map": "/static/css/main.c1e6f771.css.map",
-    "main.46409c4d.js.map": "/static/js/main.46409c4d.js.map",
+    "main.19831a51.css.map": "/static/css/main.19831a51.css.map",
+    "main.d4cb52fd.js.map": "/static/js/main.d4cb52fd.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1e6f771.css",
-    "static/js/main.46409c4d.js"
+    "static/css/main.19831a51.css",
+    "static/js/main.d4cb52fd.js"
   ]
 }
