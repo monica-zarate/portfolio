@@ -42,6 +42,9 @@ export default function ProjectDetails () {
                     break;
                 case 'graphic-design':
                     selectedProjectDiscipline = "Graphic Design Project";
+                    break;
+                default:
+                    selectedProjectDiscipline = "";
             }
             
             return (
@@ -76,10 +79,10 @@ export default function ProjectDetails () {
                                     </div>
                                 </div>
                                 <div className="flex-c project__ctas">
-                                    {__.links.repo && <a href={__.links.repo} title={__.links.repoTitle} target="_blank" className="projects-btn">GitHub Repository</a>}
-                                    {__.links.figmaPrototype && <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" className="projects-btn">Figma Prototype</a>}
-                                    {__.links.xdPrototype && <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" className="projects-btn">Adobe Xd Prototype</a>}
-                                    {__.links.site && <a href={__.links.site} title={__.links.siteTitle} target="_blank" className="projects-btn">Project's Website</a>}
+                                    {__.links.repo && <a href={__.links.repo} title={__.links.repoTitle} target="_blank" rel="noreferrer" className="projects-btn">GitHub Repository</a>}
+                                    {__.links.figmaPrototype && <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Figma Prototype</a>}
+                                    {__.links.xdPrototype && <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Adobe Xd Prototype</a>}
+                                    {__.links.site && <a href={__.links.site} title={__.links.siteTitle} target="_blank" rel="noreferrer" className="projects-btn">Project's Website</a>}
                                 </div>
                             </div>
                         </div>
@@ -96,7 +99,7 @@ export default function ProjectDetails () {
                         </div>
                         <div>
                             {__.steps.map((step, index) => {
-                                let sectionBgColour = index % 2 == 0 ? '' : 'projects-bg-light';
+                                let sectionBgColour = index % 2 === 0 ? '' : 'projects-bg-light';
                             return (<div className={`project__section ${sectionBgColour}`} key={index}>
                                 <div className="project__section-content">
                                     <div>
@@ -119,10 +122,10 @@ export default function ProjectDetails () {
                         </div>
                         <div className={"project__section"}>
                             <div className="project__section-content">
-                                {__.links.repo && <p>Find the project's <a href={__.links.repo} title={__.links.repoTitle} target="_blank" className="projects-btn">Github Repository</a>.</p>}
-                                {__.links.figmaPrototype && <p>Find the project's <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" className="projects-btn">Figma Prototype</a>.</p>}
-                                {__.links.xdPrototype && <p>Find the project's <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" className="projects-btn">Adobe Xd Prototype</a>.</p>}
-                                {__.links.site && <p>Find the project's <a href={__.links.site} title={__.links.siteTitle} target="_blank" className="projects-btn">website</a>.</p>}
+                                {__.links.repo && <p>Find the project's <a href={__.links.repo} title={__.links.repoTitle} target="_blank" rel="noreferrer" className="projects-btn">Github Repository</a>.</p>}
+                                {__.links.figmaPrototype && <p>Find the project's <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Figma Prototype</a>.</p>}
+                                {__.links.xdPrototype && <p>Find the project's <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Adobe Xd Prototype</a>.</p>}
+                                {__.links.site && <p>Find the project's <a href={__.links.site} title={__.links.siteTitle} target="_blank" rel="noreferrer" className="projects-btn">website</a>.</p>}
                             </div>
                         </div>
                         <div className='project__section project__nav'>
@@ -137,6 +140,8 @@ export default function ProjectDetails () {
                 </m.div>
             )
         }
+
+        return (<div key={key}></div>);
     })
 
     return selectedProjectObj;
