@@ -11,9 +11,6 @@ function Card({project}) {
 
     location.pathname === '/' ? path = `work/${project.path}` : path = `${location.pathname}/${project.path}`;
 
-    // Define the project's discipline to display appropriate background colour
-    let discipline = project.discipline === 'development' ? 'dev' : 'design';
-
     return (
         <m.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.95 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}} className="card-wrap">
             <Link to={path} title={project.title} className="flex-c card">
@@ -23,9 +20,9 @@ function Card({project}) {
                     <span className="h4 card__chip">{project.chip}</span>
                     <p className="card__info--description">{project.description}</p>
                     <ul className="flex-c card__tools">
-                        {project.featuredTools.map((__) => {
+                        {project.featuredTools.map((__, key) => {
                             return (
-                                <li className="flex-c">
+                                <li className="flex-c" key={key}>
                                     <img src={__.icon} alt={__.name} className="card__tool-icon"/>
                                 </li>
                             )

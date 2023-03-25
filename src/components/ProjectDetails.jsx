@@ -22,7 +22,7 @@ export default function ProjectDetails () {
     let workSectionPath = "/work";
 
     // [2] is the array's index for the project path
-    let selectedProjectObj = PROJECTS.map((__) => {
+    let selectedProjectObj = PROJECTS.map((__, key) => {
 
         const seoData = {
             title: `Monica Zarate - ${__.title}`,
@@ -45,7 +45,7 @@ export default function ProjectDetails () {
             }
             
             return (
-                <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, ease: 'easeInOut'}} exit={{opacity: 0}} className="project">
+                <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, ease: 'easeInOut'}} exit={{opacity: 0}} className="project" key={key}>
                     <SEO title={seoData.title} description={seoData.description}/>
                     <div className="flex-c project__hero projects-bg">
                         <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img"/>
@@ -64,9 +64,9 @@ export default function ProjectDetails () {
                                     <div className="project__overview--right">
                                         <h3 className="h3">Tools</h3>
                                         <ul>
-                                            {__.tools.map((tool) => {
+                                            {__.tools.map((tool, key) => {
                                                 return (
-                                                    <li className="flex-c">
+                                                    <li className="flex-c" key={key}>
                                                         <img src={tool.icon} alt={tool.name} />
                                                         <p>{tool.name}</p>
                                                     </li>
@@ -89,26 +89,26 @@ export default function ProjectDetails () {
                                     <FontAwesomeIcon icon={faMinus}/>
                                     <h3 className="h3">Introduction</h3>
                                 </div>
-                                {__.intro.map((paragraph) => {
-                                    return <p className="">{paragraph}</p>
+                                {__.intro.map((paragraph, key) => {
+                                    return <p key={key}>{paragraph}</p>
                                 })}
                             </div>
                         </div>
-                        <div className="">
+                        <div>
                             {__.steps.map((step, index) => {
                                 let sectionBgColour = index % 2 == 0 ? '' : 'projects-bg-light';
-                            return (<div className={`project__section ${sectionBgColour}`}>
+                            return (<div className={`project__section ${sectionBgColour}`} key={index}>
                                 <div className="project__section-content">
                                     <div>
                                         <FontAwesomeIcon icon={faMinus}/>
                                         <h3 className="h3">{step.name}</h3>
                                     </div>
-                                    {step.description.map((paragraph) => {
-                                        return <p>{paragraph}</p>
+                                    {step.description.map((paragraph, key) => {
+                                        return <p key={key}>{paragraph}</p>
                                     })}
-                                    {step.imgs && step.imgs.map((img) => {
+                                    {step.imgs && step.imgs.map((img, key) => {
                                         return (
-                                            <div className="flex-c">
+                                            <div className="flex-c" key={key}>
                                                 <img src={img} alt={step.name} className="project__img"/>
                                             </div>
                                         )
