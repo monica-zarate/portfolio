@@ -17,8 +17,8 @@
   width: 100%;
 }
 
-.nav-active, .header__link--active {
-  color: #e087fb;
+.nav-active::before, .header__link--active::before {
+  width: 100%;
 }
 
 .nav-mobile, .not-found__btn, .header__mobile {
@@ -72,8 +72,8 @@
 }
 
 .card-description, .card__info--description, .footer, .footer p {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22.4px;
 }
 
 .footer, .footer p {
@@ -99,7 +99,8 @@ a {
   cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -109,12 +110,8 @@ ul, ol {
   align-items: center;
 }
 
-.box-shadow, .not-found__btn, .project__img, .card:hover, .header {
-  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
-}
-
-.box-shadow-light, .card {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.box-shadow, .not-found__btn, .project__img, .card:hover, .card, .header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .projects-bg {
@@ -171,7 +168,7 @@ ul, ol {
 }
 @media (min-width: 768px) {
   .chip-btn:hover, .chip-btn--active:hover {
-    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     background-color: #fbe087;
     color: #222222;
@@ -301,7 +298,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 .intro__img {
   border-radius: 50%;
-  border: 2px solid #fbe087;
 }
 .intro__text-wrapper {
   max-width: 300px;
@@ -381,17 +377,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #000000;
   border-radius: 8px;
   margin: 0 auto 64px;
-  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   max-width: 345px;
   transition: all 0.3s ease-in-out;
   border: 1px solid rgba(102, 103, 171, 0.25);
-}
-@media (min-width: 1024px) {
-  .card {
-    height: 340px;
-  }
 }
 @media (min-width: 1024px) {
   .card {
@@ -419,7 +409,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   justify-content: flex-start;
 }
 .card__info--title {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 .card__info--description {
   margin-bottom: 24px;

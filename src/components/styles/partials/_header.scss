@@ -5,7 +5,7 @@
     background-color: $white;
     @extend .box-shadow;
     z-index: 9;
-    
+
     &__wrapper {
         margin: 0 auto;
         justify-content: flex-start;
@@ -40,7 +40,7 @@
         position: relative;
     }
 
-    &__link{
+    &__link {
         @extend .nav-menu;
 
         &--active {

@@ -9,18 +9,13 @@
     color: $black;
     border-radius: 8px;
     margin: 0 auto 64px;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
     max-width: 345px;
     transition: all .3s ease-in-out;
     border: 1px solid $light-border;
-    @extend .box-shadow-light;
-
-    @include laptop {
-        height: 340px;
-    }
-
+    @extend .box-shadow;
 
     &:hover {
         @extend .box-shadow;
@@ -49,12 +44,12 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-    
+
         &--title {
-            margin-bottom: 24px;
+            margin-bottom: 8px;
             @extend .h3;
         }
-    
+
         &--description {
             @extend .card-description;
             margin-bottom: 24px;

@@ -43,6 +43,8 @@ export default function SocialIcons(device, component) {
                 </m.li>
             </ul>);
             break;
+        default:
+            socialLinks = '';
     }
 
     return socialLinks;

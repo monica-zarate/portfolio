@@ -14,7 +14,7 @@ $urbanist-semi: "Urbanist Semi Bold";
     color: $dark;
     @extend .h4;
     font-size: 20px;
-    
+
     &::before {
         content: '';
         background-color: $primary-color;
@@ -34,7 +34,10 @@ $urbanist-semi: "Urbanist Semi Bold";
 
 .nav-active {
     @extend .nav-menu;
-    color: $primary-color;
+
+    &::before {
+        width: 100%;
+    }
 }
 
 .nav-mobile {
@@ -88,8 +91,8 @@ $urbanist-semi: "Urbanist Semi Bold";
 }
 
 .card-description {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 16px * 1.4;
 }
 
 .footer {
