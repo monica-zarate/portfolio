@@ -51,12 +51,12 @@ export default function ProjectDetails () {
                 <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, ease: 'easeInOut'}} exit={{opacity: 0}} className="project" key={key}>
                     <SEO title={seoData.title} description={seoData.description}/>
                     <div className="flex-c project__hero projects-bg">
+                        <h2 className="project__title h2">{__.title}</h2>
                         <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img"/>
                     </div>
                     <div className="project__wrapper">
                         <div className="project__section">
                             <div className="project__section-content">
-                                <h2 className="project__title h2">{__.title}</h2>
                                 <h3 className="project__subtitle h3">{__.subtitle}</h3>
                                 <h4 className="project__discipline h4">{selectedProjectDiscipline}</h4>
                                 <div className="project__overview">

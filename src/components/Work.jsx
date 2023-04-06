@@ -1,6 +1,6 @@
 // Vendor imports
 import React, { useEffect, useState } from "react";
-import { motion as m } from "framer-motion";
+import { motion as m, AnimatePresence } from "framer-motion";
 import SEO from "./SEO";
 
 // Project imports
@@ -66,7 +66,11 @@ export default function Work() {
                     <span id="design" className={designProjects === true ? "chip-btn--active" : "chip-btn"}>UX Design</span>
                     <span id="dev" className={devProjects === true ? "chip-btn--active" : "chip-btn"}>Development</span>
                 </div>
-                {printProjects()}
+                <m.div layout initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+                    <AnimatePresence>
+                    {printProjects()}
+                    </AnimatePresence>
+                </m.div>
             </div>
         </m.div>
     )

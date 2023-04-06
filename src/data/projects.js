@@ -376,13 +376,13 @@ export const PROJECTS = [
     title: "Travel Compass: Phase 1 App Prototype",
     subtitle: "Travel Management Mobile App Interface Design",
     images: {
-      thumb: require("../assets/imgs/projects/travel-compass-thumb.png"),
+      thumb: require("../assets/imgs/projects/travel-compass-thumb.jpg"),
       thumbAlt: "travel compass mobile interface preview",
       featuredImg: require("../assets/imgs/projects/tc.png"),
       featuredImgAlt: "travel compass mobile interface preview",
     },
     description:
-      "Phase 1 of the Travel Compass Project: Designed the interface of a travel management application. This project includes a first iteration of a mobile interface, from sketching to a prototype.",
+      "Designed the interface of a travel management application. A mobile interface, from sketching to a prototype.",
     chip: "UX Design",
     discipline: "design",
     path: "travel-compass-phase1",
@@ -478,7 +478,7 @@ export const PROJECTS = [
       featuredImgAlt: "Billy interface preview",
     },
     description:
-      "Designed the interface of an expense-tracking application. This project includes a first iteration of an interface for a desktop environment, from sketching to a prototype.",
+      "Designed the interface of an expense-tracking application. An interface for a desktop environment, from sketching to a prototype.",
     chip: "UX Design",
     discipline: "design",
     path: "billy",
@@ -577,13 +577,13 @@ export const PROJECTS = [
     title: "Travel Compass: Phase 2 Development",
     subtitle: "React Native Application for Android devices",
     images: {
-      thumb: require("../assets/imgs/projects/travel-compass-thumb.png"),
+      thumb: require("../assets/imgs/projects/travel-compass-thumb.jpg"),
       thumbAlt: "travel compass mobile interface preview",
       featuredImg: require("../assets/imgs/projects/tc.png"),
       featuredImgAlt: "travel compass mobile interface preview",
     },
     description:
-      "Phase 2 of the Travel Compass Project: Developed an Android application using React Native. The goal was to build the front end based on the Design from Phase 1.",
+      "Developed an Android application using React Native. The goal was to build the front end based on the Design from Phase 1.",
     chip: "Development",
     discipline: "development",
     path: "travel-compass-phase2",

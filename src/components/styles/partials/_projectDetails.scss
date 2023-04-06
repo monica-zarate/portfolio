@@ -3,6 +3,7 @@
 .project {
     &__hero {
         padding: 32px;
+        flex-direction: column;
 
         @include tablet {
             padding: 32px 64px;

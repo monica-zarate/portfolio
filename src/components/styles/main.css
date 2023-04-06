@@ -119,7 +119,7 @@ ol {
 }
 
 .projects-bg-light {
-  background-color: #fef9e6;
+  background-color: #fbe087;
 }
 
 .projects-btn {
@@ -407,6 +407,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  border-top: 1px solid rgba(102, 103, 171, 0.25);
+}
+@media (min-width: 1024px) {
+  .card__info {
+    border-left: 1px solid rgba(102, 103, 171, 0.25);
+    border-top: unset;
+    height: 338px;
+  }
 }
 .card__info--title {
   margin-bottom: 8px;
@@ -456,6 +464,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .project__hero {
   padding: 32px;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .project__hero {

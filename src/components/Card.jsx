@@ -12,7 +12,7 @@ function Card({project}) {
     location.pathname === '/' ? path = `work/${project.path}` : path = `${location.pathname}/${project.path}`;
 
     return (
-        <m.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.95 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}} className="card-wrap">
+        <m.div layout initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.95 }} style={{ x: 0 }} transition={{ease: 'easeInOut'}} className="card-wrap">
             <Link to={path} title={project.title} className="flex-c card">
                 <img src={project.images.thumb} alt={project.images.thumbAlt} className="card__img"/>
                 <div className="flex-c card__info">
