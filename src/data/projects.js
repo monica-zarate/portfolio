@@ -55,21 +55,21 @@ export const PROJECTS = [
       { name: "Adobe Dimension", icon: toolsIcons.dn },
     ],
     intro: [
-      "This project started by developing a logo using shapes and the pen tool on Adobe Illustrator, arranging the components in an orderly manner using layers. Text components were meant to be outlined, to make sure the logo was scalable. A black and white version was requested, to make sure the logo was colour-independent.",
-      "In order to create the promotional poster, we had to include a background image, and at least one 3D element that was placed on a realistic scene, blending in with the background image. Lighting and perspective were an important element of this project. As I had previously created a logo for a fictitious beverage company called Guava Punch, I decided to use that company as a foundation for this project, and develop the promotional poster that included a beverage container.",
+      "This project started by developing a logo using shapes and the pen tool in Adobe Illustrator, arranging the components in an orderly manner using layers. Text components were meant to be outlined, to make sure the logo was scalable. A black and white version was requested, to make sure the logo was colour-independent.",
+      "In order to create the promotional poster, we had to include a background image and at least one 3D element that was placed on a realistic scene, blending in with the background image. Lighting and perspective were important elements of this project. As I had previously created a logo for a fictitious beverage company called Guava Punch, I decided to use that company as a foundation for this project and develop a promotional poster that included a beverage container.",
     ],
     steps: [
       {
         name: "Beverage Company Conception",
         description: [
-          "I got inspired by a drink I used to enjoy on my childhood which was guava nectar, and decided to add sparkling water as a twist, to make it more interesting. I wanted to create a casual beverage that could be enjoyed by everyone, as a soft drink.",
+          "I got inspired by a drink I used to enjoy in my childhood which was guava nectar and decided to add sparkling water as a twist, to make it more interesting. I wanted to create a casual beverage that could be enjoyed by everyone, as a soft drink.",
         ],
         imgs: [],
       },
       {
         name: "Creative Process",
         description: [
-          "The colour palette was decided based on the beverage main ingredient: the guava fruit, which has a pink vibrant colour, as well as some green from its leaves. The logo gravitates towards round shapes, to reference the bubbles the sparkling water will add to the mix.",
+          "The colour palette was decided based on the beverage's main ingredient: the guava fruit, which has a pink vibrant colour, as well as some green from its leaves. The logo gravitates towards round shapes, to reference the bubbles the sparkling water will add to the mix.",
         ],
         imgs: [require("../assets/imgs/projects/guava-punch-1.jpg")],
       },
@@ -83,14 +83,14 @@ export const PROJECTS = [
       {
         name: "Black and White Version",
         description: [
-          "The selected sketches were translated to Adobe Illustrator on a black and white version. The guava fruit was traced using the pen tool. Balance and hierarchy were applied to create harmony and emphasize the more important information.",
+          "The selected sketches were translated into Adobe Illustrator in a black and white version. The guava fruit was traced using the pen tool. Balance and hierarchy were applied to create harmony and emphasize the more important information.",
         ],
         imgs: [],
       },
       {
         name: "Poster Brainstorming",
         description: [
-          "Since this is a casual soft drink that is targeted for the general public and its a carbonated beverage, a can would be the most likely container to be used for it. The beverage is meant to be fun, refreshing and energizing, and we tend to associate these adjectives with the summertime, when people are spending more time outdoors and the weather is hotter.",
+          "Since this is a casual soft drink that is targeted at the general public and is a carbonated beverage, a can would be the most likely container to be used for it. The beverage is meant to be fun, refreshing and energizing, and we tend to associate these adjectives with the summertime when people are spending more time outdoors and the weather is hotter.",
         ],
         imgs: [],
       },
@@ -209,7 +209,7 @@ export const PROJECTS = [
       {
         name: "Final Thoughts",
         description: [
-          "For future iterations, it would be interesting to test the search functionality again, and add a questionnaire or another opinion scale to enquire how would the users would improve this experience, what was the specific part they struggled with, etc.",
+          "For future iterations, it would be interesting to test the search functionality again and add a questionnaire or another opinion scale to enquire how the users would improve this experience, what was the specific part they struggled with, etc.",
         ],
         imgs: [],
       },
@@ -256,7 +256,7 @@ export const PROJECTS = [
       {
         name: "Project Structure",
         description: [
-          "The first step was to create the basic folder structure and initiate the project with an init.php, index.php and functions.php files. The init folder contains the project's constants, like the project's directory and localhost locations, to be able to run the application using MAMP. The Classes are also placed on this file, so they can be accessed globally. The index.php file acts as a container for the page's body. Here I'm importing the head tag, header and footer via global partials. The dynamic data is also included via the resident's card partial. Two foreach() loops were used on this file, to read both child classes and create a card for every item on those two collections.",
+          "The first step was to create the basic folder structure and initiate the project with init.php, index.php and functions.php files. The init folder contains the project's constants, like the project's directory and localhost locations, to be able to run the application using MAMP. The Classes are also placed on this file, so they can be accessed globally. The index.php file acts as a container for the page's body. Here I'm importing the head tag, header and footer via global partials. The dynamic data is also included via the resident's card partial. Two foreach() loops were used on this file, to read both child classes and create a card for every item on those two collections.",
         ],
         imgs: [require("../assets/imgs/projects/acnh-1.png")],
       },
@@ -344,14 +344,14 @@ export const PROJECTS = [
       {
         name: "Postman Tests",
         description: [
-          "After register to obtain an API key, I performed some test calls on Postman, to make sure the query parameters where being used properly and check the data I was receiving back.",
+          "After registering to obtain an API key, I performed some test calls on Postman, to make sure the query parameters were being used properly and check the data I was receiving back.",
         ],
         imgs: [require("../assets/imgs/projects/apod-1.png")],
       },
       {
         name: "fetch()",
         description: [
-          "The fetch() method gets invoked when there's a call to the APOD API, passing the query as a parameter. A then() method follows, that transforms the response from the API into a JSON format. A second then() method is called to pass the received data to a function that's in charge of displaying it in the DOM. A ctach() method is chained, to catch any errors from the API call, and display then in the browser's console. The finally() method closes this code block, which is removing a spinner from the DOM once all the data has loaded and it's ready to populate the page.",
+          "The fetch() method gets invoked when there's a call to the APOD API, passing the query as a parameter. A then() method follows, which transforms the response from the API into a JSON format. A second then() method is called to pass the received data to a function that's in charge of displaying it in the DOM. A ctach() method is chained, to catch any errors from the API call, and display them in the browser's console. The finally() method closes this code block, which is removing a spinner from the DOM once all the data has loaded and it's ready to populate the page.",
         ],
         imgs: [require("../assets/imgs/projects/apod-2.png")],
       },
@@ -365,7 +365,7 @@ export const PROJECTS = [
       {
         name: "Final Result",
         description: [
-          "This project offers three different ways to call the APOD API. On page load, the Picture of the Day gets displayed. Users also have the option to display all the pictures of the current month, or they can also find a specific date. For future iterations, I would like to re-work the page's layout, specially when having more than one card, to better align the content, as each picture's explanation varies in length.",
+          "This project offers three different ways to call the APOD API. On page load, the Picture of the Day gets displayed. Users also have the option to display all the pictures of the current month, or they can also find a specific date. For future iterations, I would like to re-work the page's layout, especially when having more than one card, to better align the content, as each picture's explanation varies in length.",
         ],
         imgs: [],
       },
@@ -422,7 +422,7 @@ export const PROJECTS = [
       {
         name: "Wireframes",
         description: [
-          "Once I had a rough idea of how I wanted the app to look like, I brought my sketches to Adobe Xd. I started to build wireframes referencing my sketches and adjusting as elements were falling into place. The wireframes were built with different shades of black, to depict the hierarchy of the key information that should be highlighted. I built wireframes for the top-level navigation screens.",
+          "Once I had a rough idea of how I wanted the app to look, I brought my sketches to Adobe Xd. I started to build wireframes referencing my sketches and adjusting as elements were falling into place. The wireframes were built with different shades of black, to depict the hierarchy of the key information that should be highlighted. I built wireframes for the top-level navigation screens.",
           "The built screens revolve around an example of how recorded trip overviews would look like for an existing user, the ability to add a new trip, discover general information about destinations and the user account settings.",
         ],
         imgs: [require("../assets/imgs/projects/tc-design-2.png")],
@@ -510,7 +510,8 @@ export const PROJECTS = [
       {
         name: "Project Scope & Research",
         description: [
-          "Once I'd decided on the basic functionality for the app, I did some research on other apps that already exist with similar functionality and features. The best-rated applications were too robust since they offered a more aggressive approach to keeping their users' expenses in check with their budget, sending alerts when expenses were going over budget or making use of the envelope budgeting system, which sounds like an effective way to administer personal finances, but I found their interface suffered because they fit a lot of information in one place, which reflects in a very cluttered interface with a lot of numbers associated with a single expense.",
+          "Once I'd decided on the basic functionality for the app, I did some research on other apps that already exist with similar functionality and features.",
+          "The best-rated applications were too robust since they offered a more aggressive approach to keeping their users' expenses in check with their budget, sending alerts when expenses were going over budget or making use of the envelope budgeting system. In these cases, I found their interface suffered because they fit a lot of information in one place, which reflects in a very cluttered interface with a lot of numbers associated with a single expense.",
         ],
         imgs: [],
       },
@@ -533,8 +534,8 @@ export const PROJECTS = [
         name: "Colour Palette",
         description: [
           "To start building the high-fidelity mock-ups for the app I needed to find a suitable colour palette that would help me make design decisions to ensure the interface would have sufficient contrast and white space.",
-          "The app's colour palette consists of green and violet that create a complementary colour scheme. Hue variations help with hierarchy and offer visual variety while remaining consistent. Since Billy is an app that's closely related to the concept of money, I decided to use green as the base colour. Aside from the reference to bills and money, green is also tending to have a soothing effect, which is a feeling we want to evoke when people are dealing with their finances, so they don't experience it as a stressful situation to be in.",
-          "I chose violet as a complement, because it offers a good contrast with the green elements, it's used mainly on buttons and call-to-action sections. Violet is often related to spirituality, and the way I intended to use it here is to awake awareness into an important topic of life, which are personal finances.",
+          "The app's colour palette consists of green and violet that create a complementary colour scheme. Hue variations help with hierarchy and offer visual variety while remaining consistent. Since Billy is an app that's closely related to the concept of money, I decided to use green as the base colour. Aside from the reference to bills and money, green is also tending to have a soothing effect, which is a feeling we want to evoke when people are dealing with their finances, so they don't experience it as a stressful situation.",
+          "I chose the violet as a compliment because it offers a good contrast with the green elements, it's used mainly on buttons and call-to-action sections. Violet is often related to spirituality, and the way I intended to use it here is to awaken awareness into an important topic of life, which is personal finances.",
           "Beyond offering a way to manage and track expenses and budgets, having a healthy financial life offers the ability to make mindful decisions and can help to lead a more enjoyable life.",
         ],
         imgs: [],
@@ -550,8 +551,8 @@ export const PROJECTS = [
         name: "Mockups",
         description: [
           "Once the basic elements were in place, I started building components on Figma for the elements that are used more than once across the app's interface. The main navigation panel came together to offer a top-level hierarchy pattern.",
-          "The elements on the interface where conceived under the 8 points rule to create harmonious balance. This can be found on paddings, font sizes and line heights, widths and heights of icons, buttons, and containers.",
-          "Since Billy is intended to be used as an application, (instead of a tradition website), the navigation menu is occupying a fixed space to the left-hand side of the layout, for the remaining area, where all the content is being presented, I'm using a nine-column grid to keep all elements aligned and promote consistency across pages.",
+          "The elements on the interface were conceived under the 8 points rule to create a harmonious balance. This can be found on paddings, font sizes and line heights, widths and heights of icons, buttons, and containers.",
+          "Since Billy is intended to be used as an application, (instead of a traditional website), the navigation menu is occupying a fixed space to the left-hand side of the layout, for the remaining area, where all the content is being presented, I'm using a nine-column grid to keep all elements aligned and promote consistency across pages.",
         ],
         imgs: [require("../assets/imgs/projects/billy-4.png")],
       },
@@ -566,7 +567,7 @@ export const PROJECTS = [
         name: "Final Thoughts",
         description: [
           "As a next step, I would like to test this version of the app on its target audience. Individuals between 18 to 30 years old who might be joining the workforce or are in their first years as employees or freelancers that receive some sort of income.",
-          "Users' feedback would provide valuable information and how much Billy is solving their pain points. How could the budgeting section be more useful? How important is their bank accounts integration to plan and make better financial decisions? These would be the kind of questions I'd ask during user testing and interviews.",
+          "Users' feedback would provide valuable information and how much Billy is solving their pain points. How could the budgeting section be more useful? How important is their bank account integration to plan and make better financial decisions? These would be the kind of questions I'd ask during user testing and interviews.",
         ],
         imgs: [],
       },
@@ -645,14 +646,14 @@ export const PROJECTS = [
       {
         name: "Splash Screen & Icons",
         description: [
-          "The application logo was implemented on a splash screen image and together with an app icon were added on the app.json file to help with branding and make for a more genuine experience when launching the app.",
+          "The application logo was implemented on a splash screen image and together with an app icon was added to the app.json file to help with branding and make for a more genuine experience when launching the app.",
         ],
         imgs: [],
       },
       {
         name: "Final Result",
         description: [
-          "I had fun building this project, it was the first time I worked with React Native and I appreciate having the experience of stepping outside of my comfort zone in terms of developing a website or application for web. For future iterations, I would like to include a back-end integration, so the app can get tested with real data.",
+          "I had fun building this project, it was the first time I worked with React Native and I appreciate having the experience of stepping outside of my comfort zone in terms of developing a website or application for the web. For future iterations, I would like to include a back-end integration, so the app can get tested with real data.",
         ],
         imgs: [],
       },
