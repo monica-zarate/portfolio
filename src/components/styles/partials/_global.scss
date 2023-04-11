@@ -41,30 +41,26 @@ ol {
 }
 
 .projects-bg-light {
-    background-color: $projects;
+    background-color: $projects-light;
 }
 
 .projects-btn {
+    display: block;
+    @extend .nav-mobile;
+    @extend .box-shadow;
+    border: 4px solid $dark;
+    padding: 12px 24px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    margin-bottom: 24px;
     color: $dark;
-    @extend .h4;
-    font-family: $regular;
-    font-size: 20px;
-    position: relative;
 
-    &::before {
-        content: '';
-        background-color: $projects;
-        position: absolute;
-        left: 0;
-        bottom: -4px;
-        width: 50%;
-        height: 4px;
-        z-index: -1;
-        transition: all .3s ease-in-out;
-    }
+    @include tablet {
+        max-width: 250px;
 
-    &:hover::before {
-        width: 100%;
+        &:hover {
+            background-color: $projects;   
+        }
     }
 }
 

@@ -57,12 +57,15 @@
         background-color: $dark;
         padding: 12px 24px;
         text-align: center;
+        transition: all .3s ease-in-out;
+        border: 4px solid $dark;
 
         @include tablet {
             max-width: 250px;
             &:hover {
                 background-color: $primary-color;
                 color: $dark;
+                border: 4px solid $primary-color;
             }
         }
     }

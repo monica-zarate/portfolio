@@ -25,7 +25,7 @@ export const PROJECTS = [
     images: {
       thumb: require("../assets/imgs/projects/guava-punch-thumb.jpg"),
       thumbAlt: "guava punch poster mockup",
-      featuredImg: require("../assets/imgs/projects/guava-punch.jpg"),
+      featuredImg: require("../assets/imgs/projects/guava-punch.png"),
       featuredImgAlt: "guava punch poster mockup",
     },
     description:

@@ -50,9 +50,11 @@ export default function ProjectDetails () {
             return (
                 <m.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.5, ease: 'easeInOut'}} exit={{opacity: 0}} className="project" key={key}>
                     <SEO title={seoData.title} description={seoData.description}/>
-                    <div className="flex-c project__hero projects-bg">
-                        <h2 className="project__title h2">{__.title}</h2>
-                        <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img"/>
+                    <div className="project__hero projects-bg">
+                        <div className="project__section-content">
+                            <h2 className="project__title h2">{__.title}</h2>
+                            <img src={__.images.featuredImg} alt={__.images.featuredImgAlt} className="project__img"/>
+                        </div>
                     </div>
                     <div className="project__wrapper">
                         <div className="project__section">
@@ -78,7 +80,7 @@ export default function ProjectDetails () {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex-c project__ctas">
+                                <div className="project__ctas">
                                     {__.links.repo && <a href={__.links.repo} title={__.links.repoTitle} target="_blank" rel="noreferrer" className="projects-btn">GitHub Repository</a>}
                                     {__.links.figmaPrototype && <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Figma Prototype</a>}
                                     {__.links.xdPrototype && <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Adobe Xd Prototype</a>}
@@ -122,16 +124,16 @@ export default function ProjectDetails () {
                         </div>
                         <div className={"project__section"}>
                             <div className="project__section-content">
-                                {__.links.repo && <p>Find the project's <a href={__.links.repo} title={__.links.repoTitle} target="_blank" rel="noreferrer" className="projects-btn">Github Repository</a>.</p>}
-                                {__.links.figmaPrototype && <p>Find the project's <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Figma Prototype</a>.</p>}
-                                {__.links.xdPrototype && <p>Find the project's <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Adobe Xd Prototype</a>.</p>}
-                                {__.links.site && <p>Find the project's <a href={__.links.site} title={__.links.siteTitle} target="_blank" rel="noreferrer" className="projects-btn">website</a>.</p>}
+                                {__.links.repo && <a href={__.links.repo} title={__.links.repoTitle} target="_blank" rel="noreferrer" className="projects-btn">Github Repository</a>}
+                                {__.links.figmaPrototype && <a href={__.links.figmaPrototype} title={__.links.figmaPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Figma Prototype</a>}
+                                {__.links.xdPrototype && <a href={__.links.xdPrototype} title={__.links.xdPrototypeTitle} target="_blank" rel="noreferrer" className="projects-btn">Adobe Xd Prototype</a>}
+                                {__.links.site && <a href={__.links.site} title={__.links.siteTitle} target="_blank" rel="noreferrer" className="projects-btn">website</a>}
                             </div>
                         </div>
                         <div className='project__section project__nav'>
                             <div className="project__section-content">
                                 <Link to={workSectionPath} className="flex-c project__nav-wrap">
-                                    <FontAwesomeIcon icon={faChevronLeft} className="dark-color"/>
+                                    <FontAwesomeIcon icon={faChevronLeft}/>
                                     <span>Back to Projects Page</span>
                                 </Link>
                             </div>

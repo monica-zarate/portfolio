@@ -1,8 +1,8 @@
-.nav-menu, .about__links, .project__nav-wrap span, .header__link, .nav-active, .header__link--active {
+.nav-menu, .about__links, .header__link, .nav-active, .header__link--active {
   color: #222222;
   font-size: 20px;
 }
-.nav-menu::before, .about__links::before, .project__nav-wrap span::before, .header__link::before, .nav-active::before, .header__link--active::before {
+.nav-menu::before, .about__links::before, .header__link::before, .nav-active::before, .header__link--active::before {
   content: "";
   background-color: #e087fb;
   position: absolute;
@@ -13,7 +13,7 @@
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
-.nav-menu:hover::before, .about__links:hover::before, .project__nav-wrap span:hover::before, .header__link:hover::before, .nav-active:hover::before, .header__link--active:hover::before {
+.nav-menu:hover::before, .about__links:hover::before, .header__link:hover::before, .nav-active:hover::before, .header__link--active:hover::before {
   width: 100%;
 }
 
@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-.nav-mobile, .not-found__btn, .header__mobile {
+.nav-mobile, .not-found__btn, .project__nav-wrap, .header__mobile, .projects-btn {
   font-family: "Source Sans Bold";
   font-size: 16px;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
   margin-bottom: 24px;
 }
 
-.h4, .projects-btn, .nav-menu, .about__links, .project__nav-wrap span, .header__link, .nav-active, .header__link--active {
+.h4, .nav-menu, .about__links, .header__link, .nav-active, .header__link--active {
   font-family: "Source Sans Bold";
   font-size: 16px;
   line-height: 25.6px;
@@ -110,7 +110,7 @@ ol {
   align-items: center;
 }
 
-.box-shadow, .not-found__btn, .project__img, .card:hover, .card, .header {
+.box-shadow, .not-found__btn, .project__nav-wrap, .card:hover, .card, .header, .projects-btn {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -119,28 +119,25 @@ ol {
 }
 
 .projects-bg-light {
-  background-color: #fbe087;
+  background-color: #fef9e6;
 }
 
 .projects-btn {
-  color: #222222;
-  font-family: "Source Sans Regular";
-  font-size: 20px;
-  position: relative;
-}
-.projects-btn::before {
-  content: "";
-  background-color: #fbe087;
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 50%;
-  height: 4px;
-  z-index: -1;
+  display: block;
+  border: 4px solid #222222;
+  padding: 12px 24px;
+  text-align: center;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 24px;
+  color: #222222;
 }
-.projects-btn:hover::before {
-  width: 100%;
+@media (min-width: 768px) {
+  .projects-btn {
+    max-width: 250px;
+  }
+  .projects-btn:hover {
+    background-color: #fbe087;
+  }
 }
 
 .primary-btn {
@@ -464,7 +461,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .project__hero {
   padding: 32px;
-  flex-direction: column;
 }
 @media (min-width: 768px) {
   .project__hero {
@@ -499,9 +495,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .project__section-content {
   max-width: 768px;
   margin: 0 auto;
-}
-.project__title {
-  margin-bottom: 24px;
 }
 @media (min-width: 768px) {
   .project__title {
@@ -551,9 +544,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   align-items: flex-start;
   margin-bottom: 16px;
 }
-.project__ctas a {
-  margin-bottom: 24px;
-}
 .project__img {
   width: 100%;
   height: auto;
@@ -568,10 +558,31 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-bottom: 80px;
   display: block;
 }
+@media (min-width: 1024px) {
+  .project__nav {
+    padding: 0;
+  }
+}
 .project__nav-wrap {
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
+  display: block;
+  background-color: #222222;
+  padding: 12px 24px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 4px solid #222222;
+}
+@media (min-width: 768px) {
+  .project__nav-wrap {
+    max-width: 280px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .project__nav-wrap:hover {
+    background-color: #e087fb;
+    color: #222222;
+    border: 4px solid #e087fb;
+  }
 }
 .project__nav-wrap span {
   margin-left: 8px;
@@ -716,6 +727,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background-color: #222222;
   padding: 12px 24px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 4px solid #222222;
 }
 @media (min-width: 768px) {
   .not-found__btn {
@@ -724,6 +737,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .not-found__btn:hover {
     background-color: #e087fb;
     color: #222222;
+    border: 4px solid #e087fb;
   }
 }
 
