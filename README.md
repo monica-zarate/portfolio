@@ -1,4 +1,6 @@
-# Hola! I'm Monica Zarate, UX Designer and Web Developer.
+# Hola!
+
+I'm Monica Zarate, UX Designer and Web Developer.
 
 Welcome to my portfolio website.
 
