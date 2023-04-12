@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.75e877da.css",
-    "main.js": "/static/js/main.dc1f4b60.js",
+    "main.js": "/static/js/main.f2391127.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/guava-punch.png": "/static/media/guava-punch.f2ad2e0782a7bd4494a9.png",
     "static/media/guava-punch-thumb.jpg": "/static/media/guava-punch-thumb.6adea8593c5e89796f85.jpg",
@@ -54,11 +54,11 @@
     "static/media/monica-logo.svg": "/static/media/monica-logo.041f6bf882c2c34ef1b9913794cf15dc.svg",
     "index.html": "/index.html",
     "main.75e877da.css.map": "/static/css/main.75e877da.css.map",
-    "main.dc1f4b60.js.map": "/static/js/main.dc1f4b60.js.map",
+    "main.f2391127.js.map": "/static/js/main.f2391127.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75e877da.css",
-    "static/js/main.dc1f4b60.js"
+    "static/js/main.f2391127.js"
   ]
 }
