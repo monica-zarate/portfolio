@@ -3,8 +3,6 @@ $extra-light: "Source Sans Extra Light";
 $light: "Source Sans Light";
 $regular: "Source Sans Regular";
 $bold: "Source Sans Bold";
-$alphapipe: "BC Alphapipe L Regular";
-$alphapipe-bold: "BC Alphapipe RB Bold";
 $urbanist-light: "Urbanist Light";
 $urbanist-semi: "Urbanist Semi Bold";
 
@@ -17,18 +15,18 @@ $urbanist-semi: "Urbanist Semi Bold";
 
     &::before {
         content: '';
-        background-color: $primary-color;
+        background-color: $white;
         position: absolute;
         left: 0;
         bottom: -4px;
-        width: 50%;
+        width: 100%;
         height: 4px;
         z-index: -1;
-        transition: all .3s ease-in-out;
+        transition: all .5s ease-in-out;
     }
 
     &:hover::before {
-        width: 100%;
+        background-color: $primary-color;
     }
 }
 
@@ -37,6 +35,7 @@ $urbanist-semi: "Urbanist Semi Bold";
 
     &::before {
         width: 100%;
+        background-color: $primary-color;
     }
 }
 

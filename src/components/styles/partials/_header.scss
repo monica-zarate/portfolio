@@ -23,8 +23,8 @@
     }
 
     &__logo {
-        height: 50px;
-        width: auto;
+        height: auto;
+        width: 150px;
     }
 
     &__nav {
@@ -61,7 +61,7 @@
     width: 36px;
     height: 30px;
     right: 32px;
-    top: 42px;
+    top: 26px;
 }
 
 /* Color/shape of burger icon bars */
@@ -91,7 +91,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
     position: fixed;
     height: 100%;
-    top: 114px;
+    top: 82px;
 }
 
 /* General sidebar styles */

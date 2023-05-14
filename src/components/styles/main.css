@@ -4,21 +4,22 @@
 }
 .nav-menu::before, .about__links::before, .header__link::before, .nav-active::before, .header__link--active::before {
   content: "";
-  background-color: #e087fb;
+  background-color: #ffffff;
   position: absolute;
   left: 0;
   bottom: -4px;
-  width: 50%;
+  width: 100%;
   height: 4px;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .nav-menu:hover::before, .about__links:hover::before, .header__link:hover::before, .nav-active:hover::before, .header__link--active:hover::before {
-  width: 100%;
+  background-color: #8B1874;
 }
 
 .nav-active::before, .header__link--active::before {
   width: 100%;
+  background-color: #8B1874;
 }
 
 .nav-mobile, .not-found__btn, .project__nav-wrap, .header__mobile, .projects-btn {
@@ -110,38 +111,39 @@ ol {
   align-items: center;
 }
 
-.box-shadow, .not-found__btn, .project__nav-wrap, .card:hover, .card, .header, .projects-btn {
+.box-shadow, .not-found__btn, .project__nav-wrap, .card, .header, .chip-btn, .chip-btn--active, .projects-btn {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .projects-bg {
-  background-color: #fbe087;
+  background-color: #AE5D9E;
 }
 
 .projects-bg-light {
-  background-color: #fef9e6;
+  background-color: #DCBAD5;
 }
 
 .projects-btn {
   display: block;
-  border: 4px solid #222222;
   padding: 12px 24px;
   text-align: center;
   transition: all 0.3s ease-in-out;
   margin-bottom: 24px;
-  color: #222222;
+  color: #ffffff;
+  background-color: #AE5D9E;
+  border-radius: 8px;
 }
 @media (min-width: 768px) {
   .projects-btn {
     max-width: 250px;
   }
   .projects-btn:hover {
-    background-color: #fbe087;
+    transform: scale(1.05);
   }
 }
 
 .primary-btn {
-  background-color: #e087fb;
+  background-color: #8B1874;
   color: #f2f2f2;
 }
 
@@ -160,15 +162,12 @@ ol {
   transition: all 0.3s ease-in-out;
 }
 .chip-btn--active {
-  color: #222222;
-  background-color: #fbe087;
+  background-color: #AE5D9E;
 }
 @media (min-width: 768px) {
   .chip-btn:hover, .chip-btn--active:hover {
-    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-    background-color: #fbe087;
-    color: #222222;
+    background-color: #AE5D9E;
   }
 }
 
@@ -201,8 +200,8 @@ ol {
   }
 }
 .header__logo {
-  height: 50px;
-  width: auto;
+  height: auto;
+  width: 150px;
 }
 .header__nav {
   display: none;
@@ -226,7 +225,7 @@ ol {
   width: 36px;
   height: 30px;
   right: 32px;
-  top: 42px;
+  top: 26px;
 }
 
 /* Color/shape of burger icon bars */
@@ -256,7 +255,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
-  top: 114px;
+  top: 82px;
 }
 
 /* General sidebar styles */
@@ -343,7 +342,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 @media (min-width: 768px) {
   .intro__social svg:hover {
-    color: #e087fb;
+    color: #AE5D9E;
   }
 }
 
@@ -496,6 +495,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   max-width: 768px;
   margin: 0 auto;
 }
+.project__title {
+  color: #ffffff;
+}
 @media (min-width: 768px) {
   .project__title {
     font-size: 40px;
@@ -570,7 +572,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 12px 24px;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  border: 4px solid #222222;
+  border-radius: 8px;
 }
 @media (min-width: 768px) {
   .project__nav-wrap {
@@ -579,9 +581,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: fit-content;
   }
   .project__nav-wrap:hover {
-    background-color: #e087fb;
-    color: #222222;
-    border: 4px solid #e087fb;
+    background-color: #8B1874;
+    transform: scale(1.05);
   }
 }
 .project__nav-wrap span {
@@ -735,15 +736,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
     max-width: 250px;
   }
   .not-found__btn:hover {
-    background-color: #e087fb;
+    background-color: #8B1874;
     color: #222222;
-    border: 4px solid #e087fb;
+    border: 4px solid #8B1874;
   }
 }
 
 /* Footer */
 .footer, .footer p {
-  border-top: 4px solid #e087fb;
+  border-top: 4px solid #8B1874;
   background-color: #222222;
 }
 .footer__wrapper {
@@ -797,7 +798,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 @media (min-width: 768px) {
   .footer__social svg:hover {
-    color: #e087fb;
+    color: #AE5D9E;
   }
 }
 

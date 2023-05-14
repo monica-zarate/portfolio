@@ -16,10 +16,6 @@
     border: 1px solid $light-border;
     @extend .box-shadow;
 
-    &:hover {
-        @extend .box-shadow;
-    }
-
     @include laptop {
         flex-direction: row;
         max-width: 690px;
