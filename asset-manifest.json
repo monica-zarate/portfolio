@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4705db8c.css",
-    "main.js": "/static/js/main.c4445e9e.js",
+    "main.js": "/static/js/main.813deabc.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/guava-punch.png": "/static/media/guava-punch.d40a0793abfe7bed8233.png",
     "static/media/guava-punch-thumb.jpg": "/static/media/guava-punch-thumb.ca7f4b65df89f5c98ffb.jpg",
@@ -46,19 +46,19 @@
     "static/media/billy-4.png": "/static/media/billy-4.58caa2d2dc3c81e227c8.png",
     "static/media/billy-3.png": "/static/media/billy-3.2fbc67158bc4b4d6c4f4.png",
     "static/media/tc-design-2.png": "/static/media/tc-design-2.b6f580d0fee3a62f6608.png",
+    "static/media/monica-logo.svg": "/static/media/monica-logo.e1130676b5f46517df48238996ac0bcf.svg",
     "static/media/billy-2.png": "/static/media/billy-2.67c3afdeb77157cd7140.png",
     "static/media/urbanist-light.ttf": "/static/media/urbanist-light.55ed2929e37cd5fd9b62.ttf",
     "static/media/urbanist-semibold.ttf": "/static/media/urbanist-semibold.7da44a6d82965ce3d957.ttf",
     "static/media/not-found.png": "/static/media/not-found.2c1d01844b00c9adef83.png",
-    "static/media/monica-logo.svg": "/static/media/monica-logo.4aaab65e2395049287da0b0de81e219e.svg",
     "static/media/react.png": "/static/media/react.2185a561f90a938cd19f.png",
     "index.html": "/index.html",
     "main.4705db8c.css.map": "/static/css/main.4705db8c.css.map",
-    "main.c4445e9e.js.map": "/static/js/main.c4445e9e.js.map",
+    "main.813deabc.js.map": "/static/js/main.813deabc.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4705db8c.css",
-    "static/js/main.c4445e9e.js"
+    "static/js/main.813deabc.js"
   ]
 }
